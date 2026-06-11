@@ -1,0 +1,556 @@
+{
+  
+    "openapi": "3.0.1",
+    "info": {
+      "title": "LegacyBridge Recovered API",
+      "version": "1.0.0",
+      "description": "High-fidelity OpenAPI 3.0.1 specification auto-recovered by LegacyBridge ResponseSanitizer v2.",
+      "contact": {
+        "name": "LegacyBridge Engineering",
+        "email": "devops@legacybridge.internal"
+      },
+      "license": {
+        "name": "Proprietary — Internal Use Only"
+      },
+      "x-generated-by": "LegacyBridge ResponseSanitizer v2",
+      "x-generated-at": "2026-06-09T09:27:41.280Z",
+      "x-recovery-note": "Field types, constraints, and relationships are statistically inferred from legacy stream data."
+    },
+    "tags": [
+      {
+        "name": "Me",
+        "description": "Operations related to the **Me** resource group."
+      }
+    ],
+    "paths": {
+      "/api/v1/me/": {
+        "get": {
+          "summary": "GET /api/v1/me/",
+          "description": "Retrieves me record(s). Recovered from 4 legacy stream records and statistically verified.",
+          "operationId": "getMe",
+          "tags": [
+            "Me"
+          ],
+          "parameters": [],
+          "responses": {
+            "200": {
+              "description": "Successful response. Recovered from 4 legacy stream record(s).",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/MeGetResponse"
+                  }
+                }
+              },
+              "headers": {
+                "X-Request-ID": {
+                  "description": "Unique request identifier for tracing.",
+                  "schema": {
+                    "type": "string",
+                    "format": "uuid"
+                  }
+                },
+                "X-Total-Count": {
+                  "description": "Total matching records (list endpoints).",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              }
+            },
+            "400": {
+              "description": "Bad Request — malformed syntax.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized — missing or invalid credentials.",
+              "headers": {
+                "WWW-Authenticate": {
+                  "description": "Authentication challenge.",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              },
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/UnauthorizedError"
+                  }
+                }
+              }
+            },
+            "403": {
+              "description": "Forbidden — insufficient permissions.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "404": {
+              "description": "Not Found — resource does not exist.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "409": {
+              "description": "Conflict — current state prevents this operation.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ConflictError"
+                  }
+                }
+              }
+            },
+            "422": {
+              "description": "Unprocessable Entity — semantic validation errors.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ValidationError"
+                  }
+                }
+              }
+            },
+            "429": {
+              "description": "Too Many Requests — rate limit exceeded.",
+              "headers": {
+                "Retry-After": {
+                  "description": "Seconds to wait before retrying.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                },
+                "X-RateLimit-Limit": {
+                  "description": "Request limit per window.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                },
+                "X-RateLimit-Remaining": {
+                  "description": "Requests remaining.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                },
+                "X-RateLimit-Reset": {
+                  "description": "Reset Unix timestamp.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              },
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/RateLimitError"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal Server Error — unexpected condition.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "503": {
+              "description": "Service Unavailable — temporarily unable to handle request.",
+              "headers": {
+                "Retry-After": {
+                  "description": "Suggested seconds to wait.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              },
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "components": {
+      "schemas": {
+        "MeGetResponse": {
+          "type": "object",
+          "properties": {
+            "result": {
+              "type": "object",
+              "properties": {
+                "email": {
+                  "type": "string",
+                  "format": "email",
+                  "minLength": 5,
+                  "maxLength": 254,
+                  "example": "admin@superset.com",
+                  "description": "Valid RFC 5321 email address."
+                },
+                "first_name": {
+                  "type": "string",
+                  "format": "hostname",
+                  "example": "Admin",
+                  "description": "RFC 1123 DNS hostname."
+                },
+                "id": {
+                  "type": "integer",
+                  "example": 1,
+                  "description": "Unique identifier for the entity. Immutable after creation.",
+                  "readOnly": true
+                },
+                "is_active": {
+                  "type": "boolean",
+                  "example": true,
+                  "description": "Boolean flag indicating whether active applies."
+                },
+                "is_anonymous": {
+                  "type": "boolean",
+                  "example": false,
+                  "description": "Boolean flag indicating whether anonymous applies."
+                },
+                "last_name": {
+                  "type": "string",
+                  "format": "hostname",
+                  "example": "User",
+                  "description": "RFC 1123 DNS hostname."
+                },
+                "username": {
+                  "type": "string",
+                  "format": "hostname",
+                  "example": "admin",
+                  "description": "RFC 1123 DNS hostname."
+                }
+              },
+              "required": [
+                "email",
+                "first_name",
+                "id",
+                "is_active",
+                "is_anonymous",
+                "last_name",
+                "username"
+              ]
+            }
+          },
+          "required": [
+            "result"
+          ],
+          "example": {
+            "result": {
+              "email": "admin@superset.com",
+              "first_name": "Admin",
+              "id": 1,
+              "is_active": true,
+              "is_anonymous": false,
+              "last_name": "User",
+              "username": "admin"
+            }
+          }
+        },
+        "ProblemDetails": {
+          "type": "object",
+          "description": "RFC 7807 Problem Details for HTTP APIs.",
+          "required": [
+            "type",
+            "title",
+            "status"
+          ],
+          "properties": {
+            "type": {
+              "type": "string",
+              "format": "uri",
+              "description": "A URI reference identifying the problem type."
+            },
+            "title": {
+              "type": "string",
+              "description": "Short, human-readable summary of the problem."
+            },
+            "status": {
+              "type": "integer",
+              "minimum": 100,
+              "maximum": 599,
+              "description": "HTTP status code."
+            },
+            "detail": {
+              "type": "string",
+              "description": "Human-readable explanation for this occurrence."
+            },
+            "instance": {
+              "type": "string",
+              "format": "uri",
+              "nullable": true,
+              "description": "URI of the specific problem instance."
+            }
+          },
+          "example": {
+            "type": "https://errors.example.com/not-found",
+            "title": "Not Found",
+            "status": 404,
+            "detail": "The resource could not be located."
+          }
+        },
+        "ValidationError": {
+          "allOf": [
+            {
+              "$ref": "#/components/schemas/ProblemDetails"
+            },
+            {
+              "type": "object",
+              "description": "Extended problem details for 422 responses.",
+              "properties": {
+                "errors": {
+                  "type": "array",
+                  "description": "Field-level validation failures.",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "field",
+                      "message"
+                    ],
+                    "properties": {
+                      "field": {
+                        "type": "string",
+                        "description": "The field that failed validation."
+                      },
+                      "message": {
+                        "type": "string",
+                        "description": "Human-readable validation failure description."
+                      },
+                      "code": {
+                        "type": "string",
+                        "nullable": true,
+                        "description": "Machine-readable error code."
+                      },
+                      "value": {
+                        "nullable": true,
+                        "description": "The rejected value, if safe to expose."
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "UnauthorizedError": {
+          "allOf": [
+            {
+              "$ref": "#/components/schemas/ProblemDetails"
+            },
+            {
+              "type": "object",
+              "description": "Authentication failure details.",
+              "properties": {
+                "auth_scheme": {
+                  "type": "string",
+                  "example": "Bearer",
+                  "description": "Expected authentication scheme."
+                },
+                "realm": {
+                  "type": "string",
+                  "nullable": true,
+                  "description": "Protection space identifier."
+                }
+              }
+            }
+          ]
+        },
+        "RateLimitError": {
+          "allOf": [
+            {
+              "$ref": "#/components/schemas/ProblemDetails"
+            },
+            {
+              "type": "object",
+              "description": "Rate-limit exceeded details.",
+              "properties": {
+                "retry_after": {
+                  "type": "integer",
+                  "description": "Seconds until the rate-limit window resets."
+                },
+                "limit": {
+                  "type": "integer",
+                  "description": "Total requests allowed per window."
+                },
+                "remaining": {
+                  "type": "integer",
+                  "description": "Requests remaining in current window."
+                },
+                "reset_timestamp": {
+                  "type": "string",
+                  "format": "date-time",
+                  "description": "When the window resets."
+                }
+              }
+            }
+          ]
+        },
+        "ConflictError": {
+          "allOf": [
+            {
+              "$ref": "#/components/schemas/ProblemDetails"
+            },
+            {
+              "type": "object",
+              "description": "Resource conflict details.",
+              "properties": {
+                "conflicting_field": {
+                  "type": "string",
+                  "nullable": true,
+                  "description": "Field that caused the conflict."
+                },
+                "existing_value": {
+                  "nullable": true,
+                  "description": "Current value of the conflicting field."
+                }
+              }
+            }
+          ]
+        }
+      },
+      "securitySchemes": {
+        "BearerAuth": {
+          "type": "http",
+          "scheme": "bearer",
+          "bearerFormat": "JWT",
+          "description": "JWT Bearer token. Header: Authorization: Bearer <token>"
+        },
+        "ApiKeyAuth": {
+          "type": "apiKey",
+          "in": "header",
+          "name": "X-API-Key",
+          "description": "API key via request header."
+        },
+        "BasicAuth": {
+          "type": "http",
+          "scheme": "basic",
+          "description": "HTTP Basic authentication (RFC 7617)."
+        }
+      },
+      "parameters": {
+        "PageParam": {
+          "name": "page",
+          "in": "query",
+          "schema": {
+            "type": "integer",
+            "minimum": 1,
+            "default": 1
+          },
+          "description": "Page number (1-based offset pagination)."
+        },
+        "LimitParam": {
+          "name": "limit",
+          "in": "query",
+          "schema": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 100,
+            "default": 20
+          },
+          "description": "Records per page."
+        },
+        "CursorParam": {
+          "name": "cursor",
+          "in": "query",
+          "schema": {
+            "type": "string"
+          },
+          "description": "Opaque cursor for cursor-based pagination."
+        },
+        "SortParam": {
+          "name": "sort",
+          "in": "query",
+          "schema": {
+            "type": "string"
+          },
+          "description": "Sort field. Prefix with - for descending (e.g. -created_at)."
+        },
+        "FieldsParam": {
+          "name": "fields",
+          "in": "query",
+          "schema": {
+            "type": "string"
+          },
+          "description": "Comma-separated list of fields to return (sparse fieldsets)."
+        },
+        "SearchParam": {
+          "name": "q",
+          "in": "query",
+          "schema": {
+            "type": "string"
+          },
+          "description": "Full-text search query."
+        }
+      },
+      "headers": {
+        "X-Request-ID": {
+          "description": "Unique request identifier.",
+          "schema": {
+            "type": "string",
+            "format": "uuid"
+          }
+        },
+        "X-RateLimit-Limit": {
+          "description": "Request limit per window.",
+          "schema": {
+            "type": "integer"
+          }
+        },
+        "X-RateLimit-Remaining": {
+          "description": "Requests remaining.",
+          "schema": {
+            "type": "integer"
+          }
+        },
+        "X-RateLimit-Reset": {
+          "description": "Window reset Unix timestamp.",
+          "schema": {
+            "type": "integer"
+          }
+        },
+        "X-Total-Count": {
+          "description": "Total matching records.",
+          "schema": {
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "security": [
+      {
+        "BearerAuth": []
+      }
+    ],
+    "x-tagGroups": [
+      {
+        "name": "Recovered Endpoints",
+        "tags": [
+          "Me"
+        ]
+      }
+    ]
+  }

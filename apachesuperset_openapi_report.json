@@ -1,0 +1,3363 @@
+[ CLI ] Starting Sovereign Analysis on: apachesuperset_openapi.json...
+{"ts":"2026-06-11T06:02:45.164Z","level":"INFO","module":"SpecNormalizer_v5.1","message":"Spec version detected: 3.0.1"}
+{"ts":"2026-06-11T06:02:45.164Z","level":"DEBUG","module":"SpecNormalizer_v5.1","message":"Registered 3 security scheme nodes"}
+{"ts":"2026-06-11T06:02:45.170Z","level":"INFO","module":"SpecNormalizer_v5.1","message":"Endpoint edges built","endpoints":25,"PATH_CHILD":2,"PUBLIC_TO_PROTECTED":0,"ADMIN_REACHABLE":0,"AUTH_BYPASS":0,"total_new_edges":2}
+{"ts":"2026-06-11T06:02:45.170Z","level":"INFO","module":"SpecNormalizer_v5.1","message":"Spec normalization complete","version":"3.0.1","nodes_built":67,"duration_ms":8}
+[GRAPH] Constructed: 67 nodes, 308 edges (9ms)
+{"ts":"2026-06-11T06:02:45.196Z","level":"INFO","module":"ProtocolAnalyzer_v6.0","message":"ProtocolAnalyzer v6.0 initialized"}
+{"ts":"2026-06-11T06:02:45.197Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"DataScanner Ultra v6.0 initialized — Context-First Architecture","runtime_ports_active":{"samples":0,"behavioral":0,"overrides":0}}
+{"ts":"2026-06-11T06:02:45.198Z","level":"INFO","module":"LoggingMonitor_Ultra_v5.1","message":"LoggingMonitor Ultra v5.1 initialized"}
+{"ts":"2026-06-11T06:02:45.198Z","level":"INFO","module":"WebhookAnalyzer_Ultra_v6.0","message":"WebhookAnalyzer Ultra v6.0 initialized — Context-First Architecture"}
+{"ts":"2026-06-11T06:02:45.199Z","level":"INFO","module":"ProtocolAnalyzer_v6.0","message":"ProtocolAnalyzer_v6.0 starting protocol detection..."}
+{"ts":"2026-06-11T06:02:45.199Z","level":"WARN","module":"ProtocolAnalyzer_v6.0","message":"[Phase 0] Endpoint transport INFERRED — decisions deferred","nodeId":"GET /superset/welcome/","transportSource":"DEFAULT","transportConf":0.1}
+{"ts":"2026-06-11T06:02:45.199Z","level":"WARN","module":"ProtocolAnalyzer_v6.0","message":"[Phase 0] Endpoint transport INFERRED — decisions deferred","nodeId":"GET /static/assets/3185.f10541918219d72b470f.entry.js","transportSource":"DEFAULT","transportConf":0.1}
+{"ts":"2026-06-11T06:02:45.199Z","level":"WARN","module":"ProtocolAnalyzer_v6.0","message":"[Phase 0] Endpoint transport INFERRED — decisions deferred","nodeId":"GET /static/assets/thumbnail.824b899f1b7b91c556af.entry.js","transportSource":"DEFAULT","transportConf":0.1}
+{"ts":"2026-06-11T06:02:45.199Z","level":"WARN","module":"ProtocolAnalyzer_v6.0","message":"[Phase 0] Endpoint transport INFERRED — decisions deferred","nodeId":"GET /static/assets/952.fcf16880ee68d8064d11.entry.js","transportSource":"DEFAULT","transportConf":0.1}
+{"ts":"2026-06-11T06:02:45.199Z","level":"WARN","module":"ProtocolAnalyzer_v6.0","message":"[Phase 0] Endpoint transport INFERRED — decisions deferred","nodeId":"GET /static/assets/1203.a1e986c5d8f5a4c4375a.entry.js","transportSource":"DEFAULT","transportConf":0.1}
+{"ts":"2026-06-11T06:02:45.199Z","level":"WARN","module":"ProtocolAnalyzer_v6.0","message":"[Phase 0] Endpoint transport INFERRED — decisions deferred","nodeId":"GET /static/assets/8706.6dfab372988d20453152.entry.js","transportSource":"DEFAULT","transportConf":0.1}
+{"ts":"2026-06-11T06:02:45.199Z","level":"WARN","module":"ProtocolAnalyzer_v6.0","message":"[Phase 0] Endpoint transport INFERRED — decisions deferred","nodeId":"GET /static/assets/1541.56876400fc511af10839.entry.js","transportSource":"DEFAULT","transportConf":0.1}
+{"ts":"2026-06-11T06:02:45.200Z","level":"WARN","module":"ProtocolAnalyzer_v6.0","message":"[Phase 0] Endpoint transport INFERRED — decisions deferred","nodeId":"GET /static/assets/7634.0acd07e01787179c928e.entry.js","transportSource":"DEFAULT","transportConf":0.1}
+{"ts":"2026-06-11T06:02:45.200Z","level":"WARN","module":"ProtocolAnalyzer_v6.0","message":"[Phase 0] Endpoint transport INFERRED — decisions deferred","nodeId":"GET /static/assets/616.94c331d4202698eb2aa9.entry.js","transportSource":"DEFAULT","transportConf":0.1}
+{"ts":"2026-06-11T06:02:45.200Z","level":"WARN","module":"ProtocolAnalyzer_v6.0","message":"[Phase 0] Endpoint transport INFERRED — decisions deferred","nodeId":"GET /static/assets/8115.b1f8cee824d849099ff3.entry.js","transportSource":"DEFAULT","transportConf":0.1}
+{"ts":"2026-06-11T06:02:45.200Z","level":"WARN","module":"ProtocolAnalyzer_v6.0","message":"[Phase 0] Endpoint transport INFERRED — decisions deferred","nodeId":"GET /static/assets/6934.9afbba59e4bb25c0c44e.entry.js","transportSource":"DEFAULT","transportConf":0.1}
+{"ts":"2026-06-11T06:02:45.200Z","level":"WARN","module":"ProtocolAnalyzer_v6.0","message":"[Phase 0] Endpoint transport INFERRED — decisions deferred","nodeId":"GET /static/assets/180.4f9024017a377ac30f78.entry.js","transportSource":"DEFAULT","transportConf":0.1}
+{"ts":"2026-06-11T06:02:45.200Z","level":"WARN","module":"ProtocolAnalyzer_v6.0","message":"[Phase 0] Endpoint transport INFERRED — decisions deferred","nodeId":"GET /static/assets/6707.35038bbaa024309b7dd8.entry.js","transportSource":"DEFAULT","transportConf":0.1}
+{"ts":"2026-06-11T06:02:45.200Z","level":"WARN","module":"ProtocolAnalyzer_v6.0","message":"[Phase 0] Endpoint transport INFERRED — decisions deferred","nodeId":"GET /static/assets/9059.b2f889ad23bd80f99e2a.entry.js","transportSource":"DEFAULT","transportConf":0.1}
+{"ts":"2026-06-11T06:02:45.200Z","level":"WARN","module":"ProtocolAnalyzer_v6.0","message":"[Phase 0] Endpoint transport INFERRED — decisions deferred","nodeId":"GET /static/assets/8085.4bc9b7059e85ba458bcb.entry.js","transportSource":"DEFAULT","transportConf":0.1}
+{"ts":"2026-06-11T06:02:45.200Z","level":"WARN","module":"ProtocolAnalyzer_v6.0","message":"[Phase 0] Endpoint transport INFERRED — decisions deferred","nodeId":"GET /static/assets/2795.af7b90bb1b1f9b21e098.entry.js","transportSource":"DEFAULT","transportConf":0.1}
+{"ts":"2026-06-11T06:02:45.200Z","level":"WARN","module":"ProtocolAnalyzer_v6.0","message":"[Phase 0] Endpoint transport INFERRED — decisions deferred","nodeId":"GET /static/assets/pwa-manifest.json","transportSource":"DEFAULT","transportConf":0.1}
+{"ts":"2026-06-11T06:02:45.200Z","level":"WARN","module":"ProtocolAnalyzer_v6.0","message":"[Phase 0] Endpoint transport INFERRED — decisions deferred","nodeId":"GET /api/v1/database/","transportSource":"DEFAULT","transportConf":0.1}
+{"ts":"2026-06-11T06:02:45.200Z","level":"WARN","module":"ProtocolAnalyzer_v6.0","message":"[Phase 0] Endpoint transport INFERRED — decisions deferred","nodeId":"GET /api/v1/log/recent_activity/","transportSource":"DEFAULT","transportConf":0.1}
+{"ts":"2026-06-11T06:02:45.200Z","level":"WARN","module":"ProtocolAnalyzer_v6.0","message":"[Phase 0] Endpoint transport INFERRED — decisions deferred","nodeId":"GET /api/v1/dashboard/","transportSource":"DEFAULT","transportConf":0.1}
+{"ts":"2026-06-11T06:02:45.200Z","level":"WARN","module":"ProtocolAnalyzer_v6.0","message":"[Phase 0] Endpoint transport INFERRED — decisions deferred","nodeId":"GET /api/v1/chart/","transportSource":"DEFAULT","transportConf":0.1}
+{"ts":"2026-06-11T06:02:45.200Z","level":"WARN","module":"ProtocolAnalyzer_v6.0","message":"[Phase 0] Endpoint transport INFERRED — decisions deferred","nodeId":"GET /api/v1/saved_query/","transportSource":"DEFAULT","transportConf":0.1}
+{"ts":"2026-06-11T06:02:45.200Z","level":"WARN","module":"ProtocolAnalyzer_v6.0","message":"[Phase 0] Endpoint transport INFERRED — decisions deferred","nodeId":"GET /api/v1/chart/_info","transportSource":"DEFAULT","transportConf":0.1}
+{"ts":"2026-06-11T06:02:45.200Z","level":"WARN","module":"ProtocolAnalyzer_v6.0","message":"[Phase 0] Endpoint transport INFERRED — decisions deferred","nodeId":"GET /api/v1/chart/favorite_status/","transportSource":"DEFAULT","transportConf":0.1}
+{"ts":"2026-06-11T06:02:45.200Z","level":"WARN","module":"ProtocolAnalyzer_v6.0","message":"[Phase 0] Endpoint transport INFERRED — decisions deferred","nodeId":"GET /api/v1/me/","transportSource":"DEFAULT","transportConf":0.1}
+{"ts":"2026-06-11T06:02:45.200Z","level":"INFO","module":"ProtocolAnalyzer_v6.0","message":"Phase 0 complete","endpointContexts":25,"globalUncertainty":0.505}
+{"ts":"2026-06-11T06:02:45.200Z","level":"INFO","module":"ProtocolAnalyzer_v6.0","message":"No global servers defined — transport protocol unknown. OAS3 default: server serving the spec file."}
+{"ts":"2026-06-11T06:02:45.200Z","level":"INFO","module":"ProtocolAnalyzer_v6.0","message":"Processing 25 endpoints for protocol flags."}
+{"ts":"2026-06-11T06:02:45.201Z","level":"INFO","module":"ProtocolAnalyzer_v6.0","message":"Protocol analysis complete.","endpoints_processed":25,"global_has_http":false,"global_has_https":false,"global_has_ws":false,"global_has_wss":false}
+{"ts":"2026-06-11T06:02:45.203Z","level":"INFO","module":"AuthAnalyzer_v2.0_ContextFirst","message":"AuthAnalyzer v2.0 — Context-First Architecture"}
+{"ts":"2026-06-11T06:02:45.204Z","level":"INFO","module":"AuthAnalyzer_v2.0_ContextFirst","message":"Shared context built","hasContextEngine":true,"schemesFound":3,"globalUncertainty":0.505}
+{"ts":"2026-06-11T06:02:45.205Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"DataScanner v6.0 — Context-First — 67 nodes","runtime_samples":0,"behavioral_sigs":0,"classification_overrides":0}
+{"ts":"2026-06-11T06:02:45.205Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Phase 0: Context-First Initialization"}
+{"ts":"2026-06-11T06:02:45.209Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Phase 0 complete","globalApiContext":"general","globalDataRisk":"low","globalUncertainty":0.505,"endpointContexts":25}
+{"ts":"2026-06-11T06:02:45.209Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Phase 1: Schema Extraction & Indexing"}
+{"ts":"2026-06-11T06:02:45.210Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Extracted 289 schema descriptors."}
+{"ts":"2026-06-11T06:02:45.210Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Phase 2: Hybrid Field Analysis (Pattern + Name + Format + Entropy + Context)"}
+{"ts":"2026-06-11T06:02:45.210Z","level":"INFO","module":"CorsRateLimiter","version":"6.0.0","message":"CorsRateLimiter v6.0 — 67 nodes"}
+{"ts":"2026-06-11T06:02:45.211Z","level":"INFO","module":"LoggingMonitor_Ultra_v5.1","message":"Engaging Log Security & Traceability Scan..."}
+{"ts":"2026-06-11T06:02:45.212Z","level":"INFO","module":"LoggingMonitor_Ultra_v5.1","message":"Phase 0 complete","endpointContexts":25}
+{"ts":"2026-06-11T06:02:45.212Z","level":"INFO","module":"WebhookAnalyzer_Ultra_v6.0","message":"Scanning for Webhooks & Callbacks..."}
+{"ts":"2026-06-11T06:02:45.213Z","level":"INFO","module":"WebhookAnalyzer_Ultra_v6.0","message":"Phase 0 complete","globalUncertainty":0.505,"endpointContexts":25}
+{"ts":"2026-06-11T06:02:45.214Z","level":"INFO","module":"WebhookAnalyzer_Ultra_v6.0","message":"No webhooks detected in specification."}
+{"ts":"2026-06-11T06:02:45.214Z","level":"INFO","module":"AuthAnalyzer_v2.0_ContextFirst","message":"Analyzing 25 endpoints with context-awareness"}
+{"ts":"2026-06-11T06:02:45.230Z","level":"INFO","module":"LoggingMonitor_Ultra_v5.1","message":"Engine 1: Global Traceability Audit"}
+{"ts":"2026-06-11T06:02:45.235Z","level":"INFO","module":"LoggingMonitor_Ultra_v5.1","message":"Engine 2: Sensitive URL Parameter Audit"}
+{"ts":"2026-06-11T06:02:45.248Z","level":"INFO","module":"LoggingMonitor_Ultra_v5.1","message":"Engine 3: CRLF Log Injection Detection"}
+{"ts":"2026-06-11T06:02:45.250Z","level":"INFO","module":"CorsRateLimiter","version":"6.0.0","message":"CorsRateLimiter v6.0 complete","duration_ms":40,"cors_misconfigurations":0,"rate_limit_issues":0,"dos_risks":0,"upload_risks":0,"context_hits":50,"context_misses":0}
+{"ts":"2026-06-11T06:02:45.250Z","level":"INFO","module":"LoggingMonitor_Ultra_v5.1","message":"Engine 4: Error Response Leakage Scan"}
+{"ts":"2026-06-11T06:02:45.252Z","level":"INFO","module":"LoggingMonitor_Ultra_v5.1","message":"Engine 5: Sensitive Response Field Audit"}
+{"ts":"2026-06-11T06:02:45.253Z","level":"INFO","module":"LoggingMonitor_Ultra_v5.1","message":"Engine 6: Audit Logging Gap Detection"}
+{"ts":"2026-06-11T06:02:45.255Z","level":"INFO","module":"LoggingMonitor_Ultra_v5.1","message":"Engine 7: Context-First Audit Logging Rules"}
+{"ts":"2026-06-11T06:02:45.256Z","level":"INFO","module":"LoggingMonitor_Ultra_v5.1","message":"Log Security Analysis Complete","duration_ms":45,"traceability_gaps":0,"injection_risks":8,"sensitive_url_params":0,"error_leaks":0,"sensitive_responses":0}
+{"ts":"2026-06-11T06:02:45.266Z","level":"INFO","module":"AuthAnalyzer_v2.0_ContextFirst","message":"Analysis complete","duration":"62ms","endpoints":25,"risks":76,"contextUsage":{"inferredAuthUsed":25,"specAuthUsed":25,"contextPrimary":0}}
+{"ts":"2026-06-11T06:02:45.276Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Phase 3: Composite Sensitivity Clustering"}
+{"ts":"2026-06-11T06:02:45.278Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Phase 4: Contextual Risk Evaluation (Context-First)"}
+{"ts":"2026-06-11T06:02:45.279Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Evaluating contextual risk rules (Context-First)..."}
+{"ts":"2026-06-11T06:02:45.283Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Phase 5: Context-Aware New Rules (v6.0)"}
+{"ts":"2026-06-11T06:02:45.284Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Context-aware rules fired: 0 new findings"}
+{"ts":"2026-06-11T06:02:45.284Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Phase 5b: AI Security Direct Scan (v6.1)"}
+{"ts":"2026-06-11T06:02:45.288Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Phase 6: Graph-Based Sensitivity Flag Propagation"}
+{"ts":"2026-06-11T06:02:45.289Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Phase 7: Context-Aware False Positive Reduction"}
+{"ts":"2026-06-11T06:02:45.289Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Applying context-aware false positive reduction..."}
+{"ts":"2026-06-11T06:02:45.290Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"False positive reduction complete: 50 findings removed."}
+{"ts":"2026-06-11T06:02:45.290Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"DataScanner v6.0 Analysis Complete","duration_ms":85,"schemas_scanned":289,"fields_analyzed":162,"sensitive_found":23,"false_positives_removed":50,"runtime_signals_used":0,"context_amplifications":0,"context_suppressions":0,"context_first_hits":25,"new_rules_triggered":0,"findings":{"CRITICAL":0,"HIGH":2,"MEDIUM":4,"LOW":13},"data_categories":{"credentials":0,"secrets":0,"pii":6,"pci":0}}
+{"ts":"2026-06-11T06:02:45.293Z","level":"INFO","module":"ComplianceEngine_Ultra_v6.0","message":"ComplianceEngine Ultra v6.0 initialized — Context-First"}
+{"ts":"2026-06-11T06:02:45.293Z","level":"INFO","module":"ComplianceEngine_Ultra_v6.0","message":"Starting Regulatory Compliance Audit v6.0 — Context-First..."}
+{"ts":"2026-06-11T06:02:45.294Z","level":"INFO","module":"ComplianceEngine_Ultra_v6.0","message":"Phase 0-A: Context built for 25 endpoints","contextEngineAvailable":true}
+{"ts":"2026-06-11T06:02:45.296Z","level":"INFO","module":"ComplianceEngine_Ultra_v6.0","message":"API Context detected — Healthcare:false Financial:true EU:true"}
+{"ts":"2026-06-11T06:02:45.300Z","level":"INFO","module":"ComplianceEngine_Ultra_v6.0","message":"Phase 0-C: Injected 0 independent compliance findings","hipaaImpacts":0,"pciImpacts":0,"gdprImpacts":0}
+{"ts":"2026-06-11T06:02:45.301Z","level":"INFO","module":"ComplianceEngine_Ultra_v6.0","message":"Mapping 78 findings to compliance standards."}
+{"ts":"2026-06-11T06:02:45.303Z","level":"INFO","module":"ComplianceEngine_Ultra_v6.0","message":"Compliance Mapping Complete.","independentFindings":0,"complianceViolations":6}
+{"ts":"2026-06-11T06:02:45.303Z","level":"WARN","module":"ComplianceEngine_Ultra_v6.0","message":"[GDPR] AT_RISK — 5 violations"}
+{"ts":"2026-06-11T06:02:45.303Z","level":"WARN","module":"ComplianceEngine_Ultra_v6.0","message":"[HIPAA] AT_RISK — 3 violations"}
+{"ts":"2026-06-11T06:02:45.303Z","level":"INFO","module":"ComplianceEngine_Ultra_v6.0","message":"[PCI_DSS] COMPLIANT — 0 violations"}
+{"ts":"2026-06-11T06:02:45.303Z","level":"INFO","module":"ComplianceEngine_Ultra_v6.0","message":"[SOC2] COMPLIANT — 0 violations"}
+{"ts":"2026-06-11T06:02:45.303Z","level":"INFO","module":"ComplianceEngine_Ultra_v6.0","message":"[OWASP] COMPLIANT — 0 violations"}
+{"ts":"2026-06-11T06:02:45.304Z","level":"INFO","module":"ScoringEngine_v5.2","message":"Scoring engine starting","nodes":67}
+{"ts":"2026-06-11T06:02:45.304Z","level":"INFO","module":"ScoringEngine_v5.2","message":"Evaluating 29 nodes"}
+{"ts":"2026-06-11T06:02:45.306Z","level":"INFO","module":"ScoringEngine_v5.2","message":"Scoring complete","global_score":48,"grade":"D","endpoints":25,"weighted_risk":2724.96,"breakdown":{"CRITICAL":0,"HIGH":27,"MEDIUM":37,"LOW":13,"INFO":1,"AI_CRITICAL":0},"runtime_used":false,"rule_failures":0,"duration_ms":2}
+Analysis_1781157765161: 165.156ms
+[ OK ] Analysis Complete.
+[ OK ] Report saved to: /mnt/secure_fort/scratch/white_page_project/white_page_project/api-security-core/SOVEREIGN_REPORTS/apachesuperset_openapi_report.json
+--------------------------------------------------
+RAW REPORT (JSON):
+{
+  "engine": "Cortex_Omega_v2.0",
+  "metadata": {
+    "generatedAt": "2026-06-11T06:02:45.326Z",
+    "durationMs": 20,
+    "metrics": {
+      "startTime": 1781157765306,
+      "nodesProcessed": 67,
+      "risksIngested": 78,
+      "risksAfterDedup": 78,
+      "attackPathsFound": 4,
+      "maxAttackDepth": 0,
+      "centralityComputed": true,
+      "centralityMethod": "exact_brandes_67_nodes",
+      "bayesianUpdates": 27,
+      "falsePositivesSuppressed": 0,
+      "suppressionBreakdown": {},
+      "workerThreadsUsed": 0,
+      "workerTimeouts": 0,
+      "crossEngineCorrelations": 0,
+      "peakMemoryMB": 13
+    }
+  },
+  "summary": {
+    "totalRisks": 82,
+    "suppressed": 0,
+    "globalScore": 48,
+    "grade": "D",
+    "riskBreakdown": {
+      "CRITICAL": 0,
+      "HIGH": 25,
+      "MEDIUM": 16,
+      "LOW": 41
+    },
+    "failedRuleCount": 0,
+    "severityCounts": {
+      "CRITICAL": 0,
+      "HIGH": 25,
+      "MEDIUM": 16,
+      "LOW": 41
+    },
+    "complianceReport": {
+      "generatedAt": "2026-06-11T06:02:45.303Z",
+      "standards": {
+        "GDPR": {
+          "violations": [
+            {
+              "riskId": "DATA_PII_NAME",
+              "severity": "MEDIUM",
+              "location": "SCHEMA_#/components/schemas/DatabaseQFiltersColAllowFileUploadOprUploadIsEnabledValueT)GetResponse",
+              "description": "Detected DATA_PII_NAME in field 'first_name' via NAME_ENGINE (confidence: 82%).",
+              "clause": "Art. 5",
+              "requirement": "Data Minimization Principle"
+            },
+            {
+              "severity": "MEDIUM",
+              "location": "SCHEMA_#/components/schemas/DatabaseQFiltersColAllowFileUploadOprUploadIsEnabledValueT)GetResponse",
+              "description": "Personal Data Impact: Sensitive Field Detected: first_name",
+              "clause": "GDPR Art. 32",
+              "requirement": "Security of processing personal data"
+            },
+            {
+              "riskId": "DATA_PII_EMAIL",
+              "severity": "HIGH",
+              "location": "SCHEMA_#/components/schemas/MeGetResponse",
+              "description": "Detected DATA_PII_EMAIL in field 'email' via FORMAT_ENGINE (confidence: 96%).",
+              "clause": "Art. 5",
+              "requirement": "Data Minimization Principle"
+            },
+            {
+              "severity": "HIGH",
+              "location": "SCHEMA_#/components/schemas/MeGetResponse",
+              "description": "Personal Data Impact: Sensitive Field Detected: email",
+              "clause": "GDPR Art. 32",
+              "requirement": "Security of processing personal data"
+            },
+            {
+              "riskId": "DATA_PII_NAME",
+              "severity": "MEDIUM",
+              "location": "SCHEMA_#/components/schemas/MeGetResponse",
+              "description": "Detected DATA_PII_NAME in field 'first_name' via NAME_ENGINE (confidence: 82%).",
+              "clause": "Art. 5",
+              "requirement": "Data Minimization Principle"
+            }
+          ],
+          "status": "AT_RISK"
+        },
+        "HIPAA": {
+          "violations": [
+            {
+              "riskId": "DATA_PII_NAME",
+              "severity": "MEDIUM",
+              "location": "SCHEMA_#/components/schemas/DatabaseQFiltersColAllowFileUploadOprUploadIsEnabledValueT)GetResponse",
+              "description": "Detected DATA_PII_NAME in field 'first_name' via NAME_ENGINE (confidence: 82%).",
+              "clause": "§164.514",
+              "requirement": "De-identification of PHI"
+            },
+            {
+              "riskId": "DATA_PII_EMAIL",
+              "severity": "HIGH",
+              "location": "SCHEMA_#/components/schemas/MeGetResponse",
+              "description": "Detected DATA_PII_EMAIL in field 'email' via FORMAT_ENGINE (confidence: 96%).",
+              "clause": "§164.514",
+              "requirement": "De-identification of PHI"
+            },
+            {
+              "riskId": "DATA_PII_NAME",
+              "severity": "MEDIUM",
+              "location": "SCHEMA_#/components/schemas/MeGetResponse",
+              "description": "Detected DATA_PII_NAME in field 'first_name' via NAME_ENGINE (confidence: 82%).",
+              "clause": "§164.514",
+              "requirement": "De-identification of PHI"
+            }
+          ],
+          "status": "AT_RISK"
+        },
+        "PCI_DSS": {
+          "violations": [],
+          "status": "COMPLIANT"
+        },
+        "SOC2": {
+          "violations": [],
+          "status": "COMPLIANT"
+        },
+        "OWASP": {
+          "violations": [],
+          "status": "COMPLIANT"
+        }
+      },
+      "metrics": {
+        "startTime": 1781157765293,
+        "endTime": null,
+        "complianceViolations": 6,
+        "gdprImpacts": 3,
+        "pciImpacts": 0,
+        "hipaaImpacts": 3,
+        "independentFindings": 0
+      }
+    },
+    "topThreats": [
+      {
+        "title": "JWT_ALGORITHM_NOT_LOCKED",
+        "severity": "HIGH",
+        "score": 79,
+        "probability": "63.2%",
+        "location": "/api/v1/chart/",
+        "engines": [
+          "AuthAnalyzer"
+        ]
+      },
+      {
+        "title": "JWT_ALGORITHM_NOT_LOCKED",
+        "severity": "HIGH",
+        "score": 79,
+        "probability": "61.0%",
+        "location": "/api/v1/chart/favorite_status/",
+        "engines": [
+          "AuthAnalyzer"
+        ]
+      },
+      {
+        "title": "JWT_ALGORITHM_NOT_LOCKED",
+        "severity": "HIGH",
+        "score": 66,
+        "probability": "51.0%",
+        "location": "/superset/welcome/",
+        "engines": [
+          "AuthAnalyzer"
+        ]
+      },
+      {
+        "title": "JWT_ALGORITHM_NOT_LOCKED",
+        "severity": "HIGH",
+        "score": 66,
+        "probability": "51.0%",
+        "location": "/static/assets/3185.f10541918219d72b470f.entry.js",
+        "engines": [
+          "AuthAnalyzer"
+        ]
+      },
+      {
+        "title": "JWT_ALGORITHM_NOT_LOCKED",
+        "severity": "HIGH",
+        "score": 66,
+        "probability": "51.0%",
+        "location": "/static/assets/thumbnail.824b899f1b7b91c556af.entry.js",
+        "engines": [
+          "AuthAnalyzer"
+        ]
+      },
+      {
+        "title": "JWT_ALGORITHM_NOT_LOCKED",
+        "severity": "HIGH",
+        "score": 66,
+        "probability": "51.0%",
+        "location": "/static/assets/952.fcf16880ee68d8064d11.entry.js",
+        "engines": [
+          "AuthAnalyzer"
+        ]
+      },
+      {
+        "title": "JWT_ALGORITHM_NOT_LOCKED",
+        "severity": "HIGH",
+        "score": 66,
+        "probability": "51.0%",
+        "location": "/static/assets/1203.a1e986c5d8f5a4c4375a.entry.js",
+        "engines": [
+          "AuthAnalyzer"
+        ]
+      },
+      {
+        "title": "JWT_ALGORITHM_NOT_LOCKED",
+        "severity": "HIGH",
+        "score": 66,
+        "probability": "51.0%",
+        "location": "/static/assets/8706.6dfab372988d20453152.entry.js",
+        "engines": [
+          "AuthAnalyzer"
+        ]
+      },
+      {
+        "title": "JWT_ALGORITHM_NOT_LOCKED",
+        "severity": "HIGH",
+        "score": 66,
+        "probability": "51.0%",
+        "location": "/static/assets/1541.56876400fc511af10839.entry.js",
+        "engines": [
+          "AuthAnalyzer"
+        ]
+      },
+      {
+        "title": "JWT_ALGORITHM_NOT_LOCKED",
+        "severity": "HIGH",
+        "score": 66,
+        "probability": "51.0%",
+        "location": "/static/assets/7634.0acd07e01787179c928e.entry.js",
+        "engines": [
+          "AuthAnalyzer"
+        ]
+      }
+    ],
+    "attackPaths": {
+      "totalDiscovered": 4,
+      "maxDepth": 0,
+      "criticalPaths": 0
+    }
+  },
+  "topology": {
+    "nodeCount": 67,
+    "edgeCount": 308,
+    "centralityMethod": "exact_brandes_67_nodes",
+    "topChokepoints": [
+      {
+        "nodeId": "SCHEMA_#/components/schemas/ValidationError",
+        "centrality": "0.01165501",
+        "path": "SCHEMA_#/components/schemas/ValidationError"
+      },
+      {
+        "nodeId": "SCHEMA_#/components/schemas/DatabaseQFiltersColAllowFileUploadOprUploadIsEnabledValueT)GetResponse",
+        "centrality": "0.00745921",
+        "path": "SCHEMA_#/components/schemas/DatabaseQFiltersColAllowFileUploadOprUploadIsEnabledValueT)GetResponse"
+      },
+      {
+        "nodeId": "SCHEMA_INLINE_3",
+        "centrality": "0.00606061",
+        "path": "SCHEMA_INLINE_3"
+      },
+      {
+        "nodeId": "SCHEMA_#/components/schemas/UnauthorizedError",
+        "centrality": "0.00582751",
+        "path": "SCHEMA_#/components/schemas/UnauthorizedError"
+      },
+      {
+        "nodeId": "SCHEMA_#/components/schemas/ConflictError",
+        "centrality": "0.00582751",
+        "path": "SCHEMA_#/components/schemas/ConflictError"
+      }
+    ]
+  },
+  "results": {
+    "/api/v1/chart/": {
+      "method": "GET",
+      "flags": 512,
+      "maxSeverity": "HIGH",
+      "securityScore": 0,
+      "findings": [
+        {
+          "id": "80a2867cccd03b2c",
+          "type": "JWT_ALGORITHM_NOT_LOCKED",
+          "title": "JWT_ALGORITHM_NOT_LOCKED",
+          "severity": "HIGH",
+          "score": 79,
+          "probability": "63.2%",
+          "centrality": "0.000000",
+          "attackChains": [
+            {
+              "entryPoint": "GET /api/v1/chart/",
+              "chain": [
+                "GET /api/v1/chart/"
+              ],
+              "depth": 1
+            }
+          ],
+          "attackChainsCount": 1,
+          "detectedBy": "AuthAnalyzer",
+          "detectedByEngines": [
+            "AuthAnalyzer"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "JWT_ALGORITHM_NOT_LOCKED"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Reachable via 1 attack path(s), max depth: 1",
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": 0.75,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "7438e25364497eb6",
+          "type": "COMPOSITE_DEEP_BREACH",
+          "title": "Deep Attack Path (2 hops)",
+          "severity": "MEDIUM",
+          "score": 62,
+          "probability": "49.6%",
+          "centrality": "0.007459",
+          "attackChains": [
+            {
+              "path": [
+                "GET /api/v1/chart/",
+                "SCHEMA_#/components/schemas/DatabaseQFiltersColAllowFileUploadOprUploadIsEnabledValueT)GetResponse"
+              ],
+              "sinkNode": {
+                "id": "SCHEMA_#/components/schemas/DatabaseQFiltersColAllowFileUploadOprUploadIsEnabledValueT)GetResponse",
+                "type": "SCHEMA"
+              },
+              "depth": 2,
+              "entryPoint": "GET /api/v1/chart/"
+            },
+            {
+              "entryPoint": "GET /api/v1/chart/",
+              "chain": [
+                "GET /api/v1/chart/"
+              ],
+              "depth": 1
+            }
+          ],
+          "attackChainsCount": 2,
+          "detectedBy": "CortexOmega_IDDFS",
+          "detectedByEngines": [
+            "CortexOmega_IDDFS"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DEEP_ATTACK_PATH"
+          ],
+          "description": "Attack chain: GET /api/v1/chart/ → SCHEMA_#/components/schemas/DatabaseQFiltersColAllowFileUploadOprUploadIsEnabledValueT)GetResponse",
+          "remediation": "Review the entire attack chain. Apply network segmentation and defense-in-depth.",
+          "reasoning": [
+            "Reachable via 2 attack path(s), max depth: 2",
+            "Semantic: 100% similarity to sensitive data",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": null,
+          "bypassBayesian": null,
+          "_ctxUncertainty": 0.505,
+          "_ctxConflicts": [],
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "3c992339cca81e22",
+          "type": "COMPOSITE_DEEP_BREACH",
+          "title": "Deep Attack Path (2 hops)",
+          "severity": "MEDIUM",
+          "score": 62,
+          "probability": "49.6%",
+          "centrality": "0.000699",
+          "attackChains": [
+            {
+              "path": [
+                "GET /api/v1/chart/",
+                "GET /api/v1/chart/favorite_status/"
+              ],
+              "sinkNode": {
+                "id": "GET /api/v1/chart/favorite_status/",
+                "type": "ENDPOINT",
+                "path": "/api/v1/chart/favorite_status/"
+              },
+              "depth": 2,
+              "entryPoint": "GET /api/v1/chart/"
+            },
+            {
+              "entryPoint": "GET /api/v1/chart/",
+              "chain": [
+                "GET /api/v1/chart/"
+              ],
+              "depth": 1
+            }
+          ],
+          "attackChainsCount": 2,
+          "detectedBy": "CortexOmega_IDDFS",
+          "detectedByEngines": [
+            "CortexOmega_IDDFS"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DEEP_ATTACK_PATH"
+          ],
+          "description": "Attack chain: GET /api/v1/chart/ → GET /api/v1/chart/favorite_status/",
+          "remediation": "Review the entire attack chain. Apply network segmentation and defense-in-depth.",
+          "reasoning": [
+            "Reachable via 2 attack path(s), max depth: 2",
+            "Semantic: 100% similarity to sensitive data",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": null,
+          "bypassBayesian": null,
+          "_ctxUncertainty": 0.505,
+          "_ctxConflicts": [],
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "8a45ee86505af304",
+          "type": "COMPOSITE_DEEP_BREACH",
+          "title": "Deep Attack Path (3 hops)",
+          "severity": "MEDIUM",
+          "score": 62,
+          "probability": "49.6%",
+          "centrality": "0.000699",
+          "attackChains": [
+            {
+              "path": [
+                "GET /api/v1/chart/",
+                "GET /api/v1/chart/favorite_status/",
+                "SCHEMA_#/components/schemas/LogRecentActivityQDistinctFPageSize24)GetResponse"
+              ],
+              "sinkNode": {
+                "id": "SCHEMA_#/components/schemas/LogRecentActivityQDistinctFPageSize24)GetResponse",
+                "type": "SCHEMA"
+              },
+              "depth": 3,
+              "entryPoint": "GET /api/v1/chart/"
+            },
+            {
+              "entryPoint": "GET /api/v1/chart/",
+              "chain": [
+                "GET /api/v1/chart/"
+              ],
+              "depth": 1
+            }
+          ],
+          "attackChainsCount": 2,
+          "detectedBy": "CortexOmega_IDDFS",
+          "detectedByEngines": [
+            "CortexOmega_IDDFS"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DEEP_ATTACK_PATH"
+          ],
+          "description": "Attack chain: GET /api/v1/chart/ → GET /api/v1/chart/favorite_status/ → SCHEMA_#/components/schemas/LogRecentActivityQDistinctFPageSize24)GetResponse",
+          "remediation": "Review the entire attack chain. Apply network segmentation and defense-in-depth.",
+          "reasoning": [
+            "Reachable via 2 attack path(s), max depth: 3",
+            "Semantic: 100% similarity to sensitive data",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": null,
+          "bypassBayesian": null,
+          "_ctxUncertainty": 0.505,
+          "_ctxConflicts": [],
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "bd057398d38fc242",
+          "type": "COMPOSITE_DEEP_BREACH",
+          "title": "Deep Attack Path (1 hops)",
+          "severity": "MEDIUM",
+          "score": 62,
+          "probability": "49.6%",
+          "centrality": "0.000000",
+          "attackChains": [
+            {
+              "path": [
+                "GET /api/v1/chart/"
+              ],
+              "entryPoint": "GET /api/v1/chart/",
+              "depth": 1
+            }
+          ],
+          "attackChainsCount": 1,
+          "detectedBy": "CortexOmega_IDDFS",
+          "detectedByEngines": [
+            "CortexOmega_IDDFS"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DEEP_ATTACK_PATH"
+          ],
+          "description": "Attack chain: GET /api/v1/chart/",
+          "remediation": "Review the entire attack chain. Apply network segmentation and defense-in-depth.",
+          "reasoning": [
+            "Reachable via 1 attack path(s), max depth: 1",
+            "Semantic: 100% similarity to sensitive data",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": null,
+          "bypassBayesian": null,
+          "_ctxUncertainty": 0.505,
+          "_ctxConflicts": [],
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "e56120116434bf96",
+          "type": "LOG_INJECTION_RISK",
+          "title": "Potential Log Injection via Unvalidated Header: q",
+          "severity": "LOW",
+          "score": 34,
+          "probability": "27.2%",
+          "centrality": "0.000000",
+          "attackChains": [
+            {
+              "entryPoint": "GET /api/v1/chart/",
+              "chain": [
+                "GET /api/v1/chart/"
+              ],
+              "depth": 1
+            }
+          ],
+          "attackChainsCount": 1,
+          "detectedBy": "LoggingMonitor",
+          "detectedByEngines": [
+            "LoggingMonitor"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "LOG_INJECTION_RISK"
+          ],
+          "description": "The query parameter 'q' accepts arbitrary strings with no pattern or length constraints. If this value is written to logs unsanitised, an attacker can inject CRLF sequences (\\r\\n) to forge fake log entries, potentially hiding malicious activity or framing legitimate users.",
+          "remediation": "Add a restrictive pattern (e.g. ^[\\w\\s,;=./@:-]{1,256}$) and maxLength to this parameter schema.",
+          "reasoning": [
+            "Reachable via 1 attack path(s), max depth: 1",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": null,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.505,
+          "_ctxConflicts": [],
+          "_ctxSpecActionable": true
+        },
+        {
+          "id": "d4052493d35128e1",
+          "type": "BEARER_TOKEN_NO_EXPIRY",
+          "title": "BEARER_TOKEN_NO_EXPIRY",
+          "severity": "LOW",
+          "score": 30,
+          "probability": "24.0%",
+          "centrality": "0.000000",
+          "attackChains": [
+            {
+              "entryPoint": "GET /api/v1/chart/",
+              "chain": [
+                "GET /api/v1/chart/"
+              ],
+              "depth": 1
+            }
+          ],
+          "attackChainsCount": 1,
+          "detectedBy": "SecurityCore",
+          "detectedByEngines": [
+            "SecurityCore"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "BEARER_TOKEN_NO_EXPIRY"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Reachable via 1 attack path(s), max depth: 1",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.65,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        }
+      ]
+    },
+    "/api/v1/chart/favorite_status/": {
+      "method": "GET",
+      "flags": 512,
+      "maxSeverity": "HIGH",
+      "securityScore": 57,
+      "findings": [
+        {
+          "id": "8fab93f76a7dfa62",
+          "type": "JWT_ALGORITHM_NOT_LOCKED",
+          "title": "JWT_ALGORITHM_NOT_LOCKED",
+          "severity": "HIGH",
+          "score": 79,
+          "probability": "61.0%",
+          "centrality": "0.000699",
+          "attackChains": [
+            {
+              "entryPoint": "GET /api/v1/chart/",
+              "chain": [
+                "GET /api/v1/chart/",
+                "GET /api/v1/chart/favorite_status/"
+              ],
+              "depth": 2
+            }
+          ],
+          "attackChainsCount": 1,
+          "detectedBy": "AuthAnalyzer",
+          "detectedByEngines": [
+            "AuthAnalyzer"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "JWT_ALGORITHM_NOT_LOCKED"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Reachable via 1 attack path(s), max depth: 2",
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": 0.75,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "d1a796da9736d706",
+          "type": "LOG_INJECTION_RISK",
+          "title": "Potential Log Injection via Unvalidated Header: q",
+          "severity": "LOW",
+          "score": 34,
+          "probability": "26.3%",
+          "centrality": "0.000699",
+          "attackChains": [
+            {
+              "entryPoint": "GET /api/v1/chart/",
+              "chain": [
+                "GET /api/v1/chart/",
+                "GET /api/v1/chart/favorite_status/"
+              ],
+              "depth": 2
+            }
+          ],
+          "attackChainsCount": 1,
+          "detectedBy": "LoggingMonitor",
+          "detectedByEngines": [
+            "LoggingMonitor"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "LOG_INJECTION_RISK"
+          ],
+          "description": "The query parameter 'q' accepts arbitrary strings with no pattern or length constraints. If this value is written to logs unsanitised, an attacker can inject CRLF sequences (\\r\\n) to forge fake log entries, potentially hiding malicious activity or framing legitimate users.",
+          "remediation": "Add a restrictive pattern (e.g. ^[\\w\\s,;=./@:-]{1,256}$) and maxLength to this parameter schema.",
+          "reasoning": [
+            "Reachable via 1 attack path(s), max depth: 2",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": null,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.505,
+          "_ctxConflicts": [],
+          "_ctxSpecActionable": true
+        },
+        {
+          "id": "0a2fbce0d5cd58d3",
+          "type": "BEARER_TOKEN_NO_EXPIRY",
+          "title": "BEARER_TOKEN_NO_EXPIRY",
+          "severity": "LOW",
+          "score": 30,
+          "probability": "23.2%",
+          "centrality": "0.000699",
+          "attackChains": [
+            {
+              "entryPoint": "GET /api/v1/chart/",
+              "chain": [
+                "GET /api/v1/chart/",
+                "GET /api/v1/chart/favorite_status/"
+              ],
+              "depth": 2
+            }
+          ],
+          "attackChainsCount": 1,
+          "detectedBy": "SecurityCore",
+          "detectedByEngines": [
+            "SecurityCore"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "BEARER_TOKEN_NO_EXPIRY"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Reachable via 1 attack path(s), max depth: 2",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.65,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        }
+      ]
+    },
+    "/superset/welcome/": {
+      "method": "GET",
+      "flags": 0,
+      "maxSeverity": "HIGH",
+      "securityScore": 74,
+      "findings": [
+        {
+          "id": "1d88712a0fab430f",
+          "type": "JWT_ALGORITHM_NOT_LOCKED",
+          "title": "JWT_ALGORITHM_NOT_LOCKED",
+          "severity": "HIGH",
+          "score": 66,
+          "probability": "51.0%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "AuthAnalyzer",
+          "detectedByEngines": [
+            "AuthAnalyzer"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "JWT_ALGORITHM_NOT_LOCKED"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": 0.75,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "bce643c505ae5599",
+          "type": "BEARER_TOKEN_NO_EXPIRY",
+          "title": "BEARER_TOKEN_NO_EXPIRY",
+          "severity": "LOW",
+          "score": 20,
+          "probability": "15.4%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "SecurityCore",
+          "detectedByEngines": [
+            "SecurityCore"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "BEARER_TOKEN_NO_EXPIRY"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.65,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        }
+      ]
+    },
+    "/static/assets/3185.f10541918219d72b470f.entry.js": {
+      "method": "GET",
+      "flags": 0,
+      "maxSeverity": "HIGH",
+      "securityScore": 74,
+      "findings": [
+        {
+          "id": "cd6d9f1145a07fb7",
+          "type": "JWT_ALGORITHM_NOT_LOCKED",
+          "title": "JWT_ALGORITHM_NOT_LOCKED",
+          "severity": "HIGH",
+          "score": 66,
+          "probability": "51.0%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "AuthAnalyzer",
+          "detectedByEngines": [
+            "AuthAnalyzer"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "JWT_ALGORITHM_NOT_LOCKED"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": 0.75,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "1a1e8b2d8b3f4b09",
+          "type": "BEARER_TOKEN_NO_EXPIRY",
+          "title": "BEARER_TOKEN_NO_EXPIRY",
+          "severity": "LOW",
+          "score": 20,
+          "probability": "15.4%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "SecurityCore",
+          "detectedByEngines": [
+            "SecurityCore"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "BEARER_TOKEN_NO_EXPIRY"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.65,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        }
+      ]
+    },
+    "/static/assets/thumbnail.824b899f1b7b91c556af.entry.js": {
+      "method": "GET",
+      "flags": 0,
+      "maxSeverity": "HIGH",
+      "securityScore": 74,
+      "findings": [
+        {
+          "id": "e8b60c96f5916ef5",
+          "type": "JWT_ALGORITHM_NOT_LOCKED",
+          "title": "JWT_ALGORITHM_NOT_LOCKED",
+          "severity": "HIGH",
+          "score": 66,
+          "probability": "51.0%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "AuthAnalyzer",
+          "detectedByEngines": [
+            "AuthAnalyzer"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "JWT_ALGORITHM_NOT_LOCKED"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": 0.75,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "3a1b3312a5cd4658",
+          "type": "BEARER_TOKEN_NO_EXPIRY",
+          "title": "BEARER_TOKEN_NO_EXPIRY",
+          "severity": "LOW",
+          "score": 20,
+          "probability": "15.4%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "SecurityCore",
+          "detectedByEngines": [
+            "SecurityCore"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "BEARER_TOKEN_NO_EXPIRY"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.65,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        }
+      ]
+    },
+    "/static/assets/952.fcf16880ee68d8064d11.entry.js": {
+      "method": "GET",
+      "flags": 0,
+      "maxSeverity": "HIGH",
+      "securityScore": 74,
+      "findings": [
+        {
+          "id": "9c8bafaa477b2deb",
+          "type": "JWT_ALGORITHM_NOT_LOCKED",
+          "title": "JWT_ALGORITHM_NOT_LOCKED",
+          "severity": "HIGH",
+          "score": 66,
+          "probability": "51.0%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "AuthAnalyzer",
+          "detectedByEngines": [
+            "AuthAnalyzer"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "JWT_ALGORITHM_NOT_LOCKED"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": 0.75,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "163483f5aa69118d",
+          "type": "BEARER_TOKEN_NO_EXPIRY",
+          "title": "BEARER_TOKEN_NO_EXPIRY",
+          "severity": "LOW",
+          "score": 20,
+          "probability": "15.4%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "SecurityCore",
+          "detectedByEngines": [
+            "SecurityCore"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "BEARER_TOKEN_NO_EXPIRY"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.65,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        }
+      ]
+    },
+    "/static/assets/1203.a1e986c5d8f5a4c4375a.entry.js": {
+      "method": "GET",
+      "flags": 0,
+      "maxSeverity": "HIGH",
+      "securityScore": 74,
+      "findings": [
+        {
+          "id": "88e75ea6d4ca303d",
+          "type": "JWT_ALGORITHM_NOT_LOCKED",
+          "title": "JWT_ALGORITHM_NOT_LOCKED",
+          "severity": "HIGH",
+          "score": 66,
+          "probability": "51.0%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "AuthAnalyzer",
+          "detectedByEngines": [
+            "AuthAnalyzer"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "JWT_ALGORITHM_NOT_LOCKED"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": 0.75,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "a04ea0c3c787c2e3",
+          "type": "BEARER_TOKEN_NO_EXPIRY",
+          "title": "BEARER_TOKEN_NO_EXPIRY",
+          "severity": "LOW",
+          "score": 20,
+          "probability": "15.4%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "SecurityCore",
+          "detectedByEngines": [
+            "SecurityCore"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "BEARER_TOKEN_NO_EXPIRY"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.65,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        }
+      ]
+    },
+    "/static/assets/8706.6dfab372988d20453152.entry.js": {
+      "method": "GET",
+      "flags": 0,
+      "maxSeverity": "HIGH",
+      "securityScore": 74,
+      "findings": [
+        {
+          "id": "908f05426f034b3a",
+          "type": "JWT_ALGORITHM_NOT_LOCKED",
+          "title": "JWT_ALGORITHM_NOT_LOCKED",
+          "severity": "HIGH",
+          "score": 66,
+          "probability": "51.0%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "AuthAnalyzer",
+          "detectedByEngines": [
+            "AuthAnalyzer"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "JWT_ALGORITHM_NOT_LOCKED"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": 0.75,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "87615db75a38a2e9",
+          "type": "BEARER_TOKEN_NO_EXPIRY",
+          "title": "BEARER_TOKEN_NO_EXPIRY",
+          "severity": "LOW",
+          "score": 20,
+          "probability": "15.4%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "SecurityCore",
+          "detectedByEngines": [
+            "SecurityCore"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "BEARER_TOKEN_NO_EXPIRY"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.65,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        }
+      ]
+    },
+    "/static/assets/1541.56876400fc511af10839.entry.js": {
+      "method": "GET",
+      "flags": 0,
+      "maxSeverity": "HIGH",
+      "securityScore": 74,
+      "findings": [
+        {
+          "id": "589288b0d8c75e10",
+          "type": "JWT_ALGORITHM_NOT_LOCKED",
+          "title": "JWT_ALGORITHM_NOT_LOCKED",
+          "severity": "HIGH",
+          "score": 66,
+          "probability": "51.0%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "AuthAnalyzer",
+          "detectedByEngines": [
+            "AuthAnalyzer"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "JWT_ALGORITHM_NOT_LOCKED"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": 0.75,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "ff6843a506c5b57b",
+          "type": "BEARER_TOKEN_NO_EXPIRY",
+          "title": "BEARER_TOKEN_NO_EXPIRY",
+          "severity": "LOW",
+          "score": 20,
+          "probability": "15.4%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "SecurityCore",
+          "detectedByEngines": [
+            "SecurityCore"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "BEARER_TOKEN_NO_EXPIRY"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.65,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        }
+      ]
+    },
+    "/static/assets/7634.0acd07e01787179c928e.entry.js": {
+      "method": "GET",
+      "flags": 0,
+      "maxSeverity": "HIGH",
+      "securityScore": 74,
+      "findings": [
+        {
+          "id": "7054381902a52256",
+          "type": "JWT_ALGORITHM_NOT_LOCKED",
+          "title": "JWT_ALGORITHM_NOT_LOCKED",
+          "severity": "HIGH",
+          "score": 66,
+          "probability": "51.0%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "AuthAnalyzer",
+          "detectedByEngines": [
+            "AuthAnalyzer"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "JWT_ALGORITHM_NOT_LOCKED"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": 0.75,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "4d0dcaa943631839",
+          "type": "BEARER_TOKEN_NO_EXPIRY",
+          "title": "BEARER_TOKEN_NO_EXPIRY",
+          "severity": "LOW",
+          "score": 20,
+          "probability": "15.4%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "SecurityCore",
+          "detectedByEngines": [
+            "SecurityCore"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "BEARER_TOKEN_NO_EXPIRY"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.65,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        }
+      ]
+    },
+    "/static/assets/616.94c331d4202698eb2aa9.entry.js": {
+      "method": "GET",
+      "flags": 0,
+      "maxSeverity": "HIGH",
+      "securityScore": 74,
+      "findings": [
+        {
+          "id": "03da2bd1ad8ca9ee",
+          "type": "JWT_ALGORITHM_NOT_LOCKED",
+          "title": "JWT_ALGORITHM_NOT_LOCKED",
+          "severity": "HIGH",
+          "score": 66,
+          "probability": "51.0%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "AuthAnalyzer",
+          "detectedByEngines": [
+            "AuthAnalyzer"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "JWT_ALGORITHM_NOT_LOCKED"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": 0.75,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "b86e35fb8b30da4a",
+          "type": "BEARER_TOKEN_NO_EXPIRY",
+          "title": "BEARER_TOKEN_NO_EXPIRY",
+          "severity": "LOW",
+          "score": 20,
+          "probability": "15.4%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "SecurityCore",
+          "detectedByEngines": [
+            "SecurityCore"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "BEARER_TOKEN_NO_EXPIRY"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.65,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        }
+      ]
+    },
+    "/static/assets/8115.b1f8cee824d849099ff3.entry.js": {
+      "method": "GET",
+      "flags": 0,
+      "maxSeverity": "HIGH",
+      "securityScore": 74,
+      "findings": [
+        {
+          "id": "05c803899af51b53",
+          "type": "JWT_ALGORITHM_NOT_LOCKED",
+          "title": "JWT_ALGORITHM_NOT_LOCKED",
+          "severity": "HIGH",
+          "score": 66,
+          "probability": "51.0%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "AuthAnalyzer",
+          "detectedByEngines": [
+            "AuthAnalyzer"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "JWT_ALGORITHM_NOT_LOCKED"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": 0.75,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "b3cfba0f776fac40",
+          "type": "BEARER_TOKEN_NO_EXPIRY",
+          "title": "BEARER_TOKEN_NO_EXPIRY",
+          "severity": "LOW",
+          "score": 20,
+          "probability": "15.4%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "SecurityCore",
+          "detectedByEngines": [
+            "SecurityCore"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "BEARER_TOKEN_NO_EXPIRY"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.65,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        }
+      ]
+    },
+    "/static/assets/6934.9afbba59e4bb25c0c44e.entry.js": {
+      "method": "GET",
+      "flags": 0,
+      "maxSeverity": "HIGH",
+      "securityScore": 74,
+      "findings": [
+        {
+          "id": "bafe0ae751995f18",
+          "type": "JWT_ALGORITHM_NOT_LOCKED",
+          "title": "JWT_ALGORITHM_NOT_LOCKED",
+          "severity": "HIGH",
+          "score": 66,
+          "probability": "51.0%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "AuthAnalyzer",
+          "detectedByEngines": [
+            "AuthAnalyzer"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "JWT_ALGORITHM_NOT_LOCKED"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": 0.75,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "2033c3325566a498",
+          "type": "BEARER_TOKEN_NO_EXPIRY",
+          "title": "BEARER_TOKEN_NO_EXPIRY",
+          "severity": "LOW",
+          "score": 20,
+          "probability": "15.4%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "SecurityCore",
+          "detectedByEngines": [
+            "SecurityCore"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "BEARER_TOKEN_NO_EXPIRY"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.65,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        }
+      ]
+    },
+    "/static/assets/180.4f9024017a377ac30f78.entry.js": {
+      "method": "GET",
+      "flags": 0,
+      "maxSeverity": "HIGH",
+      "securityScore": 74,
+      "findings": [
+        {
+          "id": "d3dc12b8853ebd50",
+          "type": "JWT_ALGORITHM_NOT_LOCKED",
+          "title": "JWT_ALGORITHM_NOT_LOCKED",
+          "severity": "HIGH",
+          "score": 66,
+          "probability": "51.0%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "AuthAnalyzer",
+          "detectedByEngines": [
+            "AuthAnalyzer"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "JWT_ALGORITHM_NOT_LOCKED"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": 0.75,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "f3a644293c6f71da",
+          "type": "BEARER_TOKEN_NO_EXPIRY",
+          "title": "BEARER_TOKEN_NO_EXPIRY",
+          "severity": "LOW",
+          "score": 20,
+          "probability": "15.4%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "SecurityCore",
+          "detectedByEngines": [
+            "SecurityCore"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "BEARER_TOKEN_NO_EXPIRY"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.65,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        }
+      ]
+    },
+    "/static/assets/6707.35038bbaa024309b7dd8.entry.js": {
+      "method": "GET",
+      "flags": 0,
+      "maxSeverity": "HIGH",
+      "securityScore": 74,
+      "findings": [
+        {
+          "id": "78f81451c3c0c911",
+          "type": "JWT_ALGORITHM_NOT_LOCKED",
+          "title": "JWT_ALGORITHM_NOT_LOCKED",
+          "severity": "HIGH",
+          "score": 66,
+          "probability": "51.0%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "AuthAnalyzer",
+          "detectedByEngines": [
+            "AuthAnalyzer"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "JWT_ALGORITHM_NOT_LOCKED"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": 0.75,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "cdb65defd1560d57",
+          "type": "BEARER_TOKEN_NO_EXPIRY",
+          "title": "BEARER_TOKEN_NO_EXPIRY",
+          "severity": "LOW",
+          "score": 20,
+          "probability": "15.4%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "SecurityCore",
+          "detectedByEngines": [
+            "SecurityCore"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "BEARER_TOKEN_NO_EXPIRY"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.65,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        }
+      ]
+    },
+    "/static/assets/9059.b2f889ad23bd80f99e2a.entry.js": {
+      "method": "GET",
+      "flags": 0,
+      "maxSeverity": "HIGH",
+      "securityScore": 74,
+      "findings": [
+        {
+          "id": "ede5324d019c04bd",
+          "type": "JWT_ALGORITHM_NOT_LOCKED",
+          "title": "JWT_ALGORITHM_NOT_LOCKED",
+          "severity": "HIGH",
+          "score": 66,
+          "probability": "51.0%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "AuthAnalyzer",
+          "detectedByEngines": [
+            "AuthAnalyzer"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "JWT_ALGORITHM_NOT_LOCKED"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": 0.75,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "84d5b1b2fcf751de",
+          "type": "BEARER_TOKEN_NO_EXPIRY",
+          "title": "BEARER_TOKEN_NO_EXPIRY",
+          "severity": "LOW",
+          "score": 20,
+          "probability": "15.4%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "SecurityCore",
+          "detectedByEngines": [
+            "SecurityCore"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "BEARER_TOKEN_NO_EXPIRY"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.65,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        }
+      ]
+    },
+    "/static/assets/8085.4bc9b7059e85ba458bcb.entry.js": {
+      "method": "GET",
+      "flags": 0,
+      "maxSeverity": "HIGH",
+      "securityScore": 74,
+      "findings": [
+        {
+          "id": "41812e87d8297ea4",
+          "type": "JWT_ALGORITHM_NOT_LOCKED",
+          "title": "JWT_ALGORITHM_NOT_LOCKED",
+          "severity": "HIGH",
+          "score": 66,
+          "probability": "51.0%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "AuthAnalyzer",
+          "detectedByEngines": [
+            "AuthAnalyzer"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "JWT_ALGORITHM_NOT_LOCKED"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": 0.75,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "78703c06d58a4b4a",
+          "type": "BEARER_TOKEN_NO_EXPIRY",
+          "title": "BEARER_TOKEN_NO_EXPIRY",
+          "severity": "LOW",
+          "score": 20,
+          "probability": "15.4%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "SecurityCore",
+          "detectedByEngines": [
+            "SecurityCore"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "BEARER_TOKEN_NO_EXPIRY"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.65,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        }
+      ]
+    },
+    "/static/assets/2795.af7b90bb1b1f9b21e098.entry.js": {
+      "method": "GET",
+      "flags": 0,
+      "maxSeverity": "HIGH",
+      "securityScore": 74,
+      "findings": [
+        {
+          "id": "ac87fe172c4ae911",
+          "type": "JWT_ALGORITHM_NOT_LOCKED",
+          "title": "JWT_ALGORITHM_NOT_LOCKED",
+          "severity": "HIGH",
+          "score": 66,
+          "probability": "51.0%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "AuthAnalyzer",
+          "detectedByEngines": [
+            "AuthAnalyzer"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "JWT_ALGORITHM_NOT_LOCKED"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": 0.75,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "020aa9b066bb6e24",
+          "type": "BEARER_TOKEN_NO_EXPIRY",
+          "title": "BEARER_TOKEN_NO_EXPIRY",
+          "severity": "LOW",
+          "score": 20,
+          "probability": "15.4%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "SecurityCore",
+          "detectedByEngines": [
+            "SecurityCore"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "BEARER_TOKEN_NO_EXPIRY"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.65,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        }
+      ]
+    },
+    "/static/assets/pwa-manifest.json": {
+      "method": "GET",
+      "flags": 512,
+      "maxSeverity": "HIGH",
+      "securityScore": 68,
+      "findings": [
+        {
+          "id": "7e0c6d60ce4f1aae",
+          "type": "JWT_ALGORITHM_NOT_LOCKED",
+          "title": "JWT_ALGORITHM_NOT_LOCKED",
+          "severity": "HIGH",
+          "score": 66,
+          "probability": "51.0%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "AuthAnalyzer",
+          "detectedByEngines": [
+            "AuthAnalyzer"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "JWT_ALGORITHM_NOT_LOCKED"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": 0.75,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "a70c9e2479b2af28",
+          "type": "LOG_INJECTION_RISK",
+          "title": "Potential Log Injection via Unvalidated Header: v",
+          "severity": "LOW",
+          "score": 20,
+          "probability": "15.4%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "LoggingMonitor",
+          "detectedByEngines": [
+            "LoggingMonitor"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "LOG_INJECTION_RISK"
+          ],
+          "description": "The query parameter 'v' accepts arbitrary strings with no pattern or length constraints. If this value is written to logs unsanitised, an attacker can inject CRLF sequences (\\r\\n) to forge fake log entries, potentially hiding malicious activity or framing legitimate users.",
+          "remediation": "Add a restrictive pattern (e.g. ^[\\w\\s,;=./@:-]{1,256}$) and maxLength to this parameter schema.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": null,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.505,
+          "_ctxConflicts": [],
+          "_ctxSpecActionable": true
+        },
+        {
+          "id": "28ab675be08fdd8c",
+          "type": "BEARER_TOKEN_NO_EXPIRY",
+          "title": "BEARER_TOKEN_NO_EXPIRY",
+          "severity": "LOW",
+          "score": 20,
+          "probability": "15.4%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "SecurityCore",
+          "detectedByEngines": [
+            "SecurityCore"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "BEARER_TOKEN_NO_EXPIRY"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.65,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        }
+      ]
+    },
+    "/api/v1/database/": {
+      "method": "GET",
+      "flags": 512,
+      "maxSeverity": "HIGH",
+      "securityScore": 68,
+      "findings": [
+        {
+          "id": "e382e8d2aecc2633",
+          "type": "JWT_ALGORITHM_NOT_LOCKED",
+          "title": "JWT_ALGORITHM_NOT_LOCKED",
+          "severity": "HIGH",
+          "score": 66,
+          "probability": "52.8%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "AuthAnalyzer",
+          "detectedByEngines": [
+            "AuthAnalyzer"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "JWT_ALGORITHM_NOT_LOCKED"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": 0.75,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "edc1d1740c232a93",
+          "type": "LOG_INJECTION_RISK",
+          "title": "Potential Log Injection via Unvalidated Header: q",
+          "severity": "LOW",
+          "score": 20,
+          "probability": "16.0%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "LoggingMonitor",
+          "detectedByEngines": [
+            "LoggingMonitor"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "LOG_INJECTION_RISK"
+          ],
+          "description": "The query parameter 'q' accepts arbitrary strings with no pattern or length constraints. If this value is written to logs unsanitised, an attacker can inject CRLF sequences (\\r\\n) to forge fake log entries, potentially hiding malicious activity or framing legitimate users.",
+          "remediation": "Add a restrictive pattern (e.g. ^[\\w\\s,;=./@:-]{1,256}$) and maxLength to this parameter schema.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": null,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.505,
+          "_ctxConflicts": [],
+          "_ctxSpecActionable": true
+        },
+        {
+          "id": "f8f617714da3eecc",
+          "type": "BEARER_TOKEN_NO_EXPIRY",
+          "title": "BEARER_TOKEN_NO_EXPIRY",
+          "severity": "LOW",
+          "score": 20,
+          "probability": "16.0%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "SecurityCore",
+          "detectedByEngines": [
+            "SecurityCore"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "BEARER_TOKEN_NO_EXPIRY"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.65,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        }
+      ]
+    },
+    "/api/v1/log/recent_activity/": {
+      "method": "GET",
+      "flags": 512,
+      "maxSeverity": "HIGH",
+      "securityScore": 68,
+      "findings": [
+        {
+          "id": "d8fff28acdc1a804",
+          "type": "JWT_ALGORITHM_NOT_LOCKED",
+          "title": "JWT_ALGORITHM_NOT_LOCKED",
+          "severity": "HIGH",
+          "score": 66,
+          "probability": "53.8%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "AuthAnalyzer",
+          "detectedByEngines": [
+            "AuthAnalyzer"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "JWT_ALGORITHM_NOT_LOCKED"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": 0.75,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "f278553641fd42f5",
+          "type": "LOG_INJECTION_RISK",
+          "title": "Potential Log Injection via Unvalidated Header: q",
+          "severity": "LOW",
+          "score": 20,
+          "probability": "16.3%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "LoggingMonitor",
+          "detectedByEngines": [
+            "LoggingMonitor"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "LOG_INJECTION_RISK"
+          ],
+          "description": "The query parameter 'q' accepts arbitrary strings with no pattern or length constraints. If this value is written to logs unsanitised, an attacker can inject CRLF sequences (\\r\\n) to forge fake log entries, potentially hiding malicious activity or framing legitimate users.",
+          "remediation": "Add a restrictive pattern (e.g. ^[\\w\\s,;=./@:-]{1,256}$) and maxLength to this parameter schema.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": null,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.505,
+          "_ctxConflicts": [],
+          "_ctxSpecActionable": true
+        },
+        {
+          "id": "3ebbac8d2f6b9cfb",
+          "type": "BEARER_TOKEN_NO_EXPIRY",
+          "title": "BEARER_TOKEN_NO_EXPIRY",
+          "severity": "LOW",
+          "score": 20,
+          "probability": "16.3%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "SecurityCore",
+          "detectedByEngines": [
+            "SecurityCore"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "BEARER_TOKEN_NO_EXPIRY"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.65,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        }
+      ]
+    },
+    "/api/v1/dashboard/": {
+      "method": "GET",
+      "flags": 512,
+      "maxSeverity": "HIGH",
+      "securityScore": 68,
+      "findings": [
+        {
+          "id": "e7ebda281aadc39c",
+          "type": "JWT_ALGORITHM_NOT_LOCKED",
+          "title": "JWT_ALGORITHM_NOT_LOCKED",
+          "severity": "HIGH",
+          "score": 66,
+          "probability": "52.8%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "AuthAnalyzer",
+          "detectedByEngines": [
+            "AuthAnalyzer"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "JWT_ALGORITHM_NOT_LOCKED"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": 0.75,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "768a244fac6272e7",
+          "type": "LOG_INJECTION_RISK",
+          "title": "Potential Log Injection via Unvalidated Header: q",
+          "severity": "LOW",
+          "score": 20,
+          "probability": "16.0%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "LoggingMonitor",
+          "detectedByEngines": [
+            "LoggingMonitor"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "LOG_INJECTION_RISK"
+          ],
+          "description": "The query parameter 'q' accepts arbitrary strings with no pattern or length constraints. If this value is written to logs unsanitised, an attacker can inject CRLF sequences (\\r\\n) to forge fake log entries, potentially hiding malicious activity or framing legitimate users.",
+          "remediation": "Add a restrictive pattern (e.g. ^[\\w\\s,;=./@:-]{1,256}$) and maxLength to this parameter schema.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": null,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.505,
+          "_ctxConflicts": [],
+          "_ctxSpecActionable": true
+        },
+        {
+          "id": "617963d3c53fbb0a",
+          "type": "BEARER_TOKEN_NO_EXPIRY",
+          "title": "BEARER_TOKEN_NO_EXPIRY",
+          "severity": "LOW",
+          "score": 20,
+          "probability": "16.0%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "SecurityCore",
+          "detectedByEngines": [
+            "SecurityCore"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "BEARER_TOKEN_NO_EXPIRY"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.65,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        }
+      ]
+    },
+    "/api/v1/saved_query/": {
+      "method": "GET",
+      "flags": 512,
+      "maxSeverity": "HIGH",
+      "securityScore": 68,
+      "findings": [
+        {
+          "id": "d5078d5da636ee88",
+          "type": "JWT_ALGORITHM_NOT_LOCKED",
+          "title": "JWT_ALGORITHM_NOT_LOCKED",
+          "severity": "HIGH",
+          "score": 66,
+          "probability": "52.8%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "AuthAnalyzer",
+          "detectedByEngines": [
+            "AuthAnalyzer"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "JWT_ALGORITHM_NOT_LOCKED"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": 0.75,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "5820a48c00205d4c",
+          "type": "LOG_INJECTION_RISK",
+          "title": "Potential Log Injection via Unvalidated Header: q",
+          "severity": "LOW",
+          "score": 20,
+          "probability": "16.0%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "LoggingMonitor",
+          "detectedByEngines": [
+            "LoggingMonitor"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "LOG_INJECTION_RISK"
+          ],
+          "description": "The query parameter 'q' accepts arbitrary strings with no pattern or length constraints. If this value is written to logs unsanitised, an attacker can inject CRLF sequences (\\r\\n) to forge fake log entries, potentially hiding malicious activity or framing legitimate users.",
+          "remediation": "Add a restrictive pattern (e.g. ^[\\w\\s,;=./@:-]{1,256}$) and maxLength to this parameter schema.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": null,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.505,
+          "_ctxConflicts": [],
+          "_ctxSpecActionable": true
+        },
+        {
+          "id": "69a6490cd6633368",
+          "type": "BEARER_TOKEN_NO_EXPIRY",
+          "title": "BEARER_TOKEN_NO_EXPIRY",
+          "severity": "LOW",
+          "score": 20,
+          "probability": "16.0%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "SecurityCore",
+          "detectedByEngines": [
+            "SecurityCore"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "BEARER_TOKEN_NO_EXPIRY"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.65,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        }
+      ]
+    },
+    "/api/v1/chart/_info": {
+      "method": "GET",
+      "flags": 0,
+      "maxSeverity": "HIGH",
+      "securityScore": 68,
+      "findings": [
+        {
+          "id": "77b634fb3b9a4f36",
+          "type": "JWT_ALGORITHM_NOT_LOCKED",
+          "title": "JWT_ALGORITHM_NOT_LOCKED",
+          "severity": "HIGH",
+          "score": 66,
+          "probability": "51.0%",
+          "centrality": "0.000699",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "AuthAnalyzer",
+          "detectedByEngines": [
+            "AuthAnalyzer"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "JWT_ALGORITHM_NOT_LOCKED"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": 0.75,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "a6c683f714f599df",
+          "type": "LOG_INJECTION_RISK",
+          "title": "Potential Log Injection via Unvalidated Header: q",
+          "severity": "LOW",
+          "score": 20,
+          "probability": "15.4%",
+          "centrality": "0.000699",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "LoggingMonitor",
+          "detectedByEngines": [
+            "LoggingMonitor"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "LOG_INJECTION_RISK"
+          ],
+          "description": "The query parameter 'q' accepts arbitrary strings with no pattern or length constraints. If this value is written to logs unsanitised, an attacker can inject CRLF sequences (\\r\\n) to forge fake log entries, potentially hiding malicious activity or framing legitimate users.",
+          "remediation": "Add a restrictive pattern (e.g. ^[\\w\\s,;=./@:-]{1,256}$) and maxLength to this parameter schema.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": null,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.505,
+          "_ctxConflicts": [],
+          "_ctxSpecActionable": true
+        },
+        {
+          "id": "896007f003dfd363",
+          "type": "BEARER_TOKEN_NO_EXPIRY",
+          "title": "BEARER_TOKEN_NO_EXPIRY",
+          "severity": "LOW",
+          "score": 20,
+          "probability": "15.4%",
+          "centrality": "0.000699",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "SecurityCore",
+          "detectedByEngines": [
+            "SecurityCore"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "BEARER_TOKEN_NO_EXPIRY"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.65,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        }
+      ]
+    },
+    "/api/v1/me/": {
+      "method": "GET",
+      "flags": 512,
+      "maxSeverity": "HIGH",
+      "securityScore": 63,
+      "findings": [
+        {
+          "id": "b289c8021838d775",
+          "type": "JWT_ALGORITHM_NOT_LOCKED",
+          "title": "JWT_ALGORITHM_NOT_LOCKED",
+          "severity": "HIGH",
+          "score": 66,
+          "probability": "53.0%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "AuthAnalyzer",
+          "detectedByEngines": [
+            "AuthAnalyzer"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "JWT_ALGORITHM_NOT_LOCKED"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": 0.75,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "a8ab6058f99d2d14",
+          "type": "COMPOSITE_PII_CONTACT",
+          "title": "Contact Identity Profile: Name + Contact Information",
+          "severity": "MEDIUM",
+          "score": 38,
+          "probability": "30.5%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "SecurityCore",
+          "detectedByEngines": [
+            "SecurityCore"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "COMPOSITE_PII_CONTACT"
+          ],
+          "description": "This schema links personal identity to contact details. High value for phishing, spam, and impersonation attacks.",
+          "remediation": "Apply field-level encryption, strict access control, audit logging, and data minimisation.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": null,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.505,
+          "_ctxConflicts": [],
+          "_ctxSpecActionable": {
+            "auth": false,
+            "transport": true,
+            "dataRisk": true,
+            "apiContext": true
+          }
+        },
+        {
+          "id": "b6cedd4c299a4e3c",
+          "type": "BEARER_TOKEN_NO_EXPIRY",
+          "title": "BEARER_TOKEN_NO_EXPIRY",
+          "severity": "LOW",
+          "score": 20,
+          "probability": "16.1%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "SecurityCore",
+          "detectedByEngines": [
+            "SecurityCore"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "BEARER_TOKEN_NO_EXPIRY"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.65,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        }
+      ]
+    },
+    "Global": {
+      "flags": 512,
+      "maxSeverity": "MEDIUM",
+      "securityScore": 0,
+      "findings": [
+        {
+          "id": "ee109bcf300b84ce",
+          "type": "DATA_NETWORK",
+          "title": "Sensitive Field Detected: backend",
+          "severity": "MEDIUM",
+          "score": 38,
+          "probability": "30.3%",
+          "centrality": "0.007459",
+          "attackChains": [
+            {
+              "entryPoint": "GET /api/v1/chart/",
+              "chain": [
+                "GET /api/v1/chart/",
+                "SCHEMA_#/components/schemas/DatabaseQFiltersColAllowFileUploadOprUploadIsEnabledValueT)GetResponse"
+              ],
+              "depth": 2
+            }
+          ],
+          "attackChainsCount": 1,
+          "detectedBy": "DataScanner",
+          "detectedByEngines": [
+            "DataScanner"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DATA_NETWORK"
+          ],
+          "description": "Detected DATA_NETWORK in field 'backend' via FORMAT_ENGINE (confidence: 72%).",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Reachable via 1 attack path(s), max depth: 2",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.72,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.505,
+          "_ctxConflicts": [],
+          "_ctxSpecActionable": {
+            "auth": false,
+            "transport": true,
+            "dataRisk": true,
+            "apiContext": true
+          }
+        },
+        {
+          "id": "ca58c845f446f722",
+          "type": "DATA_PII_NAME",
+          "title": "Sensitive Field Detected: first_name",
+          "severity": "MEDIUM",
+          "score": 38,
+          "probability": "30.3%",
+          "centrality": "0.007459",
+          "attackChains": [
+            {
+              "entryPoint": "GET /api/v1/chart/",
+              "chain": [
+                "GET /api/v1/chart/",
+                "SCHEMA_#/components/schemas/DatabaseQFiltersColAllowFileUploadOprUploadIsEnabledValueT)GetResponse"
+              ],
+              "depth": 2
+            }
+          ],
+          "attackChainsCount": 1,
+          "detectedBy": "DataScanner",
+          "detectedByEngines": [
+            "DataScanner"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DATA_PII_NAME"
+          ],
+          "description": "Detected DATA_PII_NAME in field 'first_name' via NAME_ENGINE (confidence: 82%).",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Reachable via 1 attack path(s), max depth: 2",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.82,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.505,
+          "_ctxConflicts": [],
+          "_ctxSpecActionable": {
+            "auth": false,
+            "transport": true,
+            "dataRisk": true,
+            "apiContext": true
+          }
+        },
+        {
+          "id": "4c5943be380ea4a5",
+          "type": "DATA_PII_NAME",
+          "title": "Sensitive Field Detected: last_name",
+          "severity": "MEDIUM",
+          "score": 38,
+          "probability": "30.3%",
+          "centrality": "0.007459",
+          "attackChains": [
+            {
+              "entryPoint": "GET /api/v1/chart/",
+              "chain": [
+                "GET /api/v1/chart/",
+                "SCHEMA_#/components/schemas/DatabaseQFiltersColAllowFileUploadOprUploadIsEnabledValueT)GetResponse"
+              ],
+              "depth": 2
+            }
+          ],
+          "attackChainsCount": 1,
+          "detectedBy": "DataScanner",
+          "detectedByEngines": [
+            "DataScanner"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DATA_PII_NAME"
+          ],
+          "description": "Detected DATA_PII_NAME in field 'last_name' via NAME_ENGINE (confidence: 82%).",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Reachable via 1 attack path(s), max depth: 2",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.82,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.505,
+          "_ctxConflicts": [],
+          "_ctxSpecActionable": {
+            "auth": false,
+            "transport": true,
+            "dataRisk": true,
+            "apiContext": true
+          }
+        },
+        {
+          "id": "fe54775924d9b6ae",
+          "type": "DATA_NETWORK",
+          "title": "Sensitive Field Detected: extra",
+          "severity": "MEDIUM",
+          "score": 38,
+          "probability": "30.3%",
+          "centrality": "0.007459",
+          "attackChains": [
+            {
+              "entryPoint": "GET /api/v1/chart/",
+              "chain": [
+                "GET /api/v1/chart/",
+                "SCHEMA_#/components/schemas/DatabaseQFiltersColAllowFileUploadOprUploadIsEnabledValueT)GetResponse"
+              ],
+              "depth": 2
+            }
+          ],
+          "attackChainsCount": 1,
+          "detectedBy": "DataScanner",
+          "detectedByEngines": [
+            "DataScanner"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DATA_NETWORK"
+          ],
+          "description": "Detected DATA_NETWORK in field 'extra' via FORMAT_ENGINE (confidence: 72%).",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Reachable via 1 attack path(s), max depth: 2",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.72,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.505,
+          "_ctxConflicts": [],
+          "_ctxSpecActionable": {
+            "auth": false,
+            "transport": true,
+            "dataRisk": true,
+            "apiContext": true
+          }
+        },
+        {
+          "id": "7c53da8ba5bc0feb",
+          "type": "DATA_NETWORK",
+          "title": "Sensitive Field Detected: id",
+          "severity": "MEDIUM",
+          "score": 38,
+          "probability": "30.3%",
+          "centrality": "0.007459",
+          "attackChains": [
+            {
+              "entryPoint": "GET /api/v1/chart/",
+              "chain": [
+                "GET /api/v1/chart/",
+                "SCHEMA_#/components/schemas/DatabaseQFiltersColAllowFileUploadOprUploadIsEnabledValueT)GetResponse"
+              ],
+              "depth": 2
+            }
+          ],
+          "attackChainsCount": 1,
+          "detectedBy": "DataScanner",
+          "detectedByEngines": [
+            "DataScanner"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DATA_NETWORK"
+          ],
+          "description": "Detected DATA_NETWORK in field 'id' via FORMAT_ENGINE (confidence: 72%).",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Reachable via 1 attack path(s), max depth: 2",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.72,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.505,
+          "_ctxConflicts": [],
+          "_ctxSpecActionable": {
+            "auth": false,
+            "transport": true,
+            "dataRisk": true,
+            "apiContext": true
+          }
+        },
+        {
+          "id": "f939adbb5cbc1162",
+          "type": "DATA_NETWORK",
+          "title": "Sensitive Field Detected: uuid",
+          "severity": "MEDIUM",
+          "score": 38,
+          "probability": "30.3%",
+          "centrality": "0.007459",
+          "attackChains": [
+            {
+              "entryPoint": "GET /api/v1/chart/",
+              "chain": [
+                "GET /api/v1/chart/",
+                "SCHEMA_#/components/schemas/DatabaseQFiltersColAllowFileUploadOprUploadIsEnabledValueT)GetResponse"
+              ],
+              "depth": 2
+            }
+          ],
+          "attackChainsCount": 1,
+          "detectedBy": "DataScanner",
+          "detectedByEngines": [
+            "DataScanner"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DATA_NETWORK"
+          ],
+          "description": "Detected DATA_NETWORK in field 'uuid' via FORMAT_ENGINE (confidence: 72%).",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Reachable via 1 attack path(s), max depth: 2",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.72,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.505,
+          "_ctxConflicts": [],
+          "_ctxSpecActionable": {
+            "auth": false,
+            "transport": true,
+            "dataRisk": true,
+            "apiContext": true
+          }
+        },
+        {
+          "id": "50aab31414e1dab6",
+          "type": "DATA_NETWORK",
+          "title": "Sensitive Field Detected: database_name",
+          "severity": "MEDIUM",
+          "score": 38,
+          "probability": "30.3%",
+          "centrality": "0.007459",
+          "attackChains": [
+            {
+              "entryPoint": "GET /api/v1/chart/",
+              "chain": [
+                "GET /api/v1/chart/",
+                "SCHEMA_#/components/schemas/DatabaseQFiltersColAllowFileUploadOprUploadIsEnabledValueT)GetResponse"
+              ],
+              "depth": 2
+            }
+          ],
+          "attackChainsCount": 1,
+          "detectedBy": "DataScanner",
+          "detectedByEngines": [
+            "DataScanner"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DATA_NETWORK"
+          ],
+          "description": "Detected DATA_NETWORK in field 'database_name' via FORMAT_ENGINE (confidence: 72%).",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Reachable via 1 attack path(s), max depth: 2",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.72,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.505,
+          "_ctxConflicts": [],
+          "_ctxSpecActionable": {
+            "auth": false,
+            "transport": true,
+            "dataRisk": true,
+            "apiContext": true
+          }
+        },
+        {
+          "id": "8540a3b811cd0a26",
+          "type": "DATA_ID",
+          "title": "Sensitive Field Detected: uuid",
+          "severity": "MEDIUM",
+          "score": 38,
+          "probability": "30.3%",
+          "centrality": "0.007459",
+          "attackChains": [
+            {
+              "entryPoint": "GET /api/v1/chart/",
+              "chain": [
+                "GET /api/v1/chart/",
+                "SCHEMA_#/components/schemas/DatabaseQFiltersColAllowFileUploadOprUploadIsEnabledValueT)GetResponse"
+              ],
+              "depth": 2
+            }
+          ],
+          "attackChainsCount": 1,
+          "detectedBy": "DataScanner",
+          "detectedByEngines": [
+            "DataScanner"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DATA_ID"
+          ],
+          "description": "Detected DATA_ID in field 'uuid' via FORMAT_ENGINE (confidence: 80%).",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Reachable via 1 attack path(s), max depth: 2",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.8,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.505,
+          "_ctxConflicts": [],
+          "_ctxSpecActionable": {
+            "auth": false,
+            "transport": true,
+            "dataRisk": true,
+            "apiContext": true
+          }
+        },
+        {
+          "id": "75456751174280c7",
+          "type": "DATA_NETWORK",
+          "title": "Sensitive Field Detected: action",
+          "severity": "MEDIUM",
+          "score": 38,
+          "probability": "30.3%",
+          "centrality": "0.000699",
+          "attackChains": [
+            {
+              "entryPoint": "GET /api/v1/chart/",
+              "chain": [
+                "GET /api/v1/chart/",
+                "GET /api/v1/chart/favorite_status/",
+                "SCHEMA_#/components/schemas/LogRecentActivityQDistinctFPageSize24)GetResponse"
+              ],
+              "depth": 3
+            }
+          ],
+          "attackChainsCount": 1,
+          "detectedBy": "DataScanner",
+          "detectedByEngines": [
+            "DataScanner"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DATA_NETWORK"
+          ],
+          "description": "Detected DATA_NETWORK in field 'action' via FORMAT_ENGINE (confidence: 72%).",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Reachable via 1 attack path(s), max depth: 3",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.72,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.505,
+          "_ctxConflicts": [],
+          "_ctxSpecActionable": {
+            "auth": false,
+            "transport": true,
+            "dataRisk": true,
+            "apiContext": true
+          }
+        },
+        {
+          "id": "bafaa076a3bc0922",
+          "type": "DATA_NETWORK",
+          "title": "Sensitive Field Detected: item_type",
+          "severity": "MEDIUM",
+          "score": 38,
+          "probability": "30.3%",
+          "centrality": "0.000699",
+          "attackChains": [
+            {
+              "entryPoint": "GET /api/v1/chart/",
+              "chain": [
+                "GET /api/v1/chart/",
+                "GET /api/v1/chart/favorite_status/",
+                "SCHEMA_#/components/schemas/LogRecentActivityQDistinctFPageSize24)GetResponse"
+              ],
+              "depth": 3
+            }
+          ],
+          "attackChainsCount": 1,
+          "detectedBy": "DataScanner",
+          "detectedByEngines": [
+            "DataScanner"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DATA_NETWORK"
+          ],
+          "description": "Detected DATA_NETWORK in field 'item_type' via FORMAT_ENGINE (confidence: 72%).",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Reachable via 1 attack path(s), max depth: 3",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.72,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.505,
+          "_ctxConflicts": [],
+          "_ctxSpecActionable": {
+            "auth": false,
+            "transport": true,
+            "dataRisk": true,
+            "apiContext": true
+          }
+        },
+        {
+          "id": "9cf7f03a1cf11148",
+          "type": "DATA_PII_EMAIL",
+          "title": "Sensitive Field Detected: email",
+          "severity": "MEDIUM",
+          "score": 38,
+          "probability": "30.3%",
+          "centrality": "0.000233",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "DataScanner",
+          "detectedByEngines": [
+            "DataScanner"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DATA_PII_EMAIL"
+          ],
+          "description": "Detected DATA_PII_EMAIL in field 'email' via FORMAT_ENGINE (confidence: 96%).",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.96,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.505,
+          "_ctxConflicts": [],
+          "_ctxSpecActionable": {
+            "auth": false,
+            "transport": true,
+            "dataRisk": true,
+            "apiContext": true
+          }
+        },
+        {
+          "id": "5553ea9f7cfd2235",
+          "type": "DATA_PII_NAME",
+          "title": "Sensitive Field Detected: first_name",
+          "severity": "LOW",
+          "score": 20,
+          "probability": "16.0%",
+          "centrality": "0.000233",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "DataScanner",
+          "detectedByEngines": [
+            "DataScanner"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DATA_PII_NAME"
+          ],
+          "description": "Detected DATA_PII_NAME in field 'first_name' via NAME_ENGINE (confidence: 82%).",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.82,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.505,
+          "_ctxConflicts": [],
+          "_ctxSpecActionable": {
+            "auth": false,
+            "transport": true,
+            "dataRisk": true,
+            "apiContext": true
+          }
+        },
+        {
+          "id": "fed0d7db96b0c6ba",
+          "type": "DATA_PII_NAME",
+          "title": "Sensitive Field Detected: last_name",
+          "severity": "LOW",
+          "score": 20,
+          "probability": "16.0%",
+          "centrality": "0.000233",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "DataScanner",
+          "detectedByEngines": [
+            "DataScanner"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DATA_PII_NAME"
+          ],
+          "description": "Detected DATA_PII_NAME in field 'last_name' via NAME_ENGINE (confidence: 82%).",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.82,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.505,
+          "_ctxConflicts": [],
+          "_ctxSpecActionable": {
+            "auth": false,
+            "transport": true,
+            "dataRisk": true,
+            "apiContext": true
+          }
+        },
+        {
+          "id": "c0bfee71a35a3e9e",
+          "type": "DATA_NETWORK",
+          "title": "Sensitive Field Detected: display",
+          "severity": "LOW",
+          "score": 13,
+          "probability": "10.4%",
+          "centrality": "0.000699",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "DataScanner",
+          "detectedByEngines": [
+            "DataScanner"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DATA_NETWORK"
+          ],
+          "description": "Detected DATA_NETWORK in field 'display' via FORMAT_ENGINE (confidence: 72%).",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.72,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.505,
+          "_ctxConflicts": [],
+          "_ctxSpecActionable": {
+            "auth": false,
+            "transport": true,
+            "dataRisk": true,
+            "apiContext": true
+          }
+        },
+        {
+          "id": "d25e40fa3e77feb9",
+          "type": "DATA_NETWORK",
+          "title": "Sensitive Field Detected: purpose",
+          "severity": "LOW",
+          "score": 13,
+          "probability": "10.4%",
+          "centrality": "0.000699",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "DataScanner",
+          "detectedByEngines": [
+            "DataScanner"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DATA_NETWORK"
+          ],
+          "description": "Detected DATA_NETWORK in field 'purpose' via FORMAT_ENGINE (confidence: 72%).",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.72,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.505,
+          "_ctxConflicts": [],
+          "_ctxSpecActionable": {
+            "auth": false,
+            "transport": true,
+            "dataRisk": true,
+            "apiContext": true
+          }
+        },
+        {
+          "id": "58c56fcea52c77a6",
+          "type": "DATA_NETWORK",
+          "title": "Sensitive Field Detected: sizes",
+          "severity": "LOW",
+          "score": 13,
+          "probability": "10.4%",
+          "centrality": "0.000699",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "DataScanner",
+          "detectedByEngines": [
+            "DataScanner"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DATA_NETWORK"
+          ],
+          "description": "Detected DATA_NETWORK in field 'sizes' via FORMAT_ENGINE (confidence: 72%).",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.72,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.505,
+          "_ctxConflicts": [],
+          "_ctxSpecActionable": {
+            "auth": false,
+            "transport": true,
+            "dataRisk": true,
+            "apiContext": true
+          }
+        },
+        {
+          "id": "2ba5a99cab9ce015",
+          "type": "DATA_NETWORK",
+          "title": "Sensitive Field Detected: form_factor",
+          "severity": "LOW",
+          "score": 13,
+          "probability": "10.4%",
+          "centrality": "0.000699",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "DataScanner",
+          "detectedByEngines": [
+            "DataScanner"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DATA_NETWORK"
+          ],
+          "description": "Detected DATA_NETWORK in field 'form_factor' via FORMAT_ENGINE (confidence: 72%).",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.72,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.505,
+          "_ctxConflicts": [],
+          "_ctxSpecActionable": {
+            "auth": false,
+            "transport": true,
+            "dataRisk": true,
+            "apiContext": true
+          }
+        },
+        {
+          "id": "0573cb5774957f68",
+          "type": "DATA_NETWORK",
+          "title": "Sensitive Field Detected: short_name",
+          "severity": "LOW",
+          "score": 13,
+          "probability": "10.4%",
+          "centrality": "0.000699",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "DataScanner",
+          "detectedByEngines": [
+            "DataScanner"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DATA_NETWORK"
+          ],
+          "description": "Detected DATA_NETWORK in field 'short_name' via FORMAT_ENGINE (confidence: 72%).",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.72,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.505,
+          "_ctxConflicts": [],
+          "_ctxSpecActionable": {
+            "auth": false,
+            "transport": true,
+            "dataRisk": true,
+            "apiContext": true
+          }
+        },
+        {
+          "id": "c937d52d0ee4237f",
+          "type": "DATA_NETWORK",
+          "title": "Sensitive Field Detected: username",
+          "severity": "LOW",
+          "score": 13,
+          "probability": "10.4%",
+          "centrality": "0.000233",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "DataScanner",
+          "detectedByEngines": [
+            "DataScanner"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DATA_NETWORK"
+          ],
+          "description": "Detected DATA_NETWORK in field 'username' via FORMAT_ENGINE (confidence: 72%).",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.72,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.505,
+          "_ctxConflicts": [],
+          "_ctxSpecActionable": {
+            "auth": false,
+            "transport": true,
+            "dataRisk": true,
+            "apiContext": true
+          }
+        }
+      ]
+    }
+  },
+  "intelligence": {
+    "suppressionLog": [],
+    "crossEngineCorrelations": 0,
+    "evidenceWeights": {
+      "PUBLIC_ACCESS": {
+        "pIfTrue": 0.85,
+        "pIfFalse": 0.15
+      },
+      "WEAK_AUTH": {
+        "pIfTrue": 0.92,
+        "pIfFalse": 0.08
+      },
+      "ADMIN_ROUTE": {
+        "pIfTrue": 0.78,
+        "pIfFalse": 0.35
+      },
+      "SENSITIVE_DATA": {
+        "pIfTrue": 0.88,
+        "pIfFalse": 0.12
+      },
+      "WRITE_OPERATION": {
+        "pIfTrue": 0.7,
+        "pIfFalse": 0.3
+      },
+      "HIGH_CENTRALITY": {
+        "pIfTrue": 0.75,
+        "pIfFalse": 0.25
+      },
+      "HTTP_TRANSPORT": {
+        "pIfTrue": 0.9,
+        "pIfFalse": 0.1
+      },
+      "DEEP_ATTACK_PATH": {
+        "pIfTrue": 0.95,
+        "pIfFalse": 0.05
+      },
+      "INCONSISTENT_AUTH": {
+        "pIfTrue": 0.8,
+        "pIfFalse": 0.2
+      },
+      "CORS_WILDCARD": {
+        "pIfTrue": 0.72,
+        "pIfFalse": 0.28
+      }
+    },
+    "engineTrustWeights": {
+      "ProtocolAnalyzer": 0.95,
+      "AuthAnalyzer": 0.85,
+      "DataScanner": 0.9,
+      "CorsRateLimiter": 0.78,
+      "WebhookAnalyzer": 0.8,
+      "LoggingMonitor": 0.8,
+      "ComplianceEngine": 0.8,
+      "CortexOmega_IDDFS": 0.9,
+      "SecurityCore": 0.7,
+      "ScoringEngine": 0.7,
+      "CortexOmega": 1
+    }
+  }
+}
+--------------------------------------------------
+Score: 48 | Grade: D
+Total Risks: 82
+--------------------------------------------------

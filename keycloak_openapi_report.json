@@ -1,0 +1,874 @@
+[ CLI ] Starting Sovereign Analysis on: keycloak_openapi.json...
+{"ts":"2026-06-11T06:13:05.899Z","level":"INFO","module":"SpecNormalizer_v5.1","message":"Spec version detected: 3.0.1"}
+{"ts":"2026-06-11T06:13:05.900Z","level":"DEBUG","module":"SpecNormalizer_v5.1","message":"Registered 3 security scheme nodes"}
+{"ts":"2026-06-11T06:13:05.902Z","level":"INFO","module":"SpecNormalizer_v5.1","message":"Endpoint edges built","endpoints":3,"PATH_CHILD":0,"PUBLIC_TO_PROTECTED":0,"ADMIN_REACHABLE":0,"AUTH_BYPASS":0,"total_new_edges":0}
+{"ts":"2026-06-11T06:13:05.902Z","level":"INFO","module":"SpecNormalizer_v5.1","message":"Spec normalization complete","version":"3.0.1","nodes_built":28,"duration_ms":4}
+[GRAPH] Constructed: 28 nodes, 52 edges (6ms)
+{"ts":"2026-06-11T06:13:05.919Z","level":"INFO","module":"ProtocolAnalyzer_v6.0","message":"ProtocolAnalyzer v6.0 initialized"}
+{"ts":"2026-06-11T06:13:05.920Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"DataScanner Ultra v6.0 initialized — Context-First Architecture","runtime_ports_active":{"samples":0,"behavioral":0,"overrides":0}}
+{"ts":"2026-06-11T06:13:05.920Z","level":"INFO","module":"LoggingMonitor_Ultra_v5.1","message":"LoggingMonitor Ultra v5.1 initialized"}
+{"ts":"2026-06-11T06:13:05.921Z","level":"INFO","module":"WebhookAnalyzer_Ultra_v6.0","message":"WebhookAnalyzer Ultra v6.0 initialized — Context-First Architecture"}
+{"ts":"2026-06-11T06:13:05.922Z","level":"INFO","module":"ProtocolAnalyzer_v6.0","message":"ProtocolAnalyzer_v6.0 starting protocol detection..."}
+{"ts":"2026-06-11T06:13:05.922Z","level":"WARN","module":"ProtocolAnalyzer_v6.0","message":"[Phase 0] Endpoint transport INFERRED — decisions deferred","nodeId":"GET /realms/master/protocol/openid-connect/auth","transportSource":"INFERRED","transportConf":0.6}
+{"ts":"2026-06-11T06:13:05.922Z","level":"WARN","module":"ProtocolAnalyzer_v6.0","message":"[Phase 0] Endpoint transport INFERRED — decisions deferred","nodeId":"GET /resources/k6ez4/login/keycloak.v2/js/passwordVisibility.js","transportSource":"DEFAULT","transportConf":0.1}
+{"ts":"2026-06-11T06:13:05.922Z","level":"WARN","module":"ProtocolAnalyzer_v6.0","message":"[Phase 0] Endpoint transport INFERRED — decisions deferred","nodeId":"GET /resources/k6ez4/login/keycloak.v2/js/authChecker.js","transportSource":"INFERRED","transportConf":0.6}
+{"ts":"2026-06-11T06:13:05.922Z","level":"INFO","module":"ProtocolAnalyzer_v6.0","message":"Phase 0 complete","endpointContexts":3,"globalUncertainty":0.505}
+{"ts":"2026-06-11T06:13:05.922Z","level":"INFO","module":"ProtocolAnalyzer_v6.0","message":"No global servers defined — transport protocol unknown. OAS3 default: server serving the spec file."}
+{"ts":"2026-06-11T06:13:05.923Z","level":"INFO","module":"ProtocolAnalyzer_v6.0","message":"Processing 3 endpoints for protocol flags."}
+{"ts":"2026-06-11T06:13:05.923Z","level":"INFO","module":"ProtocolAnalyzer_v6.0","message":"Protocol analysis complete.","endpoints_processed":3,"global_has_http":false,"global_has_https":false,"global_has_ws":false,"global_has_wss":false}
+{"ts":"2026-06-11T06:13:05.924Z","level":"INFO","module":"AuthAnalyzer_v2.0_ContextFirst","message":"AuthAnalyzer v2.0 — Context-First Architecture"}
+{"ts":"2026-06-11T06:13:05.926Z","level":"INFO","module":"AuthAnalyzer_v2.0_ContextFirst","message":"Shared context built","hasContextEngine":true,"schemesFound":3,"globalUncertainty":0.505}
+{"ts":"2026-06-11T06:13:05.926Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"DataScanner v6.0 — Context-First — 28 nodes","runtime_samples":0,"behavioral_sigs":0,"classification_overrides":0}
+{"ts":"2026-06-11T06:13:05.926Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Phase 0: Context-First Initialization"}
+{"ts":"2026-06-11T06:13:05.930Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Phase 0 complete","globalApiContext":"general","globalDataRisk":"low","globalUncertainty":0.505,"endpointContexts":3}
+{"ts":"2026-06-11T06:13:05.930Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Phase 1: Schema Extraction & Indexing"}
+{"ts":"2026-06-11T06:13:05.931Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Extracted 52 schema descriptors."}
+{"ts":"2026-06-11T06:13:05.931Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Phase 2: Hybrid Field Analysis (Pattern + Name + Format + Entropy + Context)"}
+{"ts":"2026-06-11T06:13:05.944Z","level":"INFO","module":"CorsRateLimiter","version":"6.0.0","message":"CorsRateLimiter v6.0 — 28 nodes"}
+{"ts":"2026-06-11T06:13:05.945Z","level":"INFO","module":"LoggingMonitor_Ultra_v5.1","message":"Engaging Log Security & Traceability Scan..."}
+{"ts":"2026-06-11T06:13:05.945Z","level":"INFO","module":"LoggingMonitor_Ultra_v5.1","message":"Phase 0 complete","endpointContexts":3}
+{"ts":"2026-06-11T06:13:05.945Z","level":"INFO","module":"WebhookAnalyzer_Ultra_v6.0","message":"Scanning for Webhooks & Callbacks..."}
+{"ts":"2026-06-11T06:13:05.946Z","level":"INFO","module":"WebhookAnalyzer_Ultra_v6.0","message":"Phase 0 complete","globalUncertainty":0.505,"endpointContexts":3}
+{"ts":"2026-06-11T06:13:05.947Z","level":"INFO","module":"WebhookAnalyzer_Ultra_v6.0","message":"No webhooks detected in specification."}
+{"ts":"2026-06-11T06:13:05.947Z","level":"INFO","module":"AuthAnalyzer_v2.0_ContextFirst","message":"Analyzing 3 endpoints with context-awareness"}
+{"ts":"2026-06-11T06:13:05.961Z","level":"INFO","module":"LoggingMonitor_Ultra_v5.1","message":"Engine 1: Global Traceability Audit"}
+{"ts":"2026-06-11T06:13:05.969Z","level":"INFO","module":"LoggingMonitor_Ultra_v5.1","message":"Engine 2: Sensitive URL Parameter Audit"}
+{"ts":"2026-06-11T06:13:05.972Z","level":"INFO","module":"LoggingMonitor_Ultra_v5.1","message":"Engine 3: CRLF Log Injection Detection"}
+{"ts":"2026-06-11T06:13:05.973Z","level":"INFO","module":"CorsRateLimiter","version":"6.0.0","message":"CorsRateLimiter v6.0 complete","duration_ms":29,"cors_misconfigurations":0,"rate_limit_issues":3,"dos_risks":0,"upload_risks":0,"context_hits":6,"context_misses":0}
+{"ts":"2026-06-11T06:13:05.973Z","level":"INFO","module":"LoggingMonitor_Ultra_v5.1","message":"Engine 4: Error Response Leakage Scan"}
+{"ts":"2026-06-11T06:13:05.973Z","level":"INFO","module":"LoggingMonitor_Ultra_v5.1","message":"Engine 5: Sensitive Response Field Audit"}
+{"ts":"2026-06-11T06:13:05.974Z","level":"INFO","module":"AuthAnalyzer_v2.0_ContextFirst","message":"Analysis complete","duration":"50ms","endpoints":3,"risks":13,"contextUsage":{"inferredAuthUsed":3,"specAuthUsed":3,"contextPrimary":0}}
+{"ts":"2026-06-11T06:13:05.974Z","level":"INFO","module":"LoggingMonitor_Ultra_v5.1","message":"Engine 6: Audit Logging Gap Detection"}
+{"ts":"2026-06-11T06:13:05.974Z","level":"INFO","module":"LoggingMonitor_Ultra_v5.1","message":"Engine 7: Context-First Audit Logging Rules"}
+{"ts":"2026-06-11T06:13:05.975Z","level":"INFO","module":"LoggingMonitor_Ultra_v5.1","message":"Log Security Analysis Complete","duration_ms":30,"traceability_gaps":0,"injection_risks":9,"sensitive_url_params":0,"error_leaks":0,"sensitive_responses":0}
+{"ts":"2026-06-11T06:13:05.977Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Phase 3: Composite Sensitivity Clustering"}
+{"ts":"2026-06-11T06:13:05.978Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Phase 4: Contextual Risk Evaluation (Context-First)"}
+{"ts":"2026-06-11T06:13:05.978Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Evaluating contextual risk rules (Context-First)..."}
+{"ts":"2026-06-11T06:13:05.980Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Phase 5: Context-Aware New Rules (v6.0)"}
+{"ts":"2026-06-11T06:13:05.981Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Context-aware rules fired: 0 new findings"}
+{"ts":"2026-06-11T06:13:05.981Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Phase 5b: AI Security Direct Scan (v6.1)"}
+{"ts":"2026-06-11T06:13:05.983Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Phase 6: Graph-Based Sensitivity Flag Propagation"}
+{"ts":"2026-06-11T06:13:05.984Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Phase 7: Context-Aware False Positive Reduction"}
+{"ts":"2026-06-11T06:13:05.984Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Applying context-aware false positive reduction..."}
+{"ts":"2026-06-11T06:13:05.984Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"False positive reduction complete: 14 findings removed."}
+{"ts":"2026-06-11T06:13:05.985Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"DataScanner v6.0 Analysis Complete","duration_ms":59,"schemas_scanned":52,"fields_analyzed":38,"sensitive_found":1,"false_positives_removed":14,"runtime_signals_used":0,"context_amplifications":0,"context_suppressions":0,"context_first_hits":3,"new_rules_triggered":0,"findings":{"CRITICAL":2,"HIGH":0,"MEDIUM":0,"LOW":0},"data_categories":{"credentials":1,"secrets":0,"pii":0,"pci":0}}
+{"ts":"2026-06-11T06:13:05.986Z","level":"INFO","module":"ComplianceEngine_Ultra_v6.0","message":"ComplianceEngine Ultra v6.0 initialized — Context-First"}
+{"ts":"2026-06-11T06:13:05.987Z","level":"INFO","module":"ComplianceEngine_Ultra_v6.0","message":"Starting Regulatory Compliance Audit v6.0 — Context-First..."}
+{"ts":"2026-06-11T06:13:05.987Z","level":"INFO","module":"ComplianceEngine_Ultra_v6.0","message":"Phase 0-A: Context built for 3 endpoints","contextEngineAvailable":true}
+{"ts":"2026-06-11T06:13:05.988Z","level":"INFO","module":"ComplianceEngine_Ultra_v6.0","message":"API Context detected — Healthcare:false Financial:false EU:true"}
+{"ts":"2026-06-11T06:13:05.989Z","level":"INFO","module":"ComplianceEngine_Ultra_v6.0","message":"Phase 0-C: Injected 0 independent compliance findings","hipaaImpacts":0,"pciImpacts":0,"gdprImpacts":0}
+{"ts":"2026-06-11T06:13:05.990Z","level":"INFO","module":"ComplianceEngine_Ultra_v6.0","message":"Mapping 15 findings to compliance standards."}
+{"ts":"2026-06-11T06:13:05.991Z","level":"INFO","module":"ComplianceEngine_Ultra_v6.0","message":"Compliance Mapping Complete.","independentFindings":0,"complianceViolations":6}
+{"ts":"2026-06-11T06:13:05.992Z","level":"INFO","module":"ComplianceEngine_Ultra_v6.0","message":"[GDPR] COMPLIANT — 0 violations"}
+{"ts":"2026-06-11T06:13:05.992Z","level":"INFO","module":"ComplianceEngine_Ultra_v6.0","message":"[HIPAA] COMPLIANT — 0 violations"}
+{"ts":"2026-06-11T06:13:05.992Z","level":"INFO","module":"ComplianceEngine_Ultra_v6.0","message":"[PCI_DSS] COMPLIANT — 0 violations"}
+{"ts":"2026-06-11T06:13:05.992Z","level":"WARN","module":"ComplianceEngine_Ultra_v6.0","message":"[SOC2] AT_RISK — 3 violations"}
+{"ts":"2026-06-11T06:13:05.992Z","level":"WARN","module":"ComplianceEngine_Ultra_v6.0","message":"[OWASP] AT_RISK — 3 violations"}
+{"ts":"2026-06-11T06:13:05.992Z","level":"INFO","module":"ScoringEngine_v5.2","message":"Scoring engine starting","nodes":28}
+{"ts":"2026-06-11T06:13:05.992Z","level":"INFO","module":"ScoringEngine_v5.2","message":"Evaluating 3 nodes"}
+{"ts":"2026-06-11T06:13:05.994Z","level":"INFO","module":"ScoringEngine_v5.2","message":"Scoring complete","global_score":39,"grade":"D","endpoints":3,"weighted_risk":1756.51,"breakdown":{"CRITICAL":2,"HIGH":9,"MEDIUM":4,"LOW":0,"INFO":0,"AI_CRITICAL":0},"runtime_used":false,"rule_failures":0,"duration_ms":2}
+Analysis_1781158385897: 105.807ms
+[ OK ] Analysis Complete.
+[ OK ] Report saved to: /mnt/secure_fort/scratch/white_page_project/white_page_project/api-security-core/SOVEREIGN_REPORTS/keycloak_openapi_report.json
+--------------------------------------------------
+RAW REPORT (JSON):
+{
+  "engine": "Cortex_Omega_v2.0",
+  "metadata": {
+    "generatedAt": "2026-06-11T06:13:06.003Z",
+    "durationMs": 9,
+    "metrics": {
+      "startTime": 1781158385994,
+      "nodesProcessed": 28,
+      "risksIngested": 15,
+      "risksAfterDedup": 15,
+      "attackPathsFound": 0,
+      "maxAttackDepth": 0,
+      "centralityComputed": true,
+      "centralityMethod": "exact_brandes_28_nodes",
+      "bayesianUpdates": 0,
+      "falsePositivesSuppressed": 0,
+      "suppressionBreakdown": {},
+      "workerThreadsUsed": 0,
+      "workerTimeouts": 0,
+      "crossEngineCorrelations": 0,
+      "peakMemoryMB": 11
+    }
+  },
+  "summary": {
+    "totalRisks": 15,
+    "suppressed": 0,
+    "globalScore": 39,
+    "grade": "D",
+    "riskBreakdown": {
+      "CRITICAL": 0,
+      "HIGH": 6,
+      "MEDIUM": 5,
+      "LOW": 4
+    },
+    "failedRuleCount": 0,
+    "severityCounts": {
+      "CRITICAL": 0,
+      "HIGH": 6,
+      "MEDIUM": 5,
+      "LOW": 4
+    },
+    "complianceReport": {
+      "generatedAt": "2026-06-11T06:13:05.991Z",
+      "standards": {
+        "GDPR": {
+          "violations": [],
+          "status": "COMPLIANT"
+        },
+        "HIPAA": {
+          "violations": [],
+          "status": "COMPLIANT"
+        },
+        "PCI_DSS": {
+          "violations": [],
+          "status": "COMPLIANT"
+        },
+        "SOC2": {
+          "violations": [
+            {
+              "riskId": "RATE_LIMIT_MISSING_LOGIN",
+              "severity": "HIGH",
+              "location": "/realms/master/protocol/openid-connect/auth",
+              "description": "GET /realms/master/protocol/openid-connect/auth handles authentication but has no documented rate limiting. Vulnerable to brute force, credential stuffing, and password spraying attacks.",
+              "clause": "A1.2",
+              "requirement": "Availability / DDoS Protection"
+            },
+            {
+              "riskId": "RATE_LIMIT_MISSING_LOGIN",
+              "severity": "HIGH",
+              "location": "/resources/k6ez4/login/keycloak.v2/js/passwordVisibility.js",
+              "description": "GET /resources/k6ez4/login/keycloak.v2/js/passwordVisibility.js handles authentication but has no documented rate limiting. Vulnerable to brute force, credential stuffing, and password spraying attacks.",
+              "clause": "A1.2",
+              "requirement": "Availability / DDoS Protection"
+            },
+            {
+              "riskId": "RATE_LIMIT_MISSING_LOGIN",
+              "severity": "HIGH",
+              "location": "/resources/k6ez4/login/keycloak.v2/js/authChecker.js",
+              "description": "GET /resources/k6ez4/login/keycloak.v2/js/authChecker.js handles authentication but has no documented rate limiting. Vulnerable to brute force, credential stuffing, and password spraying attacks.",
+              "clause": "A1.2",
+              "requirement": "Availability / DDoS Protection"
+            }
+          ],
+          "status": "AT_RISK"
+        },
+        "OWASP": {
+          "violations": [
+            {
+              "riskId": "RATE_LIMIT_MISSING_LOGIN",
+              "severity": "HIGH",
+              "location": "/realms/master/protocol/openid-connect/auth",
+              "description": "GET /realms/master/protocol/openid-connect/auth handles authentication but has no documented rate limiting. Vulnerable to brute force, credential stuffing, and password spraying attacks.",
+              "clause": "API4:2023",
+              "requirement": "Unrestricted Resource Consumption"
+            },
+            {
+              "riskId": "RATE_LIMIT_MISSING_LOGIN",
+              "severity": "HIGH",
+              "location": "/resources/k6ez4/login/keycloak.v2/js/passwordVisibility.js",
+              "description": "GET /resources/k6ez4/login/keycloak.v2/js/passwordVisibility.js handles authentication but has no documented rate limiting. Vulnerable to brute force, credential stuffing, and password spraying attacks.",
+              "clause": "API4:2023",
+              "requirement": "Unrestricted Resource Consumption"
+            },
+            {
+              "riskId": "RATE_LIMIT_MISSING_LOGIN",
+              "severity": "HIGH",
+              "location": "/resources/k6ez4/login/keycloak.v2/js/authChecker.js",
+              "description": "GET /resources/k6ez4/login/keycloak.v2/js/authChecker.js handles authentication but has no documented rate limiting. Vulnerable to brute force, credential stuffing, and password spraying attacks.",
+              "clause": "API4:2023",
+              "requirement": "Unrestricted Resource Consumption"
+            }
+          ],
+          "status": "AT_RISK"
+        }
+      },
+      "metrics": {
+        "startTime": 1781158385987,
+        "endTime": null,
+        "complianceViolations": 6,
+        "gdprImpacts": 0,
+        "pciImpacts": 0,
+        "hipaaImpacts": 0,
+        "independentFindings": 0
+      }
+    },
+    "topThreats": [
+      {
+        "title": "TENANT_SCOPE_MISSING",
+        "severity": "HIGH",
+        "score": 66,
+        "probability": "55.1%",
+        "location": "/realms/master/protocol/openid-connect/auth",
+        "engines": [
+          "AuthAnalyzer"
+        ]
+      },
+      {
+        "title": "JWT_ALGORITHM_NOT_LOCKED",
+        "severity": "HIGH",
+        "score": 66,
+        "probability": "55.1%",
+        "location": "/realms/master/protocol/openid-connect/auth",
+        "engines": [
+          "AuthAnalyzer"
+        ]
+      },
+      {
+        "title": "TENANT_SCOPE_MISSING",
+        "severity": "HIGH",
+        "score": 66,
+        "probability": "50.7%",
+        "location": "/resources/k6ez4/login/keycloak.v2/js/passwordVisibility.js",
+        "engines": [
+          "AuthAnalyzer"
+        ]
+      },
+      {
+        "title": "JWT_ALGORITHM_NOT_LOCKED",
+        "severity": "HIGH",
+        "score": 66,
+        "probability": "50.7%",
+        "location": "/resources/k6ez4/login/keycloak.v2/js/passwordVisibility.js",
+        "engines": [
+          "AuthAnalyzer"
+        ]
+      },
+      {
+        "title": "TENANT_SCOPE_MISSING",
+        "severity": "HIGH",
+        "score": 66,
+        "probability": "55.8%",
+        "location": "/resources/k6ez4/login/keycloak.v2/js/authChecker.js",
+        "engines": [
+          "AuthAnalyzer"
+        ]
+      },
+      {
+        "title": "JWT_ALGORITHM_NOT_LOCKED",
+        "severity": "HIGH",
+        "score": 66,
+        "probability": "55.8%",
+        "location": "/resources/k6ez4/login/keycloak.v2/js/authChecker.js",
+        "engines": [
+          "AuthAnalyzer"
+        ]
+      },
+      {
+        "title": "Sensitive Field Detected: client_id",
+        "severity": "MEDIUM",
+        "score": 55,
+        "probability": "45.9%",
+        "location": "/realms/master/protocol/openid-connect/auth",
+        "engines": [
+          "DataScanner"
+        ]
+      },
+      {
+        "title": "Credential in URL Query Parameter: client_id",
+        "severity": "MEDIUM",
+        "score": 55,
+        "probability": "45.9%",
+        "location": "/realms/master/protocol/openid-connect/auth",
+        "engines": [
+          "SecurityCore"
+        ]
+      },
+      {
+        "title": "Authentication Endpoint Without Rate Limiting",
+        "severity": "MEDIUM",
+        "score": 38,
+        "probability": "31.7%",
+        "location": "/realms/master/protocol/openid-connect/auth",
+        "engines": [
+          "CorsRateLimiter"
+        ]
+      },
+      {
+        "title": "Authentication Endpoint Without Rate Limiting",
+        "severity": "MEDIUM",
+        "score": 38,
+        "probability": "29.2%",
+        "location": "/resources/k6ez4/login/keycloak.v2/js/passwordVisibility.js",
+        "engines": [
+          "CorsRateLimiter"
+        ]
+      }
+    ],
+    "attackPaths": {
+      "totalDiscovered": 0,
+      "maxDepth": 0,
+      "criticalPaths": 0
+    }
+  },
+  "topology": {
+    "nodeCount": 28,
+    "edgeCount": 52,
+    "centralityMethod": "exact_brandes_28_nodes",
+    "topChokepoints": [
+      {
+        "nodeId": "SCHEMA_#/components/schemas/ValidationError",
+        "centrality": "0.00854701",
+        "path": "SCHEMA_#/components/schemas/ValidationError"
+      },
+      {
+        "nodeId": "SCHEMA_INLINE_4",
+        "centrality": "0.00569801",
+        "path": "SCHEMA_INLINE_4"
+      },
+      {
+        "nodeId": "SCHEMA_#/components/schemas/UnauthorizedError",
+        "centrality": "0.00427350",
+        "path": "SCHEMA_#/components/schemas/UnauthorizedError"
+      },
+      {
+        "nodeId": "SCHEMA_#/components/schemas/ConflictError",
+        "centrality": "0.00427350",
+        "path": "SCHEMA_#/components/schemas/ConflictError"
+      },
+      {
+        "nodeId": "SCHEMA_#/components/schemas/RateLimitError",
+        "centrality": "0.00427350",
+        "path": "SCHEMA_#/components/schemas/RateLimitError"
+      }
+    ]
+  },
+  "results": {
+    "/realms/master/protocol/openid-connect/auth": {
+      "method": "GET",
+      "flags": 512,
+      "maxSeverity": "HIGH",
+      "securityScore": 3,
+      "findings": [
+        {
+          "id": "0a700bbf541fbf25",
+          "type": "TENANT_SCOPE_MISSING",
+          "title": "TENANT_SCOPE_MISSING",
+          "severity": "HIGH",
+          "score": 66,
+          "probability": "55.1%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "AuthAnalyzer",
+          "detectedByEngines": [
+            "AuthAnalyzer"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "TENANT_SCOPE_MISSING"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": 0.78,
+          "bypassBayesian": true,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "212494cab0e41fbe",
+          "type": "JWT_ALGORITHM_NOT_LOCKED",
+          "title": "JWT_ALGORITHM_NOT_LOCKED",
+          "severity": "HIGH",
+          "score": 66,
+          "probability": "55.1%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "AuthAnalyzer",
+          "detectedByEngines": [
+            "AuthAnalyzer"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "JWT_ALGORITHM_NOT_LOCKED"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": 0.75,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "39f49995987a0877",
+          "type": "DATA_CREDENTIAL",
+          "title": "Sensitive Field Detected: client_id",
+          "severity": "MEDIUM",
+          "score": 55,
+          "probability": "45.9%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "DataScanner",
+          "detectedByEngines": [
+            "DataScanner"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DATA_CREDENTIAL"
+          ],
+          "description": "Detected DATA_CREDENTIAL in field 'client_id' via NAME_ENGINE (confidence: 95%).",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.95,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.505,
+          "_ctxConflicts": [],
+          "_ctxSpecActionable": {
+            "auth": false,
+            "transport": true,
+            "dataRisk": true,
+            "apiContext": true
+          }
+        },
+        {
+          "id": "999c6b2b6ba3b5ef",
+          "type": "CONTEXT_CREDENTIAL_IN_GET",
+          "title": "Credential in URL Query Parameter: client_id",
+          "severity": "MEDIUM",
+          "score": 55,
+          "probability": "45.9%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "SecurityCore",
+          "detectedByEngines": [
+            "SecurityCore"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "CONTEXT_CREDENTIAL_IN_GET"
+          ],
+          "description": "Endpoint GET /realms/master/protocol/openid-connect/auth handles sensitive field 'client_id' in an insecure context.",
+          "remediation": "Review data flow, apply context-appropriate controls and field-level filtering.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": null,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.505,
+          "_ctxConflicts": [],
+          "_ctxSpecActionable": {
+            "auth": false,
+            "transport": true,
+            "dataRisk": true,
+            "apiContext": true
+          }
+        },
+        {
+          "id": "8970d7a2769dcee0",
+          "type": "RATE_LIMIT_MISSING_LOGIN",
+          "title": "Authentication Endpoint Without Rate Limiting",
+          "severity": "MEDIUM",
+          "score": 38,
+          "probability": "31.7%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "CorsRateLimiter",
+          "detectedByEngines": [
+            "CorsRateLimiter"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "RATE_LIMIT_MISSING_LOGIN"
+          ],
+          "description": "GET /realms/master/protocol/openid-connect/auth handles authentication but has no documented rate limiting. Vulnerable to brute force, credential stuffing, and password spraying attacks.",
+          "remediation": "Implement strict rate limiting (≤5 req/min per IP) with progressive delays and account lockout.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": null,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.505,
+          "_ctxConflicts": [],
+          "_ctxSpecActionable": false
+        },
+        {
+          "id": "0e2e137a587ec37b",
+          "type": "BEARER_TOKEN_NO_EXPIRY",
+          "title": "BEARER_TOKEN_NO_EXPIRY",
+          "severity": "LOW",
+          "score": 20,
+          "probability": "16.7%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "SecurityCore",
+          "detectedByEngines": [
+            "SecurityCore"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "BEARER_TOKEN_NO_EXPIRY"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.65,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "11211ba6d910e533",
+          "type": "LOG_INJECTION_RISK",
+          "title": "Potential Log Injection via Unvalidated Header: client_id",
+          "severity": "LOW",
+          "score": 20,
+          "probability": "16.7%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "LoggingMonitor",
+          "detectedByEngines": [
+            "LoggingMonitor"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "LOG_INJECTION_RISK"
+          ],
+          "description": "The query parameter 'client_id' accepts arbitrary strings with no pattern or length constraints. If this value is written to logs unsanitised, an attacker can inject CRLF sequences (\\r\\n) to forge fake log entries, potentially hiding malicious activity or framing legitimate users.",
+          "remediation": "Add a restrictive pattern (e.g. ^[\\w\\s,;=./@:-]{1,256}$) and maxLength to this parameter schema.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": null,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.505,
+          "_ctxConflicts": [],
+          "_ctxSpecActionable": true
+        }
+      ]
+    },
+    "/resources/k6ez4/login/keycloak.v2/js/passwordVisibility.js": {
+      "method": "GET",
+      "flags": 0,
+      "maxSeverity": "HIGH",
+      "securityScore": 43,
+      "findings": [
+        {
+          "id": "c9d400bd0dfb8bb1",
+          "type": "TENANT_SCOPE_MISSING",
+          "title": "TENANT_SCOPE_MISSING",
+          "severity": "HIGH",
+          "score": 66,
+          "probability": "50.7%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "AuthAnalyzer",
+          "detectedByEngines": [
+            "AuthAnalyzer"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "TENANT_SCOPE_MISSING"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": 0.78,
+          "bypassBayesian": true,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "2db3b5c48e1eaa0c",
+          "type": "JWT_ALGORITHM_NOT_LOCKED",
+          "title": "JWT_ALGORITHM_NOT_LOCKED",
+          "severity": "HIGH",
+          "score": 66,
+          "probability": "50.7%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "AuthAnalyzer",
+          "detectedByEngines": [
+            "AuthAnalyzer"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "JWT_ALGORITHM_NOT_LOCKED"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": 0.75,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "7cd448fc6b0dacac",
+          "type": "RATE_LIMIT_MISSING_LOGIN",
+          "title": "Authentication Endpoint Without Rate Limiting",
+          "severity": "MEDIUM",
+          "score": 38,
+          "probability": "29.2%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "CorsRateLimiter",
+          "detectedByEngines": [
+            "CorsRateLimiter"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "RATE_LIMIT_MISSING_LOGIN"
+          ],
+          "description": "GET /resources/k6ez4/login/keycloak.v2/js/passwordVisibility.js handles authentication but has no documented rate limiting. Vulnerable to brute force, credential stuffing, and password spraying attacks.",
+          "remediation": "Implement strict rate limiting (≤5 req/min per IP) with progressive delays and account lockout.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": null,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.505,
+          "_ctxConflicts": [],
+          "_ctxSpecActionable": false
+        },
+        {
+          "id": "7821ebeaba9cb471",
+          "type": "BEARER_TOKEN_NO_EXPIRY",
+          "title": "BEARER_TOKEN_NO_EXPIRY",
+          "severity": "LOW",
+          "score": 20,
+          "probability": "15.4%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "SecurityCore",
+          "detectedByEngines": [
+            "SecurityCore"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "BEARER_TOKEN_NO_EXPIRY"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.65,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        }
+      ]
+    },
+    "/resources/k6ez4/login/keycloak.v2/js/authChecker.js": {
+      "method": "GET",
+      "flags": 0,
+      "maxSeverity": "HIGH",
+      "securityScore": 43,
+      "findings": [
+        {
+          "id": "b5a6761ade5f4107",
+          "type": "TENANT_SCOPE_MISSING",
+          "title": "TENANT_SCOPE_MISSING",
+          "severity": "HIGH",
+          "score": 66,
+          "probability": "55.8%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "AuthAnalyzer",
+          "detectedByEngines": [
+            "AuthAnalyzer"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "TENANT_SCOPE_MISSING"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": 0.78,
+          "bypassBayesian": true,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "dea075999a393bda",
+          "type": "JWT_ALGORITHM_NOT_LOCKED",
+          "title": "JWT_ALGORITHM_NOT_LOCKED",
+          "severity": "HIGH",
+          "score": 66,
+          "probability": "55.8%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "AuthAnalyzer",
+          "detectedByEngines": [
+            "AuthAnalyzer"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "JWT_ALGORITHM_NOT_LOCKED"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": 0.75,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "d82725f9f052fddc",
+          "type": "RATE_LIMIT_MISSING_LOGIN",
+          "title": "Authentication Endpoint Without Rate Limiting",
+          "severity": "MEDIUM",
+          "score": 38,
+          "probability": "32.1%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "CorsRateLimiter",
+          "detectedByEngines": [
+            "CorsRateLimiter"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "RATE_LIMIT_MISSING_LOGIN"
+          ],
+          "description": "GET /resources/k6ez4/login/keycloak.v2/js/authChecker.js handles authentication but has no documented rate limiting. Vulnerable to brute force, credential stuffing, and password spraying attacks.",
+          "remediation": "Implement strict rate limiting (≤5 req/min per IP) with progressive delays and account lockout.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": null,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.505,
+          "_ctxConflicts": [],
+          "_ctxSpecActionable": false
+        },
+        {
+          "id": "b877d75fc0576aeb",
+          "type": "BEARER_TOKEN_NO_EXPIRY",
+          "title": "BEARER_TOKEN_NO_EXPIRY",
+          "severity": "LOW",
+          "score": 20,
+          "probability": "16.9%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "SecurityCore",
+          "detectedByEngines": [
+            "SecurityCore"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "BEARER_TOKEN_NO_EXPIRY"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.65,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        }
+      ]
+    }
+  },
+  "intelligence": {
+    "suppressionLog": [],
+    "crossEngineCorrelations": 0,
+    "evidenceWeights": {
+      "PUBLIC_ACCESS": {
+        "pIfTrue": 0.85,
+        "pIfFalse": 0.15
+      },
+      "WEAK_AUTH": {
+        "pIfTrue": 0.92,
+        "pIfFalse": 0.08
+      },
+      "ADMIN_ROUTE": {
+        "pIfTrue": 0.78,
+        "pIfFalse": 0.35
+      },
+      "SENSITIVE_DATA": {
+        "pIfTrue": 0.88,
+        "pIfFalse": 0.12
+      },
+      "WRITE_OPERATION": {
+        "pIfTrue": 0.7,
+        "pIfFalse": 0.3
+      },
+      "HIGH_CENTRALITY": {
+        "pIfTrue": 0.75,
+        "pIfFalse": 0.25
+      },
+      "HTTP_TRANSPORT": {
+        "pIfTrue": 0.9,
+        "pIfFalse": 0.1
+      },
+      "DEEP_ATTACK_PATH": {
+        "pIfTrue": 0.95,
+        "pIfFalse": 0.05
+      },
+      "INCONSISTENT_AUTH": {
+        "pIfTrue": 0.8,
+        "pIfFalse": 0.2
+      },
+      "CORS_WILDCARD": {
+        "pIfTrue": 0.72,
+        "pIfFalse": 0.28
+      }
+    },
+    "engineTrustWeights": {
+      "ProtocolAnalyzer": 0.95,
+      "AuthAnalyzer": 0.85,
+      "DataScanner": 0.9,
+      "CorsRateLimiter": 0.78,
+      "WebhookAnalyzer": 0.8,
+      "LoggingMonitor": 0.8,
+      "ComplianceEngine": 0.8,
+      "CortexOmega_IDDFS": 0.9,
+      "SecurityCore": 0.7,
+      "ScoringEngine": 0.7,
+      "CortexOmega": 1
+    }
+  }
+}
+--------------------------------------------------
+Score: 39 | Grade: D
+Total Risks: 15
+--------------------------------------------------

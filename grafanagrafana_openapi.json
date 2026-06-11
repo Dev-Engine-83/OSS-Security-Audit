@@ -1,0 +1,2804 @@
+{
+  
+    "openapi": "3.0.1",
+    "info": {
+      "title": "LegacyBridge Recovered API",
+      "version": "1.0.0",
+      "description": "High-fidelity OpenAPI 3.0.1 specification auto-recovered by LegacyBridge ResponseSanitizer v2.",
+      "contact": {
+        "name": "LegacyBridge Engineering",
+        "email": "devops@legacybridge.internal"
+      },
+      "license": {
+        "name": "Proprietary — Internal Use Only"
+      },
+      "x-generated-by": "LegacyBridge ResponseSanitizer v2",
+      "x-generated-at": "2026-06-09T09:23:16.774Z",
+      "x-recovery-note": "Field types, constraints, and relationships are statistically inferred from legacy stream data."
+    },
+    "tags": [
+      {
+        "name": "Login",
+        "description": "Operations related to the **Login** resource group."
+      },
+      {
+        "name": "Public",
+        "description": "Operations related to the **Public** resource group."
+      },
+      {
+        "name": "User",
+        "description": "Operations related to the **User** resource group."
+      }
+    ],
+    "paths": {
+      "/login": {
+        "get": {
+          "summary": "GET /login",
+          "description": "Retrieves login record(s). Recovered from 16 legacy stream records and statistically verified.",
+          "operationId": "getLogin",
+          "tags": [
+            "Login"
+          ],
+          "parameters": [],
+          "responses": {
+            "200": {
+              "description": "Successful response. Recovered from 16 legacy stream record(s).",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/LoginGetResponse"
+                  }
+                }
+              },
+              "headers": {
+                "X-Request-ID": {
+                  "description": "Unique request identifier for tracing.",
+                  "schema": {
+                    "type": "string",
+                    "format": "uuid"
+                  }
+                },
+                "X-Total-Count": {
+                  "description": "Total matching records (list endpoints).",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              }
+            },
+            "400": {
+              "description": "Bad Request — malformed syntax.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized — missing or invalid credentials.",
+              "headers": {
+                "WWW-Authenticate": {
+                  "description": "Authentication challenge.",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              },
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/UnauthorizedError"
+                  }
+                }
+              }
+            },
+            "403": {
+              "description": "Forbidden — insufficient permissions.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "404": {
+              "description": "Not Found — resource does not exist.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "409": {
+              "description": "Conflict — current state prevents this operation.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ConflictError"
+                  }
+                }
+              }
+            },
+            "422": {
+              "description": "Unprocessable Entity — semantic validation errors.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ValidationError"
+                  }
+                }
+              }
+            },
+            "429": {
+              "description": "Too Many Requests — rate limit exceeded.",
+              "headers": {
+                "Retry-After": {
+                  "description": "Seconds to wait before retrying.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                },
+                "X-RateLimit-Limit": {
+                  "description": "Request limit per window.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                },
+                "X-RateLimit-Remaining": {
+                  "description": "Requests remaining.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                },
+                "X-RateLimit-Reset": {
+                  "description": "Reset Unix timestamp.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              },
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/RateLimitError"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal Server Error — unexpected condition.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "503": {
+              "description": "Service Unavailable — temporarily unable to handle request.",
+              "headers": {
+                "Retry-After": {
+                  "description": "Suggested seconds to wait.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              },
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "post": {
+          "summary": "POST /login",
+          "description": "Creates login record(s). Recovered from 44 legacy stream records and statistically verified.",
+          "operationId": "postLogin",
+          "tags": [
+            "Login"
+          ],
+          "parameters": [],
+          "responses": {
+            "200": {
+              "description": "Successful response. Recovered from 44 legacy stream record(s).",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/LoginPostResponse"
+                  }
+                }
+              },
+              "headers": {
+                "X-Request-ID": {
+                  "description": "Unique request identifier for tracing.",
+                  "schema": {
+                    "type": "string",
+                    "format": "uuid"
+                  }
+                },
+                "X-Total-Count": {
+                  "description": "Total matching records (list endpoints).",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              }
+            },
+            "400": {
+              "description": "Bad Request — malformed syntax.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized — missing or invalid credentials.",
+              "headers": {
+                "WWW-Authenticate": {
+                  "description": "Authentication challenge.",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              },
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/UnauthorizedError"
+                  }
+                }
+              }
+            },
+            "403": {
+              "description": "Forbidden — insufficient permissions.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "404": {
+              "description": "Not Found — resource does not exist.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "409": {
+              "description": "Conflict — current state prevents this operation.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ConflictError"
+                  }
+                }
+              }
+            },
+            "422": {
+              "description": "Unprocessable Entity — semantic validation errors.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ValidationError"
+                  }
+                }
+              }
+            },
+            "429": {
+              "description": "Too Many Requests — rate limit exceeded.",
+              "headers": {
+                "Retry-After": {
+                  "description": "Seconds to wait before retrying.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                },
+                "X-RateLimit-Limit": {
+                  "description": "Request limit per window.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                },
+                "X-RateLimit-Remaining": {
+                  "description": "Requests remaining.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                },
+                "X-RateLimit-Reset": {
+                  "description": "Reset Unix timestamp.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              },
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/RateLimitError"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal Server Error — unexpected condition.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "503": {
+              "description": "Service Unavailable — temporarily unable to handle request.",
+              "headers": {
+                "Retry-After": {
+                  "description": "Suggested seconds to wait.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              },
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            }
+          },
+          "requestBody": {
+            "required": true,
+            "description": "Request payload for POST /login.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LoginPostResponse"
+                }
+              }
+            }
+          }
+        }
+      },
+      "/public/build/6029.ced17922ce65e4fd1ef9.js": {
+        "get": {
+          "summary": "GET /public/build/6029.ced17922ce65e4fd1ef9.js",
+          "description": "Retrieves 6029.ced17922ce65e4fd1ef9.js record(s). Recovered from 2 legacy stream records and statistically verified.",
+          "operationId": "getPublicBuild6029.ced17922ce65e4fd1ef9.js",
+          "tags": [
+            "Public"
+          ],
+          "parameters": [],
+          "responses": {
+            "200": {
+              "description": "Successful response. Recovered from 2 legacy stream record(s).",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/PublicBuild6029Ced17922ce65e4fd1ef9JsGetResponse"
+                  }
+                }
+              },
+              "headers": {
+                "X-Request-ID": {
+                  "description": "Unique request identifier for tracing.",
+                  "schema": {
+                    "type": "string",
+                    "format": "uuid"
+                  }
+                },
+                "X-Total-Count": {
+                  "description": "Total matching records (list endpoints).",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              }
+            },
+            "400": {
+              "description": "Bad Request — malformed syntax.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized — missing or invalid credentials.",
+              "headers": {
+                "WWW-Authenticate": {
+                  "description": "Authentication challenge.",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              },
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/UnauthorizedError"
+                  }
+                }
+              }
+            },
+            "403": {
+              "description": "Forbidden — insufficient permissions.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "404": {
+              "description": "Not Found — resource does not exist.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "409": {
+              "description": "Conflict — current state prevents this operation.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ConflictError"
+                  }
+                }
+              }
+            },
+            "422": {
+              "description": "Unprocessable Entity — semantic validation errors.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ValidationError"
+                  }
+                }
+              }
+            },
+            "429": {
+              "description": "Too Many Requests — rate limit exceeded.",
+              "headers": {
+                "Retry-After": {
+                  "description": "Seconds to wait before retrying.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                },
+                "X-RateLimit-Limit": {
+                  "description": "Request limit per window.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                },
+                "X-RateLimit-Remaining": {
+                  "description": "Requests remaining.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                },
+                "X-RateLimit-Reset": {
+                  "description": "Reset Unix timestamp.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              },
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/RateLimitError"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal Server Error — unexpected condition.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "503": {
+              "description": "Service Unavailable — temporarily unable to handle request.",
+              "headers": {
+                "Retry-After": {
+                  "description": "Suggested seconds to wait.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              },
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/public/build/1791.d2121f46d19723228ede.js": {
+        "get": {
+          "summary": "GET /public/build/1791.d2121f46d19723228ede.js",
+          "description": "Retrieves 1791.d2121f46d19723228ede.js record(s). Recovered from 2 legacy stream records and statistically verified.",
+          "operationId": "getPublicBuild1791.d2121f46d19723228ede.js",
+          "tags": [
+            "Public"
+          ],
+          "parameters": [],
+          "responses": {
+            "200": {
+              "description": "Successful response. Recovered from 2 legacy stream record(s).",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/PublicBuild6029Ced17922ce65e4fd1ef9JsGetResponse"
+                  }
+                }
+              },
+              "headers": {
+                "X-Request-ID": {
+                  "description": "Unique request identifier for tracing.",
+                  "schema": {
+                    "type": "string",
+                    "format": "uuid"
+                  }
+                },
+                "X-Total-Count": {
+                  "description": "Total matching records (list endpoints).",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              }
+            },
+            "400": {
+              "description": "Bad Request — malformed syntax.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized — missing or invalid credentials.",
+              "headers": {
+                "WWW-Authenticate": {
+                  "description": "Authentication challenge.",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              },
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/UnauthorizedError"
+                  }
+                }
+              }
+            },
+            "403": {
+              "description": "Forbidden — insufficient permissions.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "404": {
+              "description": "Not Found — resource does not exist.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "409": {
+              "description": "Conflict — current state prevents this operation.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ConflictError"
+                  }
+                }
+              }
+            },
+            "422": {
+              "description": "Unprocessable Entity — semantic validation errors.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ValidationError"
+                  }
+                }
+              }
+            },
+            "429": {
+              "description": "Too Many Requests — rate limit exceeded.",
+              "headers": {
+                "Retry-After": {
+                  "description": "Seconds to wait before retrying.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                },
+                "X-RateLimit-Limit": {
+                  "description": "Request limit per window.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                },
+                "X-RateLimit-Remaining": {
+                  "description": "Requests remaining.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                },
+                "X-RateLimit-Reset": {
+                  "description": "Reset Unix timestamp.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              },
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/RateLimitError"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal Server Error — unexpected condition.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "503": {
+              "description": "Service Unavailable — temporarily unable to handle request.",
+              "headers": {
+                "Retry-After": {
+                  "description": "Suggested seconds to wait.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              },
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/public/build/522.e579a60fe94dd7b6ef93.js": {
+        "get": {
+          "summary": "GET /public/build/522.e579a60fe94dd7b6ef93.js",
+          "description": "Retrieves 522.e579a60fe94dd7b6ef93.js record(s). Recovered from 20 legacy stream records and statistically verified.",
+          "operationId": "getPublicBuild522.e579a60fe94dd7b6ef93.js",
+          "tags": [
+            "Public"
+          ],
+          "parameters": [],
+          "responses": {
+            "200": {
+              "description": "Successful response. Recovered from 20 legacy stream record(s).",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/PublicBuild522E579a60fe94dd7b6ef93JsGetResponse"
+                  }
+                }
+              },
+              "headers": {
+                "X-Request-ID": {
+                  "description": "Unique request identifier for tracing.",
+                  "schema": {
+                    "type": "string",
+                    "format": "uuid"
+                  }
+                },
+                "X-Total-Count": {
+                  "description": "Total matching records (list endpoints).",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              }
+            },
+            "400": {
+              "description": "Bad Request — malformed syntax.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized — missing or invalid credentials.",
+              "headers": {
+                "WWW-Authenticate": {
+                  "description": "Authentication challenge.",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              },
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/UnauthorizedError"
+                  }
+                }
+              }
+            },
+            "403": {
+              "description": "Forbidden — insufficient permissions.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "404": {
+              "description": "Not Found — resource does not exist.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "409": {
+              "description": "Conflict — current state prevents this operation.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ConflictError"
+                  }
+                }
+              }
+            },
+            "422": {
+              "description": "Unprocessable Entity — semantic validation errors.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ValidationError"
+                  }
+                }
+              }
+            },
+            "429": {
+              "description": "Too Many Requests — rate limit exceeded.",
+              "headers": {
+                "Retry-After": {
+                  "description": "Seconds to wait before retrying.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                },
+                "X-RateLimit-Limit": {
+                  "description": "Request limit per window.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                },
+                "X-RateLimit-Remaining": {
+                  "description": "Requests remaining.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                },
+                "X-RateLimit-Reset": {
+                  "description": "Reset Unix timestamp.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              },
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/RateLimitError"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal Server Error — unexpected condition.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "503": {
+              "description": "Service Unavailable — temporarily unable to handle request.",
+              "headers": {
+                "Retry-After": {
+                  "description": "Suggested seconds to wait.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              },
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/public/build/6182.0d50a9cb388deb736875.js": {
+        "get": {
+          "summary": "GET /public/build/6182.0d50a9cb388deb736875.js",
+          "description": "Retrieves 6182.0d50a9cb388deb736875.js record(s). Recovered from 2 legacy stream records and statistically verified.",
+          "operationId": "getPublicBuild6182.0d50a9cb388deb736875.js",
+          "tags": [
+            "Public"
+          ],
+          "parameters": [],
+          "responses": {
+            "200": {
+              "description": "Successful response. Recovered from 2 legacy stream record(s).",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/PublicBuild6029Ced17922ce65e4fd1ef9JsGetResponse"
+                  }
+                }
+              },
+              "headers": {
+                "X-Request-ID": {
+                  "description": "Unique request identifier for tracing.",
+                  "schema": {
+                    "type": "string",
+                    "format": "uuid"
+                  }
+                },
+                "X-Total-Count": {
+                  "description": "Total matching records (list endpoints).",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              }
+            },
+            "400": {
+              "description": "Bad Request — malformed syntax.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized — missing or invalid credentials.",
+              "headers": {
+                "WWW-Authenticate": {
+                  "description": "Authentication challenge.",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              },
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/UnauthorizedError"
+                  }
+                }
+              }
+            },
+            "403": {
+              "description": "Forbidden — insufficient permissions.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "404": {
+              "description": "Not Found — resource does not exist.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "409": {
+              "description": "Conflict — current state prevents this operation.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ConflictError"
+                  }
+                }
+              }
+            },
+            "422": {
+              "description": "Unprocessable Entity — semantic validation errors.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ValidationError"
+                  }
+                }
+              }
+            },
+            "429": {
+              "description": "Too Many Requests — rate limit exceeded.",
+              "headers": {
+                "Retry-After": {
+                  "description": "Seconds to wait before retrying.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                },
+                "X-RateLimit-Limit": {
+                  "description": "Request limit per window.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                },
+                "X-RateLimit-Remaining": {
+                  "description": "Requests remaining.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                },
+                "X-RateLimit-Reset": {
+                  "description": "Reset Unix timestamp.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              },
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/RateLimitError"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal Server Error — unexpected condition.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "503": {
+              "description": "Service Unavailable — temporarily unable to handle request.",
+              "headers": {
+                "Retry-After": {
+                  "description": "Suggested seconds to wait.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              },
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/public/build/7457.4455c81525be8fb26b46.js": {
+        "get": {
+          "summary": "GET /public/build/7457.4455c81525be8fb26b46.js",
+          "description": "Retrieves 7457.4455c81525be8fb26b46.js record(s). Recovered from 16 legacy stream records and statistically verified.",
+          "operationId": "getPublicBuild7457.4455c81525be8fb26b46.js",
+          "tags": [
+            "Public"
+          ],
+          "parameters": [],
+          "responses": {
+            "200": {
+              "description": "Successful response. Recovered from 16 legacy stream record(s).",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/PublicBuild522E579a60fe94dd7b6ef93JsGetResponse"
+                  }
+                }
+              },
+              "headers": {
+                "X-Request-ID": {
+                  "description": "Unique request identifier for tracing.",
+                  "schema": {
+                    "type": "string",
+                    "format": "uuid"
+                  }
+                },
+                "X-Total-Count": {
+                  "description": "Total matching records (list endpoints).",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              }
+            },
+            "400": {
+              "description": "Bad Request — malformed syntax.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized — missing or invalid credentials.",
+              "headers": {
+                "WWW-Authenticate": {
+                  "description": "Authentication challenge.",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              },
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/UnauthorizedError"
+                  }
+                }
+              }
+            },
+            "403": {
+              "description": "Forbidden — insufficient permissions.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "404": {
+              "description": "Not Found — resource does not exist.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "409": {
+              "description": "Conflict — current state prevents this operation.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ConflictError"
+                  }
+                }
+              }
+            },
+            "422": {
+              "description": "Unprocessable Entity — semantic validation errors.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ValidationError"
+                  }
+                }
+              }
+            },
+            "429": {
+              "description": "Too Many Requests — rate limit exceeded.",
+              "headers": {
+                "Retry-After": {
+                  "description": "Seconds to wait before retrying.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                },
+                "X-RateLimit-Limit": {
+                  "description": "Request limit per window.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                },
+                "X-RateLimit-Remaining": {
+                  "description": "Requests remaining.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                },
+                "X-RateLimit-Reset": {
+                  "description": "Reset Unix timestamp.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              },
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/RateLimitError"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal Server Error — unexpected condition.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "503": {
+              "description": "Service Unavailable — temporarily unable to handle request.",
+              "headers": {
+                "Retry-After": {
+                  "description": "Suggested seconds to wait.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              },
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/public/build/app.b5c3fa1a9a2d09a31940.js": {
+        "get": {
+          "summary": "GET /public/build/app.b5c3fa1a9a2d09a31940.js",
+          "description": "Retrieves app.b5c3fa1a9a2d09a31940.js record(s). Recovered from 2 legacy stream records and statistically verified.",
+          "operationId": "getPublicBuildApp.b5c3fa1a9a2d09a31940.js",
+          "tags": [
+            "Public"
+          ],
+          "parameters": [],
+          "responses": {
+            "200": {
+              "description": "Successful response. Recovered from 2 legacy stream record(s).",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/PublicBuild6029Ced17922ce65e4fd1ef9JsGetResponse"
+                  }
+                }
+              },
+              "headers": {
+                "X-Request-ID": {
+                  "description": "Unique request identifier for tracing.",
+                  "schema": {
+                    "type": "string",
+                    "format": "uuid"
+                  }
+                },
+                "X-Total-Count": {
+                  "description": "Total matching records (list endpoints).",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              }
+            },
+            "400": {
+              "description": "Bad Request — malformed syntax.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized — missing or invalid credentials.",
+              "headers": {
+                "WWW-Authenticate": {
+                  "description": "Authentication challenge.",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              },
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/UnauthorizedError"
+                  }
+                }
+              }
+            },
+            "403": {
+              "description": "Forbidden — insufficient permissions.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "404": {
+              "description": "Not Found — resource does not exist.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "409": {
+              "description": "Conflict — current state prevents this operation.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ConflictError"
+                  }
+                }
+              }
+            },
+            "422": {
+              "description": "Unprocessable Entity — semantic validation errors.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ValidationError"
+                  }
+                }
+              }
+            },
+            "429": {
+              "description": "Too Many Requests — rate limit exceeded.",
+              "headers": {
+                "Retry-After": {
+                  "description": "Seconds to wait before retrying.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                },
+                "X-RateLimit-Limit": {
+                  "description": "Request limit per window.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                },
+                "X-RateLimit-Remaining": {
+                  "description": "Requests remaining.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                },
+                "X-RateLimit-Reset": {
+                  "description": "Reset Unix timestamp.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              },
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/RateLimitError"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal Server Error — unexpected condition.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "503": {
+              "description": "Service Unavailable — temporarily unable to handle request.",
+              "headers": {
+                "Retry-After": {
+                  "description": "Suggested seconds to wait.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              },
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/public/build/9521.40c8873e3d10057330c1.js": {
+        "get": {
+          "summary": "GET /public/build/9521.40c8873e3d10057330c1.js",
+          "description": "Retrieves 9521.40c8873e3d10057330c1.js record(s). Recovered from 2 legacy stream records and statistically verified.",
+          "operationId": "getPublicBuild9521.40c8873e3d10057330c1.js",
+          "tags": [
+            "Public"
+          ],
+          "parameters": [],
+          "responses": {
+            "200": {
+              "description": "Successful response. Recovered from 2 legacy stream record(s).",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/PublicBuild6029Ced17922ce65e4fd1ef9JsGetResponse"
+                  }
+                }
+              },
+              "headers": {
+                "X-Request-ID": {
+                  "description": "Unique request identifier for tracing.",
+                  "schema": {
+                    "type": "string",
+                    "format": "uuid"
+                  }
+                },
+                "X-Total-Count": {
+                  "description": "Total matching records (list endpoints).",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              }
+            },
+            "400": {
+              "description": "Bad Request — malformed syntax.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized — missing or invalid credentials.",
+              "headers": {
+                "WWW-Authenticate": {
+                  "description": "Authentication challenge.",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              },
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/UnauthorizedError"
+                  }
+                }
+              }
+            },
+            "403": {
+              "description": "Forbidden — insufficient permissions.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "404": {
+              "description": "Not Found — resource does not exist.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "409": {
+              "description": "Conflict — current state prevents this operation.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ConflictError"
+                  }
+                }
+              }
+            },
+            "422": {
+              "description": "Unprocessable Entity — semantic validation errors.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ValidationError"
+                  }
+                }
+              }
+            },
+            "429": {
+              "description": "Too Many Requests — rate limit exceeded.",
+              "headers": {
+                "Retry-After": {
+                  "description": "Seconds to wait before retrying.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                },
+                "X-RateLimit-Limit": {
+                  "description": "Request limit per window.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                },
+                "X-RateLimit-Remaining": {
+                  "description": "Requests remaining.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                },
+                "X-RateLimit-Reset": {
+                  "description": "Reset Unix timestamp.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              },
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/RateLimitError"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal Server Error — unexpected condition.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "503": {
+              "description": "Service Unavailable — temporarily unable to handle request.",
+              "headers": {
+                "Retry-After": {
+                  "description": "Suggested seconds to wait.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              },
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/public/build/4691.3b41bcf75754c7e295a8.js": {
+        "get": {
+          "summary": "GET /public/build/4691.3b41bcf75754c7e295a8.js",
+          "description": "Retrieves 4691.3b41bcf75754c7e295a8.js record(s). Recovered from 2 legacy stream records and statistically verified.",
+          "operationId": "getPublicBuild4691.3b41bcf75754c7e295a8.js",
+          "tags": [
+            "Public"
+          ],
+          "parameters": [],
+          "responses": {
+            "200": {
+              "description": "Successful response. Recovered from 2 legacy stream record(s).",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/PublicBuild6029Ced17922ce65e4fd1ef9JsGetResponse"
+                  }
+                }
+              },
+              "headers": {
+                "X-Request-ID": {
+                  "description": "Unique request identifier for tracing.",
+                  "schema": {
+                    "type": "string",
+                    "format": "uuid"
+                  }
+                },
+                "X-Total-Count": {
+                  "description": "Total matching records (list endpoints).",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              }
+            },
+            "400": {
+              "description": "Bad Request — malformed syntax.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized — missing or invalid credentials.",
+              "headers": {
+                "WWW-Authenticate": {
+                  "description": "Authentication challenge.",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              },
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/UnauthorizedError"
+                  }
+                }
+              }
+            },
+            "403": {
+              "description": "Forbidden — insufficient permissions.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "404": {
+              "description": "Not Found — resource does not exist.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "409": {
+              "description": "Conflict — current state prevents this operation.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ConflictError"
+                  }
+                }
+              }
+            },
+            "422": {
+              "description": "Unprocessable Entity — semantic validation errors.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ValidationError"
+                  }
+                }
+              }
+            },
+            "429": {
+              "description": "Too Many Requests — rate limit exceeded.",
+              "headers": {
+                "Retry-After": {
+                  "description": "Seconds to wait before retrying.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                },
+                "X-RateLimit-Limit": {
+                  "description": "Request limit per window.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                },
+                "X-RateLimit-Remaining": {
+                  "description": "Requests remaining.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                },
+                "X-RateLimit-Reset": {
+                  "description": "Reset Unix timestamp.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              },
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/RateLimitError"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal Server Error — unexpected condition.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "503": {
+              "description": "Service Unavailable — temporarily unable to handle request.",
+              "headers": {
+                "Retry-After": {
+                  "description": "Suggested seconds to wait.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              },
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/public/build/7651.06c4a6f267dfa91784a2.js": {
+        "get": {
+          "summary": "GET /public/build/7651.06c4a6f267dfa91784a2.js",
+          "description": "Retrieves 7651.06c4a6f267dfa91784a2.js record(s). Recovered from 2 legacy stream records and statistically verified.",
+          "operationId": "getPublicBuild7651.06c4a6f267dfa91784a2.js",
+          "tags": [
+            "Public"
+          ],
+          "parameters": [],
+          "responses": {
+            "200": {
+              "description": "Successful response. Recovered from 2 legacy stream record(s).",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/PublicBuild6029Ced17922ce65e4fd1ef9JsGetResponse"
+                  }
+                }
+              },
+              "headers": {
+                "X-Request-ID": {
+                  "description": "Unique request identifier for tracing.",
+                  "schema": {
+                    "type": "string",
+                    "format": "uuid"
+                  }
+                },
+                "X-Total-Count": {
+                  "description": "Total matching records (list endpoints).",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              }
+            },
+            "400": {
+              "description": "Bad Request — malformed syntax.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized — missing or invalid credentials.",
+              "headers": {
+                "WWW-Authenticate": {
+                  "description": "Authentication challenge.",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              },
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/UnauthorizedError"
+                  }
+                }
+              }
+            },
+            "403": {
+              "description": "Forbidden — insufficient permissions.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "404": {
+              "description": "Not Found — resource does not exist.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "409": {
+              "description": "Conflict — current state prevents this operation.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ConflictError"
+                  }
+                }
+              }
+            },
+            "422": {
+              "description": "Unprocessable Entity — semantic validation errors.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ValidationError"
+                  }
+                }
+              }
+            },
+            "429": {
+              "description": "Too Many Requests — rate limit exceeded.",
+              "headers": {
+                "Retry-After": {
+                  "description": "Seconds to wait before retrying.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                },
+                "X-RateLimit-Limit": {
+                  "description": "Request limit per window.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                },
+                "X-RateLimit-Remaining": {
+                  "description": "Requests remaining.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                },
+                "X-RateLimit-Reset": {
+                  "description": "Reset Unix timestamp.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              },
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/RateLimitError"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal Server Error — unexpected condition.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "503": {
+              "description": "Service Unavailable — temporarily unable to handle request.",
+              "headers": {
+                "Retry-After": {
+                  "description": "Suggested seconds to wait.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              },
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/public/build/LoginPage.2317d599a7ae071f1fed.js": {
+        "get": {
+          "summary": "GET /public/build/LoginPage.2317d599a7ae071f1fed.js",
+          "description": "Retrieves login page.2317d599a7ae071f1fed.js record(s). Recovered from 2 legacy stream records and statistically verified.",
+          "operationId": "getPublicBuildLoginPage.2317d599a7ae071f1fed.js",
+          "tags": [
+            "Public"
+          ],
+          "parameters": [],
+          "responses": {
+            "200": {
+              "description": "Successful response. Recovered from 2 legacy stream record(s).",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/PublicBuild6029Ced17922ce65e4fd1ef9JsGetResponse"
+                  }
+                }
+              },
+              "headers": {
+                "X-Request-ID": {
+                  "description": "Unique request identifier for tracing.",
+                  "schema": {
+                    "type": "string",
+                    "format": "uuid"
+                  }
+                },
+                "X-Total-Count": {
+                  "description": "Total matching records (list endpoints).",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              }
+            },
+            "400": {
+              "description": "Bad Request — malformed syntax.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized — missing or invalid credentials.",
+              "headers": {
+                "WWW-Authenticate": {
+                  "description": "Authentication challenge.",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              },
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/UnauthorizedError"
+                  }
+                }
+              }
+            },
+            "403": {
+              "description": "Forbidden — insufficient permissions.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "404": {
+              "description": "Not Found — resource does not exist.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "409": {
+              "description": "Conflict — current state prevents this operation.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ConflictError"
+                  }
+                }
+              }
+            },
+            "422": {
+              "description": "Unprocessable Entity — semantic validation errors.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ValidationError"
+                  }
+                }
+              }
+            },
+            "429": {
+              "description": "Too Many Requests — rate limit exceeded.",
+              "headers": {
+                "Retry-After": {
+                  "description": "Seconds to wait before retrying.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                },
+                "X-RateLimit-Limit": {
+                  "description": "Request limit per window.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                },
+                "X-RateLimit-Remaining": {
+                  "description": "Requests remaining.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                },
+                "X-RateLimit-Reset": {
+                  "description": "Reset Unix timestamp.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              },
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/RateLimitError"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal Server Error — unexpected condition.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "503": {
+              "description": "Service Unavailable — temporarily unable to handle request.",
+              "headers": {
+                "Retry-After": {
+                  "description": "Suggested seconds to wait.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              },
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/public/build/SendResetMailPage.5c26d47fb6199869ae0d.js": {
+        "get": {
+          "summary": "GET /public/build/SendResetMailPage.5c26d47fb6199869ae0d.js",
+          "description": "Retrieves send reset mail page.5c26d47fb6199869ae0d.js record(s). Recovered from 2 legacy stream records and statistically verified.",
+          "operationId": "getPublicBuildSendResetMailPage.5c26d47fb6199869ae0d.js",
+          "tags": [
+            "Public"
+          ],
+          "parameters": [],
+          "responses": {
+            "200": {
+              "description": "Successful response. Recovered from 2 legacy stream record(s).",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/PublicBuild6029Ced17922ce65e4fd1ef9JsGetResponse"
+                  }
+                }
+              },
+              "headers": {
+                "X-Request-ID": {
+                  "description": "Unique request identifier for tracing.",
+                  "schema": {
+                    "type": "string",
+                    "format": "uuid"
+                  }
+                },
+                "X-Total-Count": {
+                  "description": "Total matching records (list endpoints).",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              }
+            },
+            "400": {
+              "description": "Bad Request — malformed syntax.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized — missing or invalid credentials.",
+              "headers": {
+                "WWW-Authenticate": {
+                  "description": "Authentication challenge.",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              },
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/UnauthorizedError"
+                  }
+                }
+              }
+            },
+            "403": {
+              "description": "Forbidden — insufficient permissions.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "404": {
+              "description": "Not Found — resource does not exist.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "409": {
+              "description": "Conflict — current state prevents this operation.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ConflictError"
+                  }
+                }
+              }
+            },
+            "422": {
+              "description": "Unprocessable Entity — semantic validation errors.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ValidationError"
+                  }
+                }
+              }
+            },
+            "429": {
+              "description": "Too Many Requests — rate limit exceeded.",
+              "headers": {
+                "Retry-After": {
+                  "description": "Seconds to wait before retrying.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                },
+                "X-RateLimit-Limit": {
+                  "description": "Request limit per window.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                },
+                "X-RateLimit-Remaining": {
+                  "description": "Requests remaining.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                },
+                "X-RateLimit-Reset": {
+                  "description": "Reset Unix timestamp.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              },
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/RateLimitError"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal Server Error — unexpected condition.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "503": {
+              "description": "Service Unavailable — temporarily unable to handle request.",
+              "headers": {
+                "Retry-After": {
+                  "description": "Suggested seconds to wait.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              },
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/api/user/password/send-reset-email": {
+        "post": {
+          "summary": "POST /api/user/password/send-reset-email",
+          "description": "Creates send reset email record(s). Recovered from 12 legacy stream records and statistically verified.",
+          "operationId": "postUserPasswordSend-reset-email",
+          "tags": [
+            "User"
+          ],
+          "parameters": [],
+          "responses": {
+            "200": {
+              "description": "Successful response. Recovered from 12 legacy stream record(s).",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/UserPasswordSendResetEmailPostResponse"
+                  }
+                }
+              },
+              "headers": {
+                "X-Request-ID": {
+                  "description": "Unique request identifier for tracing.",
+                  "schema": {
+                    "type": "string",
+                    "format": "uuid"
+                  }
+                },
+                "X-Total-Count": {
+                  "description": "Total matching records (list endpoints).",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              }
+            },
+            "400": {
+              "description": "Bad Request — malformed syntax.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized — missing or invalid credentials.",
+              "headers": {
+                "WWW-Authenticate": {
+                  "description": "Authentication challenge.",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              },
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/UnauthorizedError"
+                  }
+                }
+              }
+            },
+            "403": {
+              "description": "Forbidden — insufficient permissions.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "404": {
+              "description": "Not Found — resource does not exist.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "409": {
+              "description": "Conflict — current state prevents this operation.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ConflictError"
+                  }
+                }
+              }
+            },
+            "422": {
+              "description": "Unprocessable Entity — semantic validation errors.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ValidationError"
+                  }
+                }
+              }
+            },
+            "429": {
+              "description": "Too Many Requests — rate limit exceeded.",
+              "headers": {
+                "Retry-After": {
+                  "description": "Seconds to wait before retrying.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                },
+                "X-RateLimit-Limit": {
+                  "description": "Request limit per window.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                },
+                "X-RateLimit-Remaining": {
+                  "description": "Requests remaining.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                },
+                "X-RateLimit-Reset": {
+                  "description": "Reset Unix timestamp.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              },
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/RateLimitError"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal Server Error — unexpected condition.",
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            },
+            "503": {
+              "description": "Service Unavailable — temporarily unable to handle request.",
+              "headers": {
+                "Retry-After": {
+                  "description": "Suggested seconds to wait.",
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              },
+              "content": {
+                "application/problem+json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProblemDetails"
+                  }
+                }
+              }
+            }
+          },
+          "requestBody": {
+            "required": true,
+            "description": "Request payload for POST /api/user/password/send-reset-email.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserPasswordSendResetEmailPostResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "components": {
+      "schemas": {
+        "LoginGetResponse": {
+          "type": "object",
+          "properties": {},
+          "example": {}
+        },
+        "PublicBuild6029Ced17922ce65e4fd1ef9JsGetResponse": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "description": "The [] attribute of this entity."
+          }
+        },
+        "PublicBuild522E579a60fe94dd7b6ef93JsGetResponse": {
+          "oneOf": [
+            {
+              "type": "array",
+              "items": {}
+            },
+            {
+              "type": "object",
+              "additionalProperties": true
+            }
+          ]
+        },
+        "UserPasswordSendResetEmailPostResponse": {
+          "type": "object",
+          "properties": {
+            "message": {
+              "type": "string",
+              "example": "Failed to send email",
+              "description": "Free-text narrative for message. May contain Markdown."
+            }
+          },
+          "required": [
+            "message"
+          ],
+          "example": {
+            "message": "Failed to send email"
+          }
+        },
+        "LoginPostResponse": {
+          "type": "object",
+          "properties": {
+            "message": {
+              "type": "string",
+              "enum": [
+                "Invalid username or password"
+              ],
+              "example": "Invalid username or password",
+              "description": "Free-text narrative for message. May contain Markdown."
+            },
+            "messageId": {
+              "type": "string",
+              "format": "hostname",
+              "enum": [
+                "password-auth.failed"
+              ],
+              "example": "password-auth.failed",
+              "description": "Unique identifier for the message. Immutable after creation."
+            },
+            "statusCode": {
+              "type": "integer",
+              "minimum": 401,
+              "maximum": 401,
+              "multipleOf": 401,
+              "enum": [
+                "401"
+              ],
+              "example": 401,
+              "description": "The status code attribute of this entity."
+            }
+          },
+          "required": [
+            "message",
+            "messageId",
+            "statusCode"
+          ],
+          "example": {
+            "statusCode": 401,
+            "messageId": "password-auth.failed",
+            "message": "Invalid username or password"
+          }
+        },
+        "ProblemDetails": {
+          "type": "object",
+          "description": "RFC 7807 Problem Details for HTTP APIs.",
+          "required": [
+            "type",
+            "title",
+            "status"
+          ],
+          "properties": {
+            "type": {
+              "type": "string",
+              "format": "uri",
+              "description": "A URI reference identifying the problem type."
+            },
+            "title": {
+              "type": "string",
+              "description": "Short, human-readable summary of the problem."
+            },
+            "status": {
+              "type": "integer",
+              "minimum": 100,
+              "maximum": 599,
+              "description": "HTTP status code."
+            },
+            "detail": {
+              "type": "string",
+              "description": "Human-readable explanation for this occurrence."
+            },
+            "instance": {
+              "type": "string",
+              "format": "uri",
+              "nullable": true,
+              "description": "URI of the specific problem instance."
+            }
+          },
+          "example": {
+            "type": "https://errors.example.com/not-found",
+            "title": "Not Found",
+            "status": 404,
+            "detail": "The resource could not be located."
+          }
+        },
+        "ValidationError": {
+          "allOf": [
+            {
+              "$ref": "#/components/schemas/ProblemDetails"
+            },
+            {
+              "type": "object",
+              "description": "Extended problem details for 422 responses.",
+              "properties": {
+                "errors": {
+                  "type": "array",
+                  "description": "Field-level validation failures.",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "field",
+                      "message"
+                    ],
+                    "properties": {
+                      "field": {
+                        "type": "string",
+                        "description": "The field that failed validation."
+                      },
+                      "message": {
+                        "type": "string",
+                        "description": "Human-readable validation failure description."
+                      },
+                      "code": {
+                        "type": "string",
+                        "nullable": true,
+                        "description": "Machine-readable error code."
+                      },
+                      "value": {
+                        "nullable": true,
+                        "description": "The rejected value, if safe to expose."
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "UnauthorizedError": {
+          "allOf": [
+            {
+              "$ref": "#/components/schemas/ProblemDetails"
+            },
+            {
+              "type": "object",
+              "description": "Authentication failure details.",
+              "properties": {
+                "auth_scheme": {
+                  "type": "string",
+                  "example": "Bearer",
+                  "description": "Expected authentication scheme."
+                },
+                "realm": {
+                  "type": "string",
+                  "nullable": true,
+                  "description": "Protection space identifier."
+                }
+              }
+            }
+          ]
+        },
+        "RateLimitError": {
+          "allOf": [
+            {
+              "$ref": "#/components/schemas/ProblemDetails"
+            },
+            {
+              "type": "object",
+              "description": "Rate-limit exceeded details.",
+              "properties": {
+                "retry_after": {
+                  "type": "integer",
+                  "description": "Seconds until the rate-limit window resets."
+                },
+                "limit": {
+                  "type": "integer",
+                  "description": "Total requests allowed per window."
+                },
+                "remaining": {
+                  "type": "integer",
+                  "description": "Requests remaining in current window."
+                },
+                "reset_timestamp": {
+                  "type": "string",
+                  "format": "date-time",
+                  "description": "When the window resets."
+                }
+              }
+            }
+          ]
+        },
+        "ConflictError": {
+          "allOf": [
+            {
+              "$ref": "#/components/schemas/ProblemDetails"
+            },
+            {
+              "type": "object",
+              "description": "Resource conflict details.",
+              "properties": {
+                "conflicting_field": {
+                  "type": "string",
+                  "nullable": true,
+                  "description": "Field that caused the conflict."
+                },
+                "existing_value": {
+                  "nullable": true,
+                  "description": "Current value of the conflicting field."
+                }
+              }
+            }
+          ]
+        }
+      },
+      "securitySchemes": {
+        "BearerAuth": {
+          "type": "http",
+          "scheme": "bearer",
+          "bearerFormat": "JWT",
+          "description": "JWT Bearer token. Header: Authorization: Bearer <token>"
+        },
+        "ApiKeyAuth": {
+          "type": "apiKey",
+          "in": "header",
+          "name": "X-API-Key",
+          "description": "API key via request header."
+        },
+        "BasicAuth": {
+          "type": "http",
+          "scheme": "basic",
+          "description": "HTTP Basic authentication (RFC 7617)."
+        }
+      },
+      "parameters": {
+        "PageParam": {
+          "name": "page",
+          "in": "query",
+          "schema": {
+            "type": "integer",
+            "minimum": 1,
+            "default": 1
+          },
+          "description": "Page number (1-based offset pagination)."
+        },
+        "LimitParam": {
+          "name": "limit",
+          "in": "query",
+          "schema": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 100,
+            "default": 20
+          },
+          "description": "Records per page."
+        },
+        "CursorParam": {
+          "name": "cursor",
+          "in": "query",
+          "schema": {
+            "type": "string"
+          },
+          "description": "Opaque cursor for cursor-based pagination."
+        },
+        "SortParam": {
+          "name": "sort",
+          "in": "query",
+          "schema": {
+            "type": "string"
+          },
+          "description": "Sort field. Prefix with - for descending (e.g. -created_at)."
+        },
+        "FieldsParam": {
+          "name": "fields",
+          "in": "query",
+          "schema": {
+            "type": "string"
+          },
+          "description": "Comma-separated list of fields to return (sparse fieldsets)."
+        },
+        "SearchParam": {
+          "name": "q",
+          "in": "query",
+          "schema": {
+            "type": "string"
+          },
+          "description": "Full-text search query."
+        }
+      },
+      "headers": {
+        "X-Request-ID": {
+          "description": "Unique request identifier.",
+          "schema": {
+            "type": "string",
+            "format": "uuid"
+          }
+        },
+        "X-RateLimit-Limit": {
+          "description": "Request limit per window.",
+          "schema": {
+            "type": "integer"
+          }
+        },
+        "X-RateLimit-Remaining": {
+          "description": "Requests remaining.",
+          "schema": {
+            "type": "integer"
+          }
+        },
+        "X-RateLimit-Reset": {
+          "description": "Window reset Unix timestamp.",
+          "schema": {
+            "type": "integer"
+          }
+        },
+        "X-Total-Count": {
+          "description": "Total matching records.",
+          "schema": {
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "security": [
+      {
+        "BearerAuth": []
+      }
+    ],
+    "x-tagGroups": [
+      {
+        "name": "Recovered Endpoints",
+        "tags": [
+          "Login",
+          "Public",
+          "User"
+        ]
+      }
+    ]
+  }

@@ -1,0 +1,4907 @@
+[ CLI ] Starting Sovereign Analysis on: keycloak4_openapi.json...
+{"ts":"2026-06-11T06:20:29.538Z","level":"INFO","module":"SpecNormalizer_v5.1","message":"Spec version detected: 3.0.1"}
+{"ts":"2026-06-11T06:20:29.539Z","level":"DEBUG","module":"SpecNormalizer_v5.1","message":"Registered 3 security scheme nodes"}
+{"ts":"2026-06-11T06:20:29.544Z","level":"INFO","module":"SpecNormalizer_v5.1","message":"Endpoint edges built","endpoints":17,"PATH_CHILD":10,"PUBLIC_TO_PROTECTED":0,"ADMIN_REACHABLE":0,"AUTH_BYPASS":0,"total_new_edges":10}
+{"ts":"2026-06-11T06:20:29.544Z","level":"INFO","module":"SpecNormalizer_v5.1","message":"Spec normalization complete","version":"3.0.1","nodes_built":55,"duration_ms":7}
+[GRAPH] Constructed: 55 nodes, 226 edges (8ms)
+{"ts":"2026-06-11T06:20:29.567Z","level":"INFO","module":"ProtocolAnalyzer_v6.0","message":"ProtocolAnalyzer v6.0 initialized"}
+{"ts":"2026-06-11T06:20:29.569Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"DataScanner Ultra v6.0 initialized — Context-First Architecture","runtime_ports_active":{"samples":0,"behavioral":0,"overrides":0}}
+{"ts":"2026-06-11T06:20:29.569Z","level":"INFO","module":"LoggingMonitor_Ultra_v5.1","message":"LoggingMonitor Ultra v5.1 initialized"}
+{"ts":"2026-06-11T06:20:29.570Z","level":"INFO","module":"WebhookAnalyzer_Ultra_v6.0","message":"WebhookAnalyzer Ultra v6.0 initialized — Context-First Architecture"}
+{"ts":"2026-06-11T06:20:29.571Z","level":"INFO","module":"ProtocolAnalyzer_v6.0","message":"ProtocolAnalyzer_v6.0 starting protocol detection..."}
+{"ts":"2026-06-11T06:20:29.572Z","level":"WARN","module":"ProtocolAnalyzer_v6.0","message":"[Phase 0] Endpoint transport INFERRED — decisions deferred","nodeId":"GET /realms/master/account","transportSource":"DEFAULT","transportConf":0.1}
+{"ts":"2026-06-11T06:20:29.572Z","level":"WARN","module":"ProtocolAnalyzer_v6.0","message":"[Phase 0] Endpoint transport INFERRED — decisions deferred","nodeId":"GET /resources/k6ez4/common/keycloak/vendor/react/react-jsx-runtime.production.min.js","transportSource":"DEFAULT","transportConf":0.1}
+{"ts":"2026-06-11T06:20:29.572Z","level":"WARN","module":"ProtocolAnalyzer_v6.0","message":"[Phase 0] Endpoint transport INFERRED — decisions deferred","nodeId":"GET /resources/k6ez4/common/keycloak/vendor/react/react.production.min.js","transportSource":"DEFAULT","transportConf":0.1}
+{"ts":"2026-06-11T06:20:29.572Z","level":"WARN","module":"ProtocolAnalyzer_v6.0","message":"[Phase 0] Endpoint transport INFERRED — decisions deferred","nodeId":"GET /resources/k6ez4/common/keycloak/vendor/react-dom/react-dom.production.min.js","transportSource":"DEFAULT","transportConf":0.1}
+{"ts":"2026-06-11T06:20:29.572Z","level":"WARN","module":"ProtocolAnalyzer_v6.0","message":"[Phase 0] Endpoint transport INFERRED — decisions deferred","nodeId":"GET /resources/master/account/en","transportSource":"DEFAULT","transportConf":0.1}
+{"ts":"2026-06-11T06:20:29.572Z","level":"WARN","module":"ProtocolAnalyzer_v6.0","message":"[Phase 0] Endpoint transport INFERRED — decisions deferred","nodeId":"GET /realms/master/protocol/openid-connect/3p-cookies/step1.html","transportSource":"DEFAULT","transportConf":0.1}
+{"ts":"2026-06-11T06:20:29.572Z","level":"WARN","module":"ProtocolAnalyzer_v6.0","message":"[Phase 0] Endpoint transport INFERRED — decisions deferred","nodeId":"GET /realms/master/protocol/openid-connect/login-status-iframe.html","transportSource":"DEFAULT","transportConf":0.1}
+{"ts":"2026-06-11T06:20:29.572Z","level":"WARN","module":"ProtocolAnalyzer_v6.0","message":"[Phase 0] Endpoint transport INFERRED — decisions deferred","nodeId":"POST /realms/master/protocol/openid-connect/token","transportSource":"DEFAULT","transportConf":0.1}
+{"ts":"2026-06-11T06:20:29.572Z","level":"WARN","module":"ProtocolAnalyzer_v6.0","message":"[Phase 0] Endpoint transport INFERRED — decisions deferred","nodeId":"GET /resources/k6ez4/account/keycloak.v3/content.json","transportSource":"DEFAULT","transportConf":0.1}
+{"ts":"2026-06-11T06:20:29.573Z","level":"WARN","module":"ProtocolAnalyzer_v6.0","message":"[Phase 0] Endpoint transport INFERRED — decisions deferred","nodeId":"GET /resources/k6ez4/account/keycloak.v3/assets/PersonalInfo-B3qlHebj.js","transportSource":"DEFAULT","transportConf":0.1}
+{"ts":"2026-06-11T06:20:29.573Z","level":"WARN","module":"ProtocolAnalyzer_v6.0","message":"[Phase 0] Endpoint transport INFERRED — decisions deferred","nodeId":"GET /realms/master/account/supportedLocales","transportSource":"DEFAULT","transportConf":0.1}
+{"ts":"2026-06-11T06:20:29.573Z","level":"WARN","module":"ProtocolAnalyzer_v6.0","message":"[Phase 0] Endpoint transport INFERRED — decisions deferred","nodeId":"GET /realms/master/account/","transportSource":"DEFAULT","transportConf":0.1}
+{"ts":"2026-06-11T06:20:29.573Z","level":"WARN","module":"ProtocolAnalyzer_v6.0","message":"[Phase 0] Endpoint transport INFERRED — decisions deferred","nodeId":"GET /resources/k6ez4/account/keycloak.v3/assets/DataListItemRow-CXfELLqF.js","transportSource":"DEFAULT","transportConf":0.1}
+{"ts":"2026-06-11T06:20:29.573Z","level":"WARN","module":"ProtocolAnalyzer_v6.0","message":"[Phase 0] Endpoint transport INFERRED — decisions deferred","nodeId":"GET /realms/master/account/credentials","transportSource":"DEFAULT","transportConf":0.1}
+{"ts":"2026-06-11T06:20:29.573Z","level":"WARN","module":"ProtocolAnalyzer_v6.0","message":"[Phase 0] Endpoint transport INFERRED — decisions deferred","nodeId":"GET /realms/master/account/sessions/devices","transportSource":"DEFAULT","transportConf":0.1}
+{"ts":"2026-06-11T06:20:29.573Z","level":"WARN","module":"ProtocolAnalyzer_v6.0","message":"[Phase 0] Endpoint transport INFERRED — decisions deferred","nodeId":"GET /realms/master/account/linked-accounts","transportSource":"DEFAULT","transportConf":0.1}
+{"ts":"2026-06-11T06:20:29.573Z","level":"WARN","module":"ProtocolAnalyzer_v6.0","message":"[Phase 0] Endpoint transport INFERRED — decisions deferred","nodeId":"GET /realms/master/account/applications","transportSource":"DEFAULT","transportConf":0.1}
+{"ts":"2026-06-11T06:20:29.573Z","level":"INFO","module":"ProtocolAnalyzer_v6.0","message":"Phase 0 complete","endpointContexts":17,"globalUncertainty":0.38575000000000004}
+{"ts":"2026-06-11T06:20:29.573Z","level":"INFO","module":"ProtocolAnalyzer_v6.0","message":"No global servers defined — transport protocol unknown. OAS3 default: server serving the spec file."}
+{"ts":"2026-06-11T06:20:29.573Z","level":"INFO","module":"ProtocolAnalyzer_v6.0","message":"Processing 17 endpoints for protocol flags."}
+{"ts":"2026-06-11T06:20:29.574Z","level":"INFO","module":"ProtocolAnalyzer_v6.0","message":"Protocol analysis complete.","endpoints_processed":17,"global_has_http":false,"global_has_https":false,"global_has_ws":false,"global_has_wss":false}
+{"ts":"2026-06-11T06:20:29.576Z","level":"INFO","module":"AuthAnalyzer_v2.0_ContextFirst","message":"AuthAnalyzer v2.0 — Context-First Architecture"}
+{"ts":"2026-06-11T06:20:29.578Z","level":"INFO","module":"AuthAnalyzer_v2.0_ContextFirst","message":"Shared context built","hasContextEngine":true,"schemesFound":3,"globalUncertainty":0.38575000000000004}
+{"ts":"2026-06-11T06:20:29.579Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"DataScanner v6.0 — Context-First — 55 nodes","runtime_samples":0,"behavioral_sigs":0,"classification_overrides":0}
+{"ts":"2026-06-11T06:20:29.579Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Phase 0: Context-First Initialization"}
+{"ts":"2026-06-11T06:20:29.582Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Phase 0 complete","globalApiContext":"healthcare","globalDataRisk":"high","globalUncertainty":0.38575000000000004,"endpointContexts":17}
+{"ts":"2026-06-11T06:20:29.582Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Phase 1: Schema Extraction & Indexing"}
+{"ts":"2026-06-11T06:20:29.584Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Extracted 206 schema descriptors."}
+{"ts":"2026-06-11T06:20:29.584Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Phase 2: Hybrid Field Analysis (Pattern + Name + Format + Entropy + Context)"}
+{"ts":"2026-06-11T06:20:29.598Z","level":"INFO","module":"CorsRateLimiter","version":"6.0.0","message":"CorsRateLimiter v6.0 — 55 nodes"}
+{"ts":"2026-06-11T06:20:29.599Z","level":"INFO","module":"LoggingMonitor_Ultra_v5.1","message":"Engaging Log Security & Traceability Scan..."}
+{"ts":"2026-06-11T06:20:29.600Z","level":"INFO","module":"LoggingMonitor_Ultra_v5.1","message":"Phase 0 complete","endpointContexts":17}
+{"ts":"2026-06-11T06:20:29.600Z","level":"INFO","module":"WebhookAnalyzer_Ultra_v6.0","message":"Scanning for Webhooks & Callbacks..."}
+{"ts":"2026-06-11T06:20:29.600Z","level":"INFO","module":"WebhookAnalyzer_Ultra_v6.0","message":"Phase 0 complete","globalUncertainty":0.38575000000000004,"endpointContexts":17}
+{"ts":"2026-06-11T06:20:29.601Z","level":"INFO","module":"WebhookAnalyzer_Ultra_v6.0","message":"No webhooks detected in specification."}
+{"ts":"2026-06-11T06:20:29.602Z","level":"INFO","module":"AuthAnalyzer_v2.0_ContextFirst","message":"Analyzing 17 endpoints with context-awareness"}
+{"ts":"2026-06-11T06:20:29.605Z","level":"INFO","module":"LoggingMonitor_Ultra_v5.1","message":"Engine 1: Global Traceability Audit"}
+{"ts":"2026-06-11T06:20:29.619Z","level":"INFO","module":"LoggingMonitor_Ultra_v5.1","message":"Engine 2: Sensitive URL Parameter Audit"}
+{"ts":"2026-06-11T06:20:29.622Z","level":"INFO","module":"LoggingMonitor_Ultra_v5.1","message":"Engine 3: CRLF Log Injection Detection"}
+{"ts":"2026-06-11T06:20:29.624Z","level":"INFO","module":"CorsRateLimiter","version":"6.0.0","message":"CorsRateLimiter v6.0 complete","duration_ms":25,"cors_misconfigurations":0,"rate_limit_issues":9,"dos_risks":0,"upload_risks":0,"context_hits":34,"context_misses":0}
+{"ts":"2026-06-11T06:20:29.624Z","level":"INFO","module":"LoggingMonitor_Ultra_v5.1","message":"Engine 4: Error Response Leakage Scan"}
+{"ts":"2026-06-11T06:20:29.624Z","level":"INFO","module":"LoggingMonitor_Ultra_v5.1","message":"Engine 5: Sensitive Response Field Audit"}
+{"ts":"2026-06-11T06:20:29.625Z","level":"INFO","module":"LoggingMonitor_Ultra_v5.1","message":"Engine 6: Audit Logging Gap Detection"}
+{"ts":"2026-06-11T06:20:29.626Z","level":"INFO","module":"LoggingMonitor_Ultra_v5.1","message":"Engine 7: Context-First Audit Logging Rules"}
+{"ts":"2026-06-11T06:20:29.627Z","level":"INFO","module":"LoggingMonitor_Ultra_v5.1","message":"Log Security Analysis Complete","duration_ms":28,"traceability_gaps":0,"injection_risks":10,"sensitive_url_params":0,"error_leaks":0,"sensitive_responses":0}
+{"ts":"2026-06-11T06:20:29.629Z","level":"INFO","module":"AuthAnalyzer_v2.0_ContextFirst","message":"Analysis complete","duration":"54ms","endpoints":17,"risks":53,"contextUsage":{"inferredAuthUsed":17,"specAuthUsed":17,"contextPrimary":0}}
+{"ts":"2026-06-11T06:20:29.633Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Phase 3: Composite Sensitivity Clustering"}
+{"ts":"2026-06-11T06:20:29.634Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Phase 4: Contextual Risk Evaluation (Context-First)"}
+{"ts":"2026-06-11T06:20:29.635Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Evaluating contextual risk rules (Context-First)..."}
+{"ts":"2026-06-11T06:20:29.636Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Phase 5: Context-Aware New Rules (v6.0)"}
+{"ts":"2026-06-11T06:20:29.637Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Context-aware rules fired: 0 new findings"}
+{"ts":"2026-06-11T06:20:29.637Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Phase 5b: AI Security Direct Scan (v6.1)"}
+{"ts":"2026-06-11T06:20:29.640Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Phase 6: Graph-Based Sensitivity Flag Propagation"}
+{"ts":"2026-06-11T06:20:29.640Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Phase 7: Context-Aware False Positive Reduction"}
+{"ts":"2026-06-11T06:20:29.640Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Applying context-aware false positive reduction..."}
+{"ts":"2026-06-11T06:20:29.641Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"False positive reduction complete: 24 findings removed."}
+{"ts":"2026-06-11T06:20:29.641Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"DataScanner v6.0 Analysis Complete","duration_ms":62,"schemas_scanned":206,"fields_analyzed":125,"sensitive_found":17,"false_positives_removed":24,"runtime_signals_used":0,"context_amplifications":0,"context_suppressions":0,"context_first_hits":17,"new_rules_triggered":0,"findings":{"CRITICAL":1,"HIGH":4,"MEDIUM":0,"LOW":10},"data_categories":{"credentials":4,"secrets":0,"pii":1,"pci":0}}
+{"ts":"2026-06-11T06:20:29.643Z","level":"INFO","module":"ComplianceEngine_Ultra_v6.0","message":"ComplianceEngine Ultra v6.0 initialized — Context-First"}
+{"ts":"2026-06-11T06:20:29.643Z","level":"INFO","module":"ComplianceEngine_Ultra_v6.0","message":"Starting Regulatory Compliance Audit v6.0 — Context-First..."}
+{"ts":"2026-06-11T06:20:29.644Z","level":"INFO","module":"ComplianceEngine_Ultra_v6.0","message":"Phase 0-A: Context built for 17 endpoints","contextEngineAvailable":true}
+{"ts":"2026-06-11T06:20:29.645Z","level":"INFO","module":"ComplianceEngine_Ultra_v6.0","message":"API Context detected — Healthcare:true Financial:false EU:true"}
+{"ts":"2026-06-11T06:20:29.647Z","level":"INFO","module":"ComplianceEngine_Ultra_v6.0","message":"Phase 0-C: Injected 10 independent compliance findings","hipaaImpacts":0,"pciImpacts":0,"gdprImpacts":10}
+{"ts":"2026-06-11T06:20:29.648Z","level":"INFO","module":"ComplianceEngine_Ultra_v6.0","message":"Mapping 74 findings to compliance standards."}
+{"ts":"2026-06-11T06:20:29.649Z","level":"INFO","module":"ComplianceEngine_Ultra_v6.0","message":"Compliance Mapping Complete.","independentFindings":10,"complianceViolations":32}
+{"ts":"2026-06-11T06:20:29.650Z","level":"WARN","module":"ComplianceEngine_Ultra_v6.0","message":"[GDPR] AT_RISK — 4 violations"}
+{"ts":"2026-06-11T06:20:29.650Z","level":"WARN","module":"ComplianceEngine_Ultra_v6.0","message":"[HIPAA] AT_RISK — 4 violations"}
+{"ts":"2026-06-11T06:20:29.650Z","level":"INFO","module":"ComplianceEngine_Ultra_v6.0","message":"[PCI_DSS] COMPLIANT — 0 violations"}
+{"ts":"2026-06-11T06:20:29.650Z","level":"WARN","module":"ComplianceEngine_Ultra_v6.0","message":"[SOC2] AT_RISK — 9 violations"}
+{"ts":"2026-06-11T06:20:29.650Z","level":"WARN","module":"ComplianceEngine_Ultra_v6.0","message":"[OWASP] AT_RISK — 9 violations"}
+{"ts":"2026-06-11T06:20:29.650Z","level":"INFO","module":"ScoringEngine_v5.2","message":"Scoring engine starting","nodes":55}
+{"ts":"2026-06-11T06:20:29.650Z","level":"INFO","module":"ScoringEngine_v5.2","message":"Evaluating 21 nodes"}
+{"ts":"2026-06-11T06:20:29.652Z","level":"INFO","module":"ScoringEngine_v5.2","message":"Scoring complete","global_score":48,"grade":"D","endpoints":17,"weighted_risk":4636.08,"breakdown":{"CRITICAL":1,"HIGH":42,"MEDIUM":20,"LOW":10,"INFO":1,"AI_CRITICAL":0},"runtime_used":false,"rule_failures":0,"duration_ms":2}
+Analysis_1781158829536: 133.429ms
+[ OK ] Analysis Complete.
+[ OK ] Report saved to: /mnt/secure_fort/scratch/white_page_project/white_page_project/api-security-core/SOVEREIGN_REPORTS/keycloak4_openapi_report.json
+--------------------------------------------------
+RAW REPORT (JSON):
+{
+  "engine": "Cortex_Omega_v2.0",
+  "metadata": {
+    "generatedAt": "2026-06-11T06:20:29.669Z",
+    "durationMs": 17,
+    "metrics": {
+      "startTime": 1781158829652,
+      "nodesProcessed": 55,
+      "risksIngested": 74,
+      "risksAfterDedup": 74,
+      "attackPathsFound": 24,
+      "maxAttackDepth": 0,
+      "centralityComputed": true,
+      "centralityMethod": "exact_brandes_55_nodes",
+      "bayesianUpdates": 92,
+      "falsePositivesSuppressed": 0,
+      "suppressionBreakdown": {},
+      "workerThreadsUsed": 0,
+      "workerTimeouts": 0,
+      "crossEngineCorrelations": 0,
+      "peakMemoryMB": 12
+    }
+  },
+  "summary": {
+    "totalRisks": 98,
+    "suppressed": 0,
+    "globalScore": 48,
+    "grade": "D",
+    "riskBreakdown": {
+      "CRITICAL": 0,
+      "HIGH": 34,
+      "MEDIUM": 42,
+      "LOW": 22
+    },
+    "failedRuleCount": 0,
+    "severityCounts": {
+      "CRITICAL": 0,
+      "HIGH": 34,
+      "MEDIUM": 42,
+      "LOW": 22
+    },
+    "complianceReport": {
+      "generatedAt": "2026-06-11T06:20:29.649Z",
+      "standards": {
+        "GDPR": {
+          "violations": [
+            {
+              "riskId": "DATA_PII_EMAIL",
+              "severity": "HIGH",
+              "location": "SCHEMA_#/components/schemas/RealmsMasterAccountUserProfileMetadataTrueGetResponse",
+              "description": "Detected DATA_PII_EMAIL in field 'email' via NAME_ENGINE (confidence: 90%).",
+              "clause": "Art. 5",
+              "requirement": "Data Minimization Principle"
+            },
+            {
+              "severity": "HIGH",
+              "location": "SCHEMA_#/components/schemas/RealmsMasterAccountUserProfileMetadataTrueGetResponse",
+              "description": "Personal Data Impact: Sensitive Field Detected: email",
+              "clause": "GDPR Art. 32",
+              "requirement": "Security of processing personal data"
+            },
+            {
+              "riskId": "DATA_PII",
+              "severity": "HIGH",
+              "location": "/realms/master/account",
+              "description": "Endpoint GET /realms/master/account follows a user-profile path pattern and is likely to return personally identifiable information (PII) such as email, phone number, or other personal data. GDPR Art. 32 requires technical measures to secure the processing of personal data.",
+              "clause": "Art. 5",
+              "requirement": "Data Minimization Principle"
+            },
+            {
+              "severity": "HIGH",
+              "location": "/realms/master/account",
+              "description": "Personal Data Impact: User Profile Endpoint — Likely PII Exposure",
+              "clause": "GDPR Art. 32",
+              "requirement": "Security of processing personal data"
+            }
+          ],
+          "status": "AT_RISK"
+        },
+        "HIPAA": {
+          "violations": [
+            {
+              "riskId": "DATA_PII_EMAIL",
+              "severity": "HIGH",
+              "location": "SCHEMA_#/components/schemas/RealmsMasterAccountUserProfileMetadataTrueGetResponse",
+              "description": "Detected DATA_PII_EMAIL in field 'email' via NAME_ENGINE (confidence: 90%).",
+              "clause": "§164.514",
+              "requirement": "De-identification of PHI"
+            },
+            {
+              "severity": "HIGH",
+              "location": "SCHEMA_#/components/schemas/RealmsMasterAccountUserProfileMetadataTrueGetResponse",
+              "description": "Sensitive Data: Sensitive Field Detected: email",
+              "clause": "§164.514",
+              "requirement": "De-identification of PHI required"
+            },
+            {
+              "riskId": "DATA_PII",
+              "severity": "HIGH",
+              "location": "/realms/master/account",
+              "description": "Endpoint GET /realms/master/account follows a user-profile path pattern and is likely to return personally identifiable information (PII) such as email, phone number, or other personal data. GDPR Art. 32 requires technical measures to secure the processing of personal data.",
+              "clause": "§164.514",
+              "requirement": "De-identification of PHI"
+            },
+            {
+              "severity": "HIGH",
+              "location": "/realms/master/account",
+              "description": "Sensitive Data: User Profile Endpoint — Likely PII Exposure",
+              "clause": "§164.514",
+              "requirement": "De-identification of PHI required"
+            }
+          ],
+          "status": "AT_RISK"
+        },
+        "PCI_DSS": {
+          "violations": [],
+          "status": "COMPLIANT"
+        },
+        "SOC2": {
+          "violations": [
+            {
+              "riskId": "RATE_LIMIT_MISSING_SENSITIVE",
+              "severity": "HIGH",
+              "location": "/resources/k6ez4/common/keycloak/vendor/react/react-jsx-runtime.production.min.js",
+              "description": "GET /resources/k6ez4/common/keycloak/vendor/react/react-jsx-runtime.production.min.js operates on highly sensitive data (pathSensitivity=0.95) with weak authentication and no rate limiting.",
+              "clause": "A1.2",
+              "requirement": "Availability / DDoS Protection"
+            },
+            {
+              "riskId": "RATE_LIMIT_MISSING_SENSITIVE",
+              "severity": "HIGH",
+              "location": "/resources/k6ez4/common/keycloak/vendor/react/react.production.min.js",
+              "description": "GET /resources/k6ez4/common/keycloak/vendor/react/react.production.min.js operates on highly sensitive data (pathSensitivity=0.95) with weak authentication and no rate limiting.",
+              "clause": "A1.2",
+              "requirement": "Availability / DDoS Protection"
+            },
+            {
+              "riskId": "RATE_LIMIT_MISSING_SENSITIVE",
+              "severity": "HIGH",
+              "location": "/resources/k6ez4/common/keycloak/vendor/react-dom/react-dom.production.min.js",
+              "description": "GET /resources/k6ez4/common/keycloak/vendor/react-dom/react-dom.production.min.js operates on highly sensitive data (pathSensitivity=0.95) with weak authentication and no rate limiting.",
+              "clause": "A1.2",
+              "requirement": "Availability / DDoS Protection"
+            },
+            {
+              "riskId": "RATE_LIMIT_MISSING_LOGIN",
+              "severity": "HIGH",
+              "location": "/realms/master/protocol/openid-connect/login-status-iframe.html",
+              "description": "GET /realms/master/protocol/openid-connect/login-status-iframe.html handles authentication but has no documented rate limiting. Vulnerable to brute force, credential stuffing, and password spraying attacks.",
+              "clause": "A1.2",
+              "requirement": "Availability / DDoS Protection"
+            },
+            {
+              "riskId": "RATE_LIMIT_MISSING_LOGIN",
+              "severity": "HIGH",
+              "location": "/realms/master/protocol/openid-connect/token",
+              "description": "POST /realms/master/protocol/openid-connect/token handles authentication but has no documented rate limiting. Vulnerable to brute force, credential stuffing, and password spraying attacks.",
+              "clause": "A1.2",
+              "requirement": "Availability / DDoS Protection"
+            },
+            {
+              "riskId": "RATE_LIMIT_MISSING_SENSITIVE",
+              "severity": "HIGH",
+              "location": "/resources/k6ez4/account/keycloak.v3/content.json",
+              "description": "GET /resources/k6ez4/account/keycloak.v3/content.json operates on highly sensitive data (pathSensitivity=0.95) with weak authentication and no rate limiting.",
+              "clause": "A1.2",
+              "requirement": "Availability / DDoS Protection"
+            },
+            {
+              "riskId": "RATE_LIMIT_MISSING_SENSITIVE",
+              "severity": "HIGH",
+              "location": "/resources/k6ez4/account/keycloak.v3/assets/PersonalInfo-B3qlHebj.js",
+              "description": "GET /resources/k6ez4/account/keycloak.v3/assets/PersonalInfo-B3qlHebj.js operates on highly sensitive data (pathSensitivity=0.95) with weak authentication and no rate limiting.",
+              "clause": "A1.2",
+              "requirement": "Availability / DDoS Protection"
+            },
+            {
+              "riskId": "RATE_LIMIT_MISSING_SENSITIVE",
+              "severity": "HIGH",
+              "location": "/resources/k6ez4/account/keycloak.v3/assets/DataListItemRow-CXfELLqF.js",
+              "description": "GET /resources/k6ez4/account/keycloak.v3/assets/DataListItemRow-CXfELLqF.js operates on highly sensitive data (pathSensitivity=0.95) with weak authentication and no rate limiting.",
+              "clause": "A1.2",
+              "requirement": "Availability / DDoS Protection"
+            },
+            {
+              "riskId": "RATE_LIMIT_MISSING_SENSITIVE",
+              "severity": "HIGH",
+              "location": "/realms/master/account/credentials",
+              "description": "GET /realms/master/account/credentials operates on highly sensitive data (pathSensitivity=0.95) with weak authentication and no rate limiting.",
+              "clause": "A1.2",
+              "requirement": "Availability / DDoS Protection"
+            }
+          ],
+          "status": "AT_RISK"
+        },
+        "OWASP": {
+          "violations": [
+            {
+              "riskId": "RATE_LIMIT_MISSING_SENSITIVE",
+              "severity": "HIGH",
+              "location": "/resources/k6ez4/common/keycloak/vendor/react/react-jsx-runtime.production.min.js",
+              "description": "GET /resources/k6ez4/common/keycloak/vendor/react/react-jsx-runtime.production.min.js operates on highly sensitive data (pathSensitivity=0.95) with weak authentication and no rate limiting.",
+              "clause": "API4:2023",
+              "requirement": "Unrestricted Resource Consumption"
+            },
+            {
+              "riskId": "RATE_LIMIT_MISSING_SENSITIVE",
+              "severity": "HIGH",
+              "location": "/resources/k6ez4/common/keycloak/vendor/react/react.production.min.js",
+              "description": "GET /resources/k6ez4/common/keycloak/vendor/react/react.production.min.js operates on highly sensitive data (pathSensitivity=0.95) with weak authentication and no rate limiting.",
+              "clause": "API4:2023",
+              "requirement": "Unrestricted Resource Consumption"
+            },
+            {
+              "riskId": "RATE_LIMIT_MISSING_SENSITIVE",
+              "severity": "HIGH",
+              "location": "/resources/k6ez4/common/keycloak/vendor/react-dom/react-dom.production.min.js",
+              "description": "GET /resources/k6ez4/common/keycloak/vendor/react-dom/react-dom.production.min.js operates on highly sensitive data (pathSensitivity=0.95) with weak authentication and no rate limiting.",
+              "clause": "API4:2023",
+              "requirement": "Unrestricted Resource Consumption"
+            },
+            {
+              "riskId": "RATE_LIMIT_MISSING_LOGIN",
+              "severity": "HIGH",
+              "location": "/realms/master/protocol/openid-connect/login-status-iframe.html",
+              "description": "GET /realms/master/protocol/openid-connect/login-status-iframe.html handles authentication but has no documented rate limiting. Vulnerable to brute force, credential stuffing, and password spraying attacks.",
+              "clause": "API4:2023",
+              "requirement": "Unrestricted Resource Consumption"
+            },
+            {
+              "riskId": "RATE_LIMIT_MISSING_LOGIN",
+              "severity": "HIGH",
+              "location": "/realms/master/protocol/openid-connect/token",
+              "description": "POST /realms/master/protocol/openid-connect/token handles authentication but has no documented rate limiting. Vulnerable to brute force, credential stuffing, and password spraying attacks.",
+              "clause": "API4:2023",
+              "requirement": "Unrestricted Resource Consumption"
+            },
+            {
+              "riskId": "RATE_LIMIT_MISSING_SENSITIVE",
+              "severity": "HIGH",
+              "location": "/resources/k6ez4/account/keycloak.v3/content.json",
+              "description": "GET /resources/k6ez4/account/keycloak.v3/content.json operates on highly sensitive data (pathSensitivity=0.95) with weak authentication and no rate limiting.",
+              "clause": "API4:2023",
+              "requirement": "Unrestricted Resource Consumption"
+            },
+            {
+              "riskId": "RATE_LIMIT_MISSING_SENSITIVE",
+              "severity": "HIGH",
+              "location": "/resources/k6ez4/account/keycloak.v3/assets/PersonalInfo-B3qlHebj.js",
+              "description": "GET /resources/k6ez4/account/keycloak.v3/assets/PersonalInfo-B3qlHebj.js operates on highly sensitive data (pathSensitivity=0.95) with weak authentication and no rate limiting.",
+              "clause": "API4:2023",
+              "requirement": "Unrestricted Resource Consumption"
+            },
+            {
+              "riskId": "RATE_LIMIT_MISSING_SENSITIVE",
+              "severity": "HIGH",
+              "location": "/resources/k6ez4/account/keycloak.v3/assets/DataListItemRow-CXfELLqF.js",
+              "description": "GET /resources/k6ez4/account/keycloak.v3/assets/DataListItemRow-CXfELLqF.js operates on highly sensitive data (pathSensitivity=0.95) with weak authentication and no rate limiting.",
+              "clause": "API4:2023",
+              "requirement": "Unrestricted Resource Consumption"
+            },
+            {
+              "riskId": "RATE_LIMIT_MISSING_SENSITIVE",
+              "severity": "HIGH",
+              "location": "/realms/master/account/credentials",
+              "description": "GET /realms/master/account/credentials operates on highly sensitive data (pathSensitivity=0.95) with weak authentication and no rate limiting.",
+              "clause": "API4:2023",
+              "requirement": "Unrestricted Resource Consumption"
+            }
+          ],
+          "status": "AT_RISK"
+        }
+      },
+      "metrics": {
+        "startTime": 1781158829643,
+        "endTime": null,
+        "complianceViolations": 32,
+        "gdprImpacts": 12,
+        "pciImpacts": 0,
+        "hipaaImpacts": 2,
+        "independentFindings": 10
+      }
+    },
+    "topThreats": [
+      {
+        "title": "JWT_ALGORITHM_NOT_LOCKED",
+        "severity": "HIGH",
+        "score": 84,
+        "probability": "69.4%",
+        "location": "/realms/master/account/credentials",
+        "engines": [
+          "AuthAnalyzer"
+        ]
+      },
+      {
+        "title": "JWT_ALGORITHM_NOT_LOCKED",
+        "severity": "HIGH",
+        "score": 81,
+        "probability": "66.9%",
+        "location": "/realms/master/account",
+        "engines": [
+          "AuthAnalyzer"
+        ]
+      },
+      {
+        "title": "JWT_ALGORITHM_NOT_LOCKED",
+        "severity": "HIGH",
+        "score": 81,
+        "probability": "66.9%",
+        "location": "/realms/master/account/supportedLocales",
+        "engines": [
+          "AuthAnalyzer"
+        ]
+      },
+      {
+        "title": "JWT_ALGORITHM_NOT_LOCKED",
+        "severity": "HIGH",
+        "score": 81,
+        "probability": "66.9%",
+        "location": "/realms/master/account/",
+        "engines": [
+          "AuthAnalyzer"
+        ]
+      },
+      {
+        "title": "JWT_ALGORITHM_NOT_LOCKED",
+        "severity": "HIGH",
+        "score": 81,
+        "probability": "66.3%",
+        "location": "/realms/master/account/sessions/devices",
+        "engines": [
+          "AuthAnalyzer"
+        ]
+      },
+      {
+        "title": "JWT_ALGORITHM_NOT_LOCKED",
+        "severity": "HIGH",
+        "score": 81,
+        "probability": "66.9%",
+        "location": "/realms/master/account/linked-accounts",
+        "engines": [
+          "AuthAnalyzer"
+        ]
+      },
+      {
+        "title": "JWT_ALGORITHM_NOT_LOCKED",
+        "severity": "HIGH",
+        "score": 81,
+        "probability": "66.9%",
+        "location": "/realms/master/account/applications",
+        "engines": [
+          "AuthAnalyzer"
+        ]
+      },
+      {
+        "title": "GDPR Concern: Personal Data Path Without Verified Controls",
+        "severity": "HIGH",
+        "score": 79,
+        "probability": "65.3%",
+        "location": "/realms/master/account/credentials",
+        "engines": [
+          "ComplianceEngine",
+          "ContextEngine"
+        ]
+      },
+      {
+        "title": "High-Sensitivity Endpoint Without Rate Limiting (sensitivity=0.95)",
+        "severity": "HIGH",
+        "score": 77,
+        "probability": "63.6%",
+        "location": "/realms/master/account/credentials",
+        "engines": [
+          "CorsRateLimiter"
+        ]
+      },
+      {
+        "title": "GDPR Concern: Personal Data Path Without Verified Controls",
+        "severity": "HIGH",
+        "score": 76,
+        "probability": "62.8%",
+        "location": "/realms/master/account",
+        "engines": [
+          "ComplianceEngine",
+          "ContextEngine"
+        ]
+      }
+    ],
+    "attackPaths": {
+      "totalDiscovered": 24,
+      "maxDepth": 0,
+      "criticalPaths": 0
+    }
+  },
+  "topology": {
+    "nodeCount": 55,
+    "edgeCount": 226,
+    "centralityMethod": "exact_brandes_55_nodes",
+    "topChokepoints": [
+      {
+        "nodeId": "SCHEMA_#/components/schemas/ValidationError",
+        "centrality": "0.01187980",
+        "path": "SCHEMA_#/components/schemas/ValidationError"
+      },
+      {
+        "nodeId": "SCHEMA_INLINE_5",
+        "centrality": "0.00628931",
+        "path": "SCHEMA_INLINE_5"
+      },
+      {
+        "nodeId": "SCHEMA_#/components/schemas/UnauthorizedError",
+        "centrality": "0.00593990",
+        "path": "SCHEMA_#/components/schemas/UnauthorizedError"
+      },
+      {
+        "nodeId": "SCHEMA_#/components/schemas/ConflictError",
+        "centrality": "0.00593990",
+        "path": "SCHEMA_#/components/schemas/ConflictError"
+      },
+      {
+        "nodeId": "SCHEMA_#/components/schemas/RateLimitError",
+        "centrality": "0.00593990",
+        "path": "SCHEMA_#/components/schemas/RateLimitError"
+      }
+    ]
+  },
+  "results": {
+    "/realms/master/account/credentials": {
+      "method": "GET",
+      "flags": 512,
+      "maxSeverity": "HIGH",
+      "securityScore": 18,
+      "findings": [
+        {
+          "id": "3c575e244a03c713",
+          "type": "JWT_ALGORITHM_NOT_LOCKED",
+          "title": "JWT_ALGORITHM_NOT_LOCKED",
+          "severity": "HIGH",
+          "score": 84,
+          "probability": "69.4%",
+          "centrality": "0.000140",
+          "attackChains": [
+            {
+              "entryPoint": "GET /realms/master/account",
+              "chain": [
+                "GET /realms/master/account",
+                "GET /realms/master/account/credentials"
+              ],
+              "depth": 2
+            },
+            {
+              "entryPoint": "GET /realms/master/account/",
+              "chain": [
+                "GET /realms/master/account/",
+                "GET /realms/master/account/credentials"
+              ],
+              "depth": 2
+            }
+          ],
+          "attackChainsCount": 2,
+          "detectedBy": "AuthAnalyzer",
+          "detectedByEngines": [
+            "AuthAnalyzer"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "JWT_ALGORITHM_NOT_LOCKED"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Reachable via 2 attack path(s), max depth: 2",
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": 0.75,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "b717a5533b293bbd",
+          "type": "GDPR_PII_PATH_UNPROTECTED",
+          "title": "GDPR Concern: Personal Data Path Without Verified Controls",
+          "severity": "HIGH",
+          "score": 79,
+          "probability": "65.3%",
+          "centrality": "0.000140",
+          "attackChains": [
+            {
+              "entryPoint": "GET /realms/master/account",
+              "chain": [
+                "GET /realms/master/account",
+                "GET /realms/master/account/credentials"
+              ],
+              "depth": 2
+            },
+            {
+              "entryPoint": "GET /realms/master/account/",
+              "chain": [
+                "GET /realms/master/account/",
+                "GET /realms/master/account/credentials"
+              ],
+              "depth": 2
+            }
+          ],
+          "attackChainsCount": 2,
+          "detectedBy": "ComplianceEngine",
+          "detectedByEngines": [
+            "ComplianceEngine",
+            "ContextEngine"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "GDPR_PII_PATH_UNPROTECTED"
+          ],
+          "description": "Endpoint GET /realms/master/account/credentials follows a personal data path pattern (matched: account) without spec-verified authentication. GDPR Art. 32 requires appropriate technical measures to secure personal data processing. Auth source: CROSS_VALIDATED — not sufficient for GDPR compliance decisions.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Reachable via 2 attack path(s), max depth: 2",
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": null,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "de0e09eb17c5aa97",
+          "type": "RATE_LIMIT_MISSING_SENSITIVE",
+          "title": "High-Sensitivity Endpoint Without Rate Limiting (sensitivity=0.95)",
+          "severity": "HIGH",
+          "score": 77,
+          "probability": "63.6%",
+          "centrality": "0.000140",
+          "attackChains": [
+            {
+              "entryPoint": "GET /realms/master/account",
+              "chain": [
+                "GET /realms/master/account",
+                "GET /realms/master/account/credentials"
+              ],
+              "depth": 2
+            },
+            {
+              "entryPoint": "GET /realms/master/account/",
+              "chain": [
+                "GET /realms/master/account/",
+                "GET /realms/master/account/credentials"
+              ],
+              "depth": 2
+            }
+          ],
+          "attackChainsCount": 2,
+          "detectedBy": "CorsRateLimiter",
+          "detectedByEngines": [
+            "CorsRateLimiter"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "RATE_LIMIT_MISSING_SENSITIVE"
+          ],
+          "description": "GET /realms/master/account/credentials operates on highly sensitive data (pathSensitivity=0.95) with weak authentication and no rate limiting.",
+          "remediation": "Implement per-user and per-IP rate limiting. For financial/health endpoints: ≤10 req/min per user.",
+          "reasoning": [
+            "Reachable via 2 attack path(s), max depth: 2",
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": null,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": false
+        },
+        {
+          "id": "1674a53aef25a206",
+          "type": "BEARER_TOKEN_NO_EXPIRY",
+          "title": "BEARER_TOKEN_NO_EXPIRY",
+          "severity": "LOW",
+          "score": 32,
+          "probability": "26.4%",
+          "centrality": "0.000140",
+          "attackChains": [
+            {
+              "entryPoint": "GET /realms/master/account",
+              "chain": [
+                "GET /realms/master/account",
+                "GET /realms/master/account/credentials"
+              ],
+              "depth": 2
+            },
+            {
+              "entryPoint": "GET /realms/master/account/",
+              "chain": [
+                "GET /realms/master/account/",
+                "GET /realms/master/account/credentials"
+              ],
+              "depth": 2
+            }
+          ],
+          "attackChainsCount": 2,
+          "detectedBy": "SecurityCore",
+          "detectedByEngines": [
+            "SecurityCore"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "BEARER_TOKEN_NO_EXPIRY"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Reachable via 2 attack path(s), max depth: 2",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.65,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        }
+      ]
+    },
+    "/realms/master/account": {
+      "method": "GET",
+      "flags": 512,
+      "maxSeverity": "HIGH",
+      "securityScore": 0,
+      "findings": [
+        {
+          "id": "060358f5d6e7a37c",
+          "type": "JWT_ALGORITHM_NOT_LOCKED",
+          "title": "JWT_ALGORITHM_NOT_LOCKED",
+          "severity": "HIGH",
+          "score": 81,
+          "probability": "66.9%",
+          "centrality": "0.000000",
+          "attackChains": [
+            {
+              "entryPoint": "GET /realms/master/account",
+              "chain": [
+                "GET /realms/master/account"
+              ],
+              "depth": 1
+            }
+          ],
+          "attackChainsCount": 1,
+          "detectedBy": "AuthAnalyzer",
+          "detectedByEngines": [
+            "AuthAnalyzer"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "JWT_ALGORITHM_NOT_LOCKED"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Reachable via 1 attack path(s), max depth: 1",
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": 0.75,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "113602a7cc123f21",
+          "type": "GDPR_PII_PATH_UNPROTECTED",
+          "title": "GDPR Concern: Personal Data Path Without Verified Controls",
+          "severity": "HIGH",
+          "score": 76,
+          "probability": "62.8%",
+          "centrality": "0.000000",
+          "attackChains": [
+            {
+              "entryPoint": "GET /realms/master/account",
+              "chain": [
+                "GET /realms/master/account"
+              ],
+              "depth": 1
+            }
+          ],
+          "attackChainsCount": 1,
+          "detectedBy": "ComplianceEngine",
+          "detectedByEngines": [
+            "ComplianceEngine",
+            "ContextEngine"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "GDPR_PII_PATH_UNPROTECTED"
+          ],
+          "description": "Endpoint GET /realms/master/account follows a personal data path pattern (matched: account) without spec-verified authentication. GDPR Art. 32 requires appropriate technical measures to secure personal data processing. Auth source: CROSS_VALIDATED — not sufficient for GDPR compliance decisions.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Reachable via 1 attack path(s), max depth: 1",
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": null,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "0fe17ea5aefa69e9",
+          "type": "COMPOSITE_DEEP_BREACH",
+          "title": "Deep Attack Path (2 hops)",
+          "severity": "MEDIUM",
+          "score": 63,
+          "probability": "52.1%",
+          "centrality": "0.000699",
+          "attackChains": [
+            {
+              "path": [
+                "GET /realms/master/account",
+                "SCHEMA_#/components/schemas/RealmsMasterAccountReferrerSecurityAdminConsoleReferrerUriHttp3A2F2Flocalhost3A80802Fadmin2Fmaster2Fconsole2F232Fmaster2Fworkflows2Fcreate2FnewState63c7639f2fad4f6e813e4776f458ea4bSessionStateMNBmkl4JeMVnH4NGvX6QEFIssHttp3A2F2Flocalhost3A80802Frealms2FmasterCode0b22965fE9480576Ac20149be74ff465MNBmkl4JeMVnH4NGvX6QEF771f25596eda4861A5aeA1e83537db57GetResponse"
+              ],
+              "sinkNode": {
+                "id": "SCHEMA_#/components/schemas/RealmsMasterAccountReferrerSecurityAdminConsoleReferrerUriHttp3A2F2Flocalhost3A80802Fadmin2Fmaster2Fconsole2F232Fmaster2Fworkflows2Fcreate2FnewState63c7639f2fad4f6e813e4776f458ea4bSessionStateMNBmkl4JeMVnH4NGvX6QEFIssHttp3A2F2Flocalhost3A80802Frealms2FmasterCode0b22965fE9480576Ac20149be74ff465MNBmkl4JeMVnH4NGvX6QEF771f25596eda4861A5aeA1e83537db57GetResponse",
+                "type": "SCHEMA"
+              },
+              "depth": 2,
+              "entryPoint": "GET /realms/master/account"
+            },
+            {
+              "entryPoint": "GET /realms/master/account",
+              "chain": [
+                "GET /realms/master/account"
+              ],
+              "depth": 1
+            }
+          ],
+          "attackChainsCount": 2,
+          "detectedBy": "CortexOmega_IDDFS",
+          "detectedByEngines": [
+            "CortexOmega_IDDFS"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DEEP_ATTACK_PATH"
+          ],
+          "description": "Attack chain: GET /realms/master/account → SCHEMA_#/components/schemas/RealmsMasterAccountReferrerSecurityAdminConsoleReferrerUriHttp3A2F2Flocalhost3A80802Fadmin2Fmaster2Fconsole2F232Fmaster2Fworkflows2Fcreate2FnewState63c7639f2fad4f6e813e4776f458ea4bSessionStateMNBmkl4JeMVnH4NGvX6QEFIssHttp3A2F2Flocalhost3A80802Frealms2FmasterCode0b22965fE9480576Ac20149be74ff465MNBmkl4JeMVnH4NGvX6QEF771f25596eda4861A5aeA1e83537db57GetResponse",
+          "remediation": "Review the entire attack chain. Apply network segmentation and defense-in-depth.",
+          "reasoning": [
+            "Reachable via 2 attack path(s), max depth: 2",
+            "Semantic: 100% similarity to sensitive data",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": null,
+          "bypassBayesian": null,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "c6acafdfefa7ddb0",
+          "type": "COMPOSITE_DEEP_BREACH",
+          "title": "Deep Attack Path (2 hops)",
+          "severity": "MEDIUM",
+          "score": 63,
+          "probability": "52.1%",
+          "centrality": "0.000140",
+          "attackChains": [
+            {
+              "path": [
+                "GET /realms/master/account",
+                "GET /realms/master/account/supportedLocales"
+              ],
+              "sinkNode": {
+                "id": "GET /realms/master/account/supportedLocales",
+                "type": "ENDPOINT",
+                "path": "/realms/master/account/supportedLocales"
+              },
+              "depth": 2,
+              "entryPoint": "GET /realms/master/account"
+            },
+            {
+              "entryPoint": "GET /realms/master/account",
+              "chain": [
+                "GET /realms/master/account"
+              ],
+              "depth": 1
+            }
+          ],
+          "attackChainsCount": 2,
+          "detectedBy": "CortexOmega_IDDFS",
+          "detectedByEngines": [
+            "CortexOmega_IDDFS"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DEEP_ATTACK_PATH"
+          ],
+          "description": "Attack chain: GET /realms/master/account → GET /realms/master/account/supportedLocales",
+          "remediation": "Review the entire attack chain. Apply network segmentation and defense-in-depth.",
+          "reasoning": [
+            "Reachable via 2 attack path(s), max depth: 2",
+            "Semantic: 100% similarity to sensitive data",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": null,
+          "bypassBayesian": null,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "38c778a38aa8a488",
+          "type": "COMPOSITE_DEEP_BREACH",
+          "title": "Deep Attack Path (3 hops)",
+          "severity": "MEDIUM",
+          "score": 63,
+          "probability": "52.1%",
+          "centrality": "0.000000",
+          "attackChains": [
+            {
+              "path": [
+                "GET /realms/master/account",
+                "GET /realms/master/account/supportedLocales",
+                "SCHEMA_#/components/schemas/ResourcesMasterAccountEnGetResponse"
+              ],
+              "sinkNode": {
+                "id": "SCHEMA_#/components/schemas/ResourcesMasterAccountEnGetResponse",
+                "type": "SCHEMA"
+              },
+              "depth": 3,
+              "entryPoint": "GET /realms/master/account"
+            },
+            {
+              "entryPoint": "GET /realms/master/account",
+              "chain": [
+                "GET /realms/master/account"
+              ],
+              "depth": 1
+            }
+          ],
+          "attackChainsCount": 2,
+          "detectedBy": "CortexOmega_IDDFS",
+          "detectedByEngines": [
+            "CortexOmega_IDDFS"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DEEP_ATTACK_PATH"
+          ],
+          "description": "Attack chain: GET /realms/master/account → GET /realms/master/account/supportedLocales → SCHEMA_#/components/schemas/ResourcesMasterAccountEnGetResponse",
+          "remediation": "Review the entire attack chain. Apply network segmentation and defense-in-depth.",
+          "reasoning": [
+            "Reachable via 2 attack path(s), max depth: 3",
+            "Semantic: 100% similarity to sensitive data",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": null,
+          "bypassBayesian": null,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "7f280c02abb1ee1f",
+          "type": "COMPOSITE_DEEP_BREACH",
+          "title": "Deep Attack Path (2 hops)",
+          "severity": "MEDIUM",
+          "score": 63,
+          "probability": "52.1%",
+          "centrality": "0.000140",
+          "attackChains": [
+            {
+              "path": [
+                "GET /realms/master/account",
+                "GET /realms/master/account/credentials"
+              ],
+              "sinkNode": {
+                "id": "GET /realms/master/account/credentials",
+                "type": "ENDPOINT",
+                "path": "/realms/master/account/credentials"
+              },
+              "depth": 2,
+              "entryPoint": "GET /realms/master/account"
+            },
+            {
+              "entryPoint": "GET /realms/master/account",
+              "chain": [
+                "GET /realms/master/account"
+              ],
+              "depth": 1
+            }
+          ],
+          "attackChainsCount": 2,
+          "detectedBy": "CortexOmega_IDDFS",
+          "detectedByEngines": [
+            "CortexOmega_IDDFS"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DEEP_ATTACK_PATH"
+          ],
+          "description": "Attack chain: GET /realms/master/account → GET /realms/master/account/credentials",
+          "remediation": "Review the entire attack chain. Apply network segmentation and defense-in-depth.",
+          "reasoning": [
+            "Reachable via 2 attack path(s), max depth: 2",
+            "Semantic: 100% similarity to sensitive data",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": null,
+          "bypassBayesian": null,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "080fe1248e593970",
+          "type": "COMPOSITE_DEEP_BREACH",
+          "title": "Deep Attack Path (3 hops)",
+          "severity": "MEDIUM",
+          "score": 63,
+          "probability": "52.1%",
+          "centrality": "0.000000",
+          "attackChains": [
+            {
+              "path": [
+                "GET /realms/master/account",
+                "GET /realms/master/account/credentials",
+                "SCHEMA_#/components/schemas/ResourcesMasterAccountEnGetResponse"
+              ],
+              "sinkNode": {
+                "id": "SCHEMA_#/components/schemas/ResourcesMasterAccountEnGetResponse",
+                "type": "SCHEMA"
+              },
+              "depth": 3,
+              "entryPoint": "GET /realms/master/account"
+            },
+            {
+              "entryPoint": "GET /realms/master/account",
+              "chain": [
+                "GET /realms/master/account"
+              ],
+              "depth": 1
+            }
+          ],
+          "attackChainsCount": 2,
+          "detectedBy": "CortexOmega_IDDFS",
+          "detectedByEngines": [
+            "CortexOmega_IDDFS"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DEEP_ATTACK_PATH"
+          ],
+          "description": "Attack chain: GET /realms/master/account → GET /realms/master/account/credentials → SCHEMA_#/components/schemas/ResourcesMasterAccountEnGetResponse",
+          "remediation": "Review the entire attack chain. Apply network segmentation and defense-in-depth.",
+          "reasoning": [
+            "Reachable via 2 attack path(s), max depth: 3",
+            "Semantic: 100% similarity to sensitive data",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": null,
+          "bypassBayesian": null,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "b1eb8a763e9cf4b5",
+          "type": "COMPOSITE_DEEP_BREACH",
+          "title": "Deep Attack Path (2 hops)",
+          "severity": "MEDIUM",
+          "score": 63,
+          "probability": "52.1%",
+          "centrality": "0.000140",
+          "attackChains": [
+            {
+              "path": [
+                "GET /realms/master/account",
+                "GET /realms/master/account/sessions/devices"
+              ],
+              "sinkNode": {
+                "id": "GET /realms/master/account/sessions/devices",
+                "type": "ENDPOINT",
+                "path": "/realms/master/account/sessions/devices"
+              },
+              "depth": 2,
+              "entryPoint": "GET /realms/master/account"
+            },
+            {
+              "entryPoint": "GET /realms/master/account",
+              "chain": [
+                "GET /realms/master/account"
+              ],
+              "depth": 1
+            }
+          ],
+          "attackChainsCount": 2,
+          "detectedBy": "CortexOmega_IDDFS",
+          "detectedByEngines": [
+            "CortexOmega_IDDFS"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DEEP_ATTACK_PATH"
+          ],
+          "description": "Attack chain: GET /realms/master/account → GET /realms/master/account/sessions/devices",
+          "remediation": "Review the entire attack chain. Apply network segmentation and defense-in-depth.",
+          "reasoning": [
+            "Reachable via 2 attack path(s), max depth: 2",
+            "Semantic: 100% similarity to sensitive data",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": null,
+          "bypassBayesian": null,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "92b0587375ec9913",
+          "type": "COMPOSITE_DEEP_BREACH",
+          "title": "Deep Attack Path (3 hops)",
+          "severity": "MEDIUM",
+          "score": 63,
+          "probability": "52.1%",
+          "centrality": "0.000000",
+          "attackChains": [
+            {
+              "path": [
+                "GET /realms/master/account",
+                "GET /realms/master/account/sessions/devices",
+                "SCHEMA_#/components/schemas/ResourcesMasterAccountEnGetResponse"
+              ],
+              "sinkNode": {
+                "id": "SCHEMA_#/components/schemas/ResourcesMasterAccountEnGetResponse",
+                "type": "SCHEMA"
+              },
+              "depth": 3,
+              "entryPoint": "GET /realms/master/account"
+            },
+            {
+              "entryPoint": "GET /realms/master/account",
+              "chain": [
+                "GET /realms/master/account"
+              ],
+              "depth": 1
+            }
+          ],
+          "attackChainsCount": 2,
+          "detectedBy": "CortexOmega_IDDFS",
+          "detectedByEngines": [
+            "CortexOmega_IDDFS"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DEEP_ATTACK_PATH"
+          ],
+          "description": "Attack chain: GET /realms/master/account → GET /realms/master/account/sessions/devices → SCHEMA_#/components/schemas/ResourcesMasterAccountEnGetResponse",
+          "remediation": "Review the entire attack chain. Apply network segmentation and defense-in-depth.",
+          "reasoning": [
+            "Reachable via 2 attack path(s), max depth: 3",
+            "Semantic: 100% similarity to sensitive data",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": null,
+          "bypassBayesian": null,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "923dd0683d85c6e1",
+          "type": "COMPOSITE_DEEP_BREACH",
+          "title": "Deep Attack Path (2 hops)",
+          "severity": "MEDIUM",
+          "score": 63,
+          "probability": "52.1%",
+          "centrality": "0.002236",
+          "attackChains": [
+            {
+              "path": [
+                "GET /realms/master/account",
+                "GET /realms/master/account/linked-accounts"
+              ],
+              "sinkNode": {
+                "id": "GET /realms/master/account/linked-accounts",
+                "type": "ENDPOINT",
+                "path": "/realms/master/account/linked-accounts"
+              },
+              "depth": 2,
+              "entryPoint": "GET /realms/master/account"
+            },
+            {
+              "entryPoint": "GET /realms/master/account",
+              "chain": [
+                "GET /realms/master/account"
+              ],
+              "depth": 1
+            }
+          ],
+          "attackChainsCount": 2,
+          "detectedBy": "CortexOmega_IDDFS",
+          "detectedByEngines": [
+            "CortexOmega_IDDFS"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DEEP_ATTACK_PATH"
+          ],
+          "description": "Attack chain: GET /realms/master/account → GET /realms/master/account/linked-accounts",
+          "remediation": "Review the entire attack chain. Apply network segmentation and defense-in-depth.",
+          "reasoning": [
+            "Reachable via 2 attack path(s), max depth: 2",
+            "Semantic: 100% similarity to sensitive data",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": null,
+          "bypassBayesian": null,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "a7d78ded3167b13a",
+          "type": "COMPOSITE_DEEP_BREACH",
+          "title": "Deep Attack Path (3 hops)",
+          "severity": "MEDIUM",
+          "score": 63,
+          "probability": "52.1%",
+          "centrality": "0.000000",
+          "attackChains": [
+            {
+              "path": [
+                "GET /realms/master/account",
+                "GET /realms/master/account/linked-accounts",
+                "SCHEMA_#/components/schemas/ResourcesMasterAccountEnGetResponse"
+              ],
+              "sinkNode": {
+                "id": "SCHEMA_#/components/schemas/ResourcesMasterAccountEnGetResponse",
+                "type": "SCHEMA"
+              },
+              "depth": 3,
+              "entryPoint": "GET /realms/master/account"
+            },
+            {
+              "entryPoint": "GET /realms/master/account",
+              "chain": [
+                "GET /realms/master/account"
+              ],
+              "depth": 1
+            }
+          ],
+          "attackChainsCount": 2,
+          "detectedBy": "CortexOmega_IDDFS",
+          "detectedByEngines": [
+            "CortexOmega_IDDFS"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DEEP_ATTACK_PATH"
+          ],
+          "description": "Attack chain: GET /realms/master/account → GET /realms/master/account/linked-accounts → SCHEMA_#/components/schemas/ResourcesMasterAccountEnGetResponse",
+          "remediation": "Review the entire attack chain. Apply network segmentation and defense-in-depth.",
+          "reasoning": [
+            "Reachable via 2 attack path(s), max depth: 3",
+            "Semantic: 100% similarity to sensitive data",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": null,
+          "bypassBayesian": null,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "8c03eb537e19bcc8",
+          "type": "COMPOSITE_DEEP_BREACH",
+          "title": "Deep Attack Path (2 hops)",
+          "severity": "MEDIUM",
+          "score": 63,
+          "probability": "52.1%",
+          "centrality": "0.000140",
+          "attackChains": [
+            {
+              "path": [
+                "GET /realms/master/account",
+                "GET /realms/master/account/applications"
+              ],
+              "sinkNode": {
+                "id": "GET /realms/master/account/applications",
+                "type": "ENDPOINT",
+                "path": "/realms/master/account/applications"
+              },
+              "depth": 2,
+              "entryPoint": "GET /realms/master/account"
+            },
+            {
+              "entryPoint": "GET /realms/master/account",
+              "chain": [
+                "GET /realms/master/account"
+              ],
+              "depth": 1
+            }
+          ],
+          "attackChainsCount": 2,
+          "detectedBy": "CortexOmega_IDDFS",
+          "detectedByEngines": [
+            "CortexOmega_IDDFS"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DEEP_ATTACK_PATH"
+          ],
+          "description": "Attack chain: GET /realms/master/account → GET /realms/master/account/applications",
+          "remediation": "Review the entire attack chain. Apply network segmentation and defense-in-depth.",
+          "reasoning": [
+            "Reachable via 2 attack path(s), max depth: 2",
+            "Semantic: 100% similarity to sensitive data",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": null,
+          "bypassBayesian": null,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "424962f50caa9ee0",
+          "type": "COMPOSITE_DEEP_BREACH",
+          "title": "Deep Attack Path (3 hops)",
+          "severity": "MEDIUM",
+          "score": 63,
+          "probability": "52.1%",
+          "centrality": "0.000000",
+          "attackChains": [
+            {
+              "path": [
+                "GET /realms/master/account",
+                "GET /realms/master/account/applications",
+                "SCHEMA_#/components/schemas/ResourcesMasterAccountEnGetResponse"
+              ],
+              "sinkNode": {
+                "id": "SCHEMA_#/components/schemas/ResourcesMasterAccountEnGetResponse",
+                "type": "SCHEMA"
+              },
+              "depth": 3,
+              "entryPoint": "GET /realms/master/account"
+            },
+            {
+              "entryPoint": "GET /realms/master/account",
+              "chain": [
+                "GET /realms/master/account"
+              ],
+              "depth": 1
+            }
+          ],
+          "attackChainsCount": 2,
+          "detectedBy": "CortexOmega_IDDFS",
+          "detectedByEngines": [
+            "CortexOmega_IDDFS"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DEEP_ATTACK_PATH"
+          ],
+          "description": "Attack chain: GET /realms/master/account → GET /realms/master/account/applications → SCHEMA_#/components/schemas/ResourcesMasterAccountEnGetResponse",
+          "remediation": "Review the entire attack chain. Apply network segmentation and defense-in-depth.",
+          "reasoning": [
+            "Reachable via 2 attack path(s), max depth: 3",
+            "Semantic: 100% similarity to sensitive data",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": null,
+          "bypassBayesian": null,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "2f249e639ad259c9",
+          "type": "COMPOSITE_DEEP_BREACH",
+          "title": "Deep Attack Path (1 hops)",
+          "severity": "MEDIUM",
+          "score": 63,
+          "probability": "52.1%",
+          "centrality": "0.000000",
+          "attackChains": [
+            {
+              "path": [
+                "GET /realms/master/account"
+              ],
+              "entryPoint": "GET /realms/master/account",
+              "depth": 1
+            }
+          ],
+          "attackChainsCount": 1,
+          "detectedBy": "CortexOmega_IDDFS",
+          "detectedByEngines": [
+            "CortexOmega_IDDFS"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DEEP_ATTACK_PATH"
+          ],
+          "description": "Attack chain: GET /realms/master/account",
+          "remediation": "Review the entire attack chain. Apply network segmentation and defense-in-depth.",
+          "reasoning": [
+            "Reachable via 1 attack path(s), max depth: 1",
+            "Semantic: 100% similarity to sensitive data",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": null,
+          "bypassBayesian": null,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "32acff0e68094d72",
+          "type": "LOG_INJECTION_RISK",
+          "title": "Potential Log Injection via Unvalidated Header: referrer",
+          "severity": "LOW",
+          "score": 35,
+          "probability": "28.9%",
+          "centrality": "0.000000",
+          "attackChains": [
+            {
+              "entryPoint": "GET /realms/master/account",
+              "chain": [
+                "GET /realms/master/account"
+              ],
+              "depth": 1
+            }
+          ],
+          "attackChainsCount": 1,
+          "detectedBy": "LoggingMonitor",
+          "detectedByEngines": [
+            "LoggingMonitor"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "LOG_INJECTION_RISK"
+          ],
+          "description": "The query parameter 'referrer' accepts arbitrary strings with no pattern or length constraints. If this value is written to logs unsanitised, an attacker can inject CRLF sequences (\\r\\n) to forge fake log entries, potentially hiding malicious activity or framing legitimate users.",
+          "remediation": "Add a restrictive pattern (e.g. ^[\\w\\s,;=./@:-]{1,256}$) and maxLength to this parameter schema.",
+          "reasoning": [
+            "Reachable via 1 attack path(s), max depth: 1",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": null,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": true
+        },
+        {
+          "id": "6985c93baf40a4b8",
+          "type": "BEARER_TOKEN_NO_EXPIRY",
+          "title": "BEARER_TOKEN_NO_EXPIRY",
+          "severity": "LOW",
+          "score": 30,
+          "probability": "24.8%",
+          "centrality": "0.000000",
+          "attackChains": [
+            {
+              "entryPoint": "GET /realms/master/account",
+              "chain": [
+                "GET /realms/master/account"
+              ],
+              "depth": 1
+            }
+          ],
+          "attackChainsCount": 1,
+          "detectedBy": "SecurityCore",
+          "detectedByEngines": [
+            "SecurityCore"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "BEARER_TOKEN_NO_EXPIRY"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Reachable via 1 attack path(s), max depth: 1",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.65,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        }
+      ]
+    },
+    "/realms/master/account/supportedLocales": {
+      "method": "GET",
+      "flags": 512,
+      "maxSeverity": "HIGH",
+      "securityScore": 44,
+      "findings": [
+        {
+          "id": "68cf09a9931e7b76",
+          "type": "JWT_ALGORITHM_NOT_LOCKED",
+          "title": "JWT_ALGORITHM_NOT_LOCKED",
+          "severity": "HIGH",
+          "score": 81,
+          "probability": "66.9%",
+          "centrality": "0.000140",
+          "attackChains": [
+            {
+              "entryPoint": "GET /realms/master/account",
+              "chain": [
+                "GET /realms/master/account",
+                "GET /realms/master/account/supportedLocales"
+              ],
+              "depth": 2
+            },
+            {
+              "entryPoint": "GET /realms/master/account/",
+              "chain": [
+                "GET /realms/master/account/",
+                "GET /realms/master/account/supportedLocales"
+              ],
+              "depth": 2
+            }
+          ],
+          "attackChainsCount": 2,
+          "detectedBy": "AuthAnalyzer",
+          "detectedByEngines": [
+            "AuthAnalyzer"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "JWT_ALGORITHM_NOT_LOCKED"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Reachable via 2 attack path(s), max depth: 2",
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": 0.75,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "c6db27107c643c23",
+          "type": "GDPR_PII_PATH_UNPROTECTED",
+          "title": "GDPR Concern: Personal Data Path Without Verified Controls",
+          "severity": "HIGH",
+          "score": 76,
+          "probability": "62.8%",
+          "centrality": "0.000140",
+          "attackChains": [
+            {
+              "entryPoint": "GET /realms/master/account",
+              "chain": [
+                "GET /realms/master/account",
+                "GET /realms/master/account/supportedLocales"
+              ],
+              "depth": 2
+            },
+            {
+              "entryPoint": "GET /realms/master/account/",
+              "chain": [
+                "GET /realms/master/account/",
+                "GET /realms/master/account/supportedLocales"
+              ],
+              "depth": 2
+            }
+          ],
+          "attackChainsCount": 2,
+          "detectedBy": "ComplianceEngine",
+          "detectedByEngines": [
+            "ComplianceEngine",
+            "ContextEngine"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "GDPR_PII_PATH_UNPROTECTED"
+          ],
+          "description": "Endpoint GET /realms/master/account/supportedLocales follows a personal data path pattern (matched: account) without spec-verified authentication. GDPR Art. 32 requires appropriate technical measures to secure personal data processing. Auth source: CROSS_VALIDATED — not sufficient for GDPR compliance decisions.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Reachable via 2 attack path(s), max depth: 2",
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": null,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "491c03deedaaeb36",
+          "type": "BEARER_TOKEN_NO_EXPIRY",
+          "title": "BEARER_TOKEN_NO_EXPIRY",
+          "severity": "LOW",
+          "score": 30,
+          "probability": "24.8%",
+          "centrality": "0.000140",
+          "attackChains": [
+            {
+              "entryPoint": "GET /realms/master/account",
+              "chain": [
+                "GET /realms/master/account",
+                "GET /realms/master/account/supportedLocales"
+              ],
+              "depth": 2
+            },
+            {
+              "entryPoint": "GET /realms/master/account/",
+              "chain": [
+                "GET /realms/master/account/",
+                "GET /realms/master/account/supportedLocales"
+              ],
+              "depth": 2
+            }
+          ],
+          "attackChainsCount": 2,
+          "detectedBy": "SecurityCore",
+          "detectedByEngines": [
+            "SecurityCore"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "BEARER_TOKEN_NO_EXPIRY"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Reachable via 2 attack path(s), max depth: 2",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.65,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        }
+      ]
+    },
+    "/realms/master/account/": {
+      "method": "GET",
+      "flags": 512,
+      "maxSeverity": "HIGH",
+      "securityScore": 0,
+      "findings": [
+        {
+          "id": "e66bc62e0d2e321a",
+          "type": "JWT_ALGORITHM_NOT_LOCKED",
+          "title": "JWT_ALGORITHM_NOT_LOCKED",
+          "severity": "HIGH",
+          "score": 81,
+          "probability": "66.9%",
+          "centrality": "0.000000",
+          "attackChains": [
+            {
+              "entryPoint": "GET /realms/master/account/",
+              "chain": [
+                "GET /realms/master/account/"
+              ],
+              "depth": 1
+            }
+          ],
+          "attackChainsCount": 1,
+          "detectedBy": "AuthAnalyzer",
+          "detectedByEngines": [
+            "AuthAnalyzer"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "JWT_ALGORITHM_NOT_LOCKED"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Reachable via 1 attack path(s), max depth: 1",
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": 0.75,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "9bc367d2851bab78",
+          "type": "GDPR_PII_PATH_UNPROTECTED",
+          "title": "GDPR Concern: Personal Data Path Without Verified Controls",
+          "severity": "HIGH",
+          "score": 76,
+          "probability": "62.8%",
+          "centrality": "0.000000",
+          "attackChains": [
+            {
+              "entryPoint": "GET /realms/master/account/",
+              "chain": [
+                "GET /realms/master/account/"
+              ],
+              "depth": 1
+            }
+          ],
+          "attackChainsCount": 1,
+          "detectedBy": "ComplianceEngine",
+          "detectedByEngines": [
+            "ComplianceEngine",
+            "ContextEngine"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "GDPR_PII_PATH_UNPROTECTED"
+          ],
+          "description": "Endpoint GET /realms/master/account/ follows a personal data path pattern (matched: account) without spec-verified authentication. GDPR Art. 32 requires appropriate technical measures to secure personal data processing. Auth source: CROSS_VALIDATED — not sufficient for GDPR compliance decisions.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Reachable via 1 attack path(s), max depth: 1",
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": null,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "63cf0963058e4695",
+          "type": "COMPOSITE_DEEP_BREACH",
+          "title": "Deep Attack Path (2 hops)",
+          "severity": "MEDIUM",
+          "score": 63,
+          "probability": "52.1%",
+          "centrality": "0.001747",
+          "attackChains": [
+            {
+              "path": [
+                "GET /realms/master/account/",
+                "SCHEMA_#/components/schemas/RealmsMasterAccountUserProfileMetadataTrueGetResponse"
+              ],
+              "sinkNode": {
+                "id": "SCHEMA_#/components/schemas/RealmsMasterAccountUserProfileMetadataTrueGetResponse",
+                "type": "SCHEMA"
+              },
+              "depth": 2,
+              "entryPoint": "GET /realms/master/account/"
+            },
+            {
+              "entryPoint": "GET /realms/master/account/",
+              "chain": [
+                "GET /realms/master/account/"
+              ],
+              "depth": 1
+            }
+          ],
+          "attackChainsCount": 2,
+          "detectedBy": "CortexOmega_IDDFS",
+          "detectedByEngines": [
+            "CortexOmega_IDDFS"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DEEP_ATTACK_PATH"
+          ],
+          "description": "Attack chain: GET /realms/master/account/ → SCHEMA_#/components/schemas/RealmsMasterAccountUserProfileMetadataTrueGetResponse",
+          "remediation": "Review the entire attack chain. Apply network segmentation and defense-in-depth.",
+          "reasoning": [
+            "Reachable via 2 attack path(s), max depth: 2",
+            "Semantic: 100% similarity to sensitive data",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": null,
+          "bypassBayesian": null,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "010c22ed64fc6676",
+          "type": "COMPOSITE_DEEP_BREACH",
+          "title": "Deep Attack Path (2 hops)",
+          "severity": "MEDIUM",
+          "score": 63,
+          "probability": "52.1%",
+          "centrality": "0.000140",
+          "attackChains": [
+            {
+              "path": [
+                "GET /realms/master/account/",
+                "GET /realms/master/account/supportedLocales"
+              ],
+              "sinkNode": {
+                "id": "GET /realms/master/account/supportedLocales",
+                "type": "ENDPOINT",
+                "path": "/realms/master/account/supportedLocales"
+              },
+              "depth": 2,
+              "entryPoint": "GET /realms/master/account/"
+            },
+            {
+              "entryPoint": "GET /realms/master/account/",
+              "chain": [
+                "GET /realms/master/account/"
+              ],
+              "depth": 1
+            }
+          ],
+          "attackChainsCount": 2,
+          "detectedBy": "CortexOmega_IDDFS",
+          "detectedByEngines": [
+            "CortexOmega_IDDFS"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DEEP_ATTACK_PATH"
+          ],
+          "description": "Attack chain: GET /realms/master/account/ → GET /realms/master/account/supportedLocales",
+          "remediation": "Review the entire attack chain. Apply network segmentation and defense-in-depth.",
+          "reasoning": [
+            "Reachable via 2 attack path(s), max depth: 2",
+            "Semantic: 100% similarity to sensitive data",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": null,
+          "bypassBayesian": null,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "a55d8e5735f27401",
+          "type": "COMPOSITE_DEEP_BREACH",
+          "title": "Deep Attack Path (3 hops)",
+          "severity": "MEDIUM",
+          "score": 63,
+          "probability": "52.1%",
+          "centrality": "0.000000",
+          "attackChains": [
+            {
+              "path": [
+                "GET /realms/master/account/",
+                "GET /realms/master/account/supportedLocales",
+                "SCHEMA_#/components/schemas/ResourcesMasterAccountEnGetResponse"
+              ],
+              "sinkNode": {
+                "id": "SCHEMA_#/components/schemas/ResourcesMasterAccountEnGetResponse",
+                "type": "SCHEMA"
+              },
+              "depth": 3,
+              "entryPoint": "GET /realms/master/account/"
+            },
+            {
+              "entryPoint": "GET /realms/master/account/",
+              "chain": [
+                "GET /realms/master/account/"
+              ],
+              "depth": 1
+            }
+          ],
+          "attackChainsCount": 2,
+          "detectedBy": "CortexOmega_IDDFS",
+          "detectedByEngines": [
+            "CortexOmega_IDDFS"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DEEP_ATTACK_PATH"
+          ],
+          "description": "Attack chain: GET /realms/master/account/ → GET /realms/master/account/supportedLocales → SCHEMA_#/components/schemas/ResourcesMasterAccountEnGetResponse",
+          "remediation": "Review the entire attack chain. Apply network segmentation and defense-in-depth.",
+          "reasoning": [
+            "Reachable via 2 attack path(s), max depth: 3",
+            "Semantic: 100% similarity to sensitive data",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": null,
+          "bypassBayesian": null,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "8212fb2fc3485483",
+          "type": "COMPOSITE_DEEP_BREACH",
+          "title": "Deep Attack Path (2 hops)",
+          "severity": "MEDIUM",
+          "score": 63,
+          "probability": "52.1%",
+          "centrality": "0.000140",
+          "attackChains": [
+            {
+              "path": [
+                "GET /realms/master/account/",
+                "GET /realms/master/account/credentials"
+              ],
+              "sinkNode": {
+                "id": "GET /realms/master/account/credentials",
+                "type": "ENDPOINT",
+                "path": "/realms/master/account/credentials"
+              },
+              "depth": 2,
+              "entryPoint": "GET /realms/master/account/"
+            },
+            {
+              "entryPoint": "GET /realms/master/account/",
+              "chain": [
+                "GET /realms/master/account/"
+              ],
+              "depth": 1
+            }
+          ],
+          "attackChainsCount": 2,
+          "detectedBy": "CortexOmega_IDDFS",
+          "detectedByEngines": [
+            "CortexOmega_IDDFS"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DEEP_ATTACK_PATH"
+          ],
+          "description": "Attack chain: GET /realms/master/account/ → GET /realms/master/account/credentials",
+          "remediation": "Review the entire attack chain. Apply network segmentation and defense-in-depth.",
+          "reasoning": [
+            "Reachable via 2 attack path(s), max depth: 2",
+            "Semantic: 100% similarity to sensitive data",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": null,
+          "bypassBayesian": null,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "c77d4bf707513d8a",
+          "type": "COMPOSITE_DEEP_BREACH",
+          "title": "Deep Attack Path (3 hops)",
+          "severity": "MEDIUM",
+          "score": 63,
+          "probability": "52.1%",
+          "centrality": "0.000000",
+          "attackChains": [
+            {
+              "path": [
+                "GET /realms/master/account/",
+                "GET /realms/master/account/credentials",
+                "SCHEMA_#/components/schemas/ResourcesMasterAccountEnGetResponse"
+              ],
+              "sinkNode": {
+                "id": "SCHEMA_#/components/schemas/ResourcesMasterAccountEnGetResponse",
+                "type": "SCHEMA"
+              },
+              "depth": 3,
+              "entryPoint": "GET /realms/master/account/"
+            },
+            {
+              "entryPoint": "GET /realms/master/account/",
+              "chain": [
+                "GET /realms/master/account/"
+              ],
+              "depth": 1
+            }
+          ],
+          "attackChainsCount": 2,
+          "detectedBy": "CortexOmega_IDDFS",
+          "detectedByEngines": [
+            "CortexOmega_IDDFS"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DEEP_ATTACK_PATH"
+          ],
+          "description": "Attack chain: GET /realms/master/account/ → GET /realms/master/account/credentials → SCHEMA_#/components/schemas/ResourcesMasterAccountEnGetResponse",
+          "remediation": "Review the entire attack chain. Apply network segmentation and defense-in-depth.",
+          "reasoning": [
+            "Reachable via 2 attack path(s), max depth: 3",
+            "Semantic: 100% similarity to sensitive data",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": null,
+          "bypassBayesian": null,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "b59701d4dd9dd9ee",
+          "type": "COMPOSITE_DEEP_BREACH",
+          "title": "Deep Attack Path (2 hops)",
+          "severity": "MEDIUM",
+          "score": 63,
+          "probability": "52.1%",
+          "centrality": "0.000140",
+          "attackChains": [
+            {
+              "path": [
+                "GET /realms/master/account/",
+                "GET /realms/master/account/sessions/devices"
+              ],
+              "sinkNode": {
+                "id": "GET /realms/master/account/sessions/devices",
+                "type": "ENDPOINT",
+                "path": "/realms/master/account/sessions/devices"
+              },
+              "depth": 2,
+              "entryPoint": "GET /realms/master/account/"
+            },
+            {
+              "entryPoint": "GET /realms/master/account/",
+              "chain": [
+                "GET /realms/master/account/"
+              ],
+              "depth": 1
+            }
+          ],
+          "attackChainsCount": 2,
+          "detectedBy": "CortexOmega_IDDFS",
+          "detectedByEngines": [
+            "CortexOmega_IDDFS"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DEEP_ATTACK_PATH"
+          ],
+          "description": "Attack chain: GET /realms/master/account/ → GET /realms/master/account/sessions/devices",
+          "remediation": "Review the entire attack chain. Apply network segmentation and defense-in-depth.",
+          "reasoning": [
+            "Reachable via 2 attack path(s), max depth: 2",
+            "Semantic: 100% similarity to sensitive data",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": null,
+          "bypassBayesian": null,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "5df3be2a431cb26d",
+          "type": "COMPOSITE_DEEP_BREACH",
+          "title": "Deep Attack Path (3 hops)",
+          "severity": "MEDIUM",
+          "score": 63,
+          "probability": "52.1%",
+          "centrality": "0.000000",
+          "attackChains": [
+            {
+              "path": [
+                "GET /realms/master/account/",
+                "GET /realms/master/account/sessions/devices",
+                "SCHEMA_#/components/schemas/ResourcesMasterAccountEnGetResponse"
+              ],
+              "sinkNode": {
+                "id": "SCHEMA_#/components/schemas/ResourcesMasterAccountEnGetResponse",
+                "type": "SCHEMA"
+              },
+              "depth": 3,
+              "entryPoint": "GET /realms/master/account/"
+            },
+            {
+              "entryPoint": "GET /realms/master/account/",
+              "chain": [
+                "GET /realms/master/account/"
+              ],
+              "depth": 1
+            }
+          ],
+          "attackChainsCount": 2,
+          "detectedBy": "CortexOmega_IDDFS",
+          "detectedByEngines": [
+            "CortexOmega_IDDFS"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DEEP_ATTACK_PATH"
+          ],
+          "description": "Attack chain: GET /realms/master/account/ → GET /realms/master/account/sessions/devices → SCHEMA_#/components/schemas/ResourcesMasterAccountEnGetResponse",
+          "remediation": "Review the entire attack chain. Apply network segmentation and defense-in-depth.",
+          "reasoning": [
+            "Reachable via 2 attack path(s), max depth: 3",
+            "Semantic: 100% similarity to sensitive data",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": null,
+          "bypassBayesian": null,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "a28ab4d9b42d917c",
+          "type": "COMPOSITE_DEEP_BREACH",
+          "title": "Deep Attack Path (2 hops)",
+          "severity": "MEDIUM",
+          "score": 63,
+          "probability": "52.1%",
+          "centrality": "0.002236",
+          "attackChains": [
+            {
+              "path": [
+                "GET /realms/master/account/",
+                "GET /realms/master/account/linked-accounts"
+              ],
+              "sinkNode": {
+                "id": "GET /realms/master/account/linked-accounts",
+                "type": "ENDPOINT",
+                "path": "/realms/master/account/linked-accounts"
+              },
+              "depth": 2,
+              "entryPoint": "GET /realms/master/account/"
+            },
+            {
+              "entryPoint": "GET /realms/master/account/",
+              "chain": [
+                "GET /realms/master/account/"
+              ],
+              "depth": 1
+            }
+          ],
+          "attackChainsCount": 2,
+          "detectedBy": "CortexOmega_IDDFS",
+          "detectedByEngines": [
+            "CortexOmega_IDDFS"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DEEP_ATTACK_PATH"
+          ],
+          "description": "Attack chain: GET /realms/master/account/ → GET /realms/master/account/linked-accounts",
+          "remediation": "Review the entire attack chain. Apply network segmentation and defense-in-depth.",
+          "reasoning": [
+            "Reachable via 2 attack path(s), max depth: 2",
+            "Semantic: 100% similarity to sensitive data",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": null,
+          "bypassBayesian": null,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "da1010d23005ef98",
+          "type": "COMPOSITE_DEEP_BREACH",
+          "title": "Deep Attack Path (3 hops)",
+          "severity": "MEDIUM",
+          "score": 63,
+          "probability": "52.1%",
+          "centrality": "0.000000",
+          "attackChains": [
+            {
+              "path": [
+                "GET /realms/master/account/",
+                "GET /realms/master/account/linked-accounts",
+                "SCHEMA_#/components/schemas/ResourcesMasterAccountEnGetResponse"
+              ],
+              "sinkNode": {
+                "id": "SCHEMA_#/components/schemas/ResourcesMasterAccountEnGetResponse",
+                "type": "SCHEMA"
+              },
+              "depth": 3,
+              "entryPoint": "GET /realms/master/account/"
+            },
+            {
+              "entryPoint": "GET /realms/master/account/",
+              "chain": [
+                "GET /realms/master/account/"
+              ],
+              "depth": 1
+            }
+          ],
+          "attackChainsCount": 2,
+          "detectedBy": "CortexOmega_IDDFS",
+          "detectedByEngines": [
+            "CortexOmega_IDDFS"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DEEP_ATTACK_PATH"
+          ],
+          "description": "Attack chain: GET /realms/master/account/ → GET /realms/master/account/linked-accounts → SCHEMA_#/components/schemas/ResourcesMasterAccountEnGetResponse",
+          "remediation": "Review the entire attack chain. Apply network segmentation and defense-in-depth.",
+          "reasoning": [
+            "Reachable via 2 attack path(s), max depth: 3",
+            "Semantic: 100% similarity to sensitive data",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": null,
+          "bypassBayesian": null,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "1bc474d9c7d17d04",
+          "type": "COMPOSITE_DEEP_BREACH",
+          "title": "Deep Attack Path (2 hops)",
+          "severity": "MEDIUM",
+          "score": 63,
+          "probability": "52.1%",
+          "centrality": "0.000140",
+          "attackChains": [
+            {
+              "path": [
+                "GET /realms/master/account/",
+                "GET /realms/master/account/applications"
+              ],
+              "sinkNode": {
+                "id": "GET /realms/master/account/applications",
+                "type": "ENDPOINT",
+                "path": "/realms/master/account/applications"
+              },
+              "depth": 2,
+              "entryPoint": "GET /realms/master/account/"
+            },
+            {
+              "entryPoint": "GET /realms/master/account/",
+              "chain": [
+                "GET /realms/master/account/"
+              ],
+              "depth": 1
+            }
+          ],
+          "attackChainsCount": 2,
+          "detectedBy": "CortexOmega_IDDFS",
+          "detectedByEngines": [
+            "CortexOmega_IDDFS"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DEEP_ATTACK_PATH"
+          ],
+          "description": "Attack chain: GET /realms/master/account/ → GET /realms/master/account/applications",
+          "remediation": "Review the entire attack chain. Apply network segmentation and defense-in-depth.",
+          "reasoning": [
+            "Reachable via 2 attack path(s), max depth: 2",
+            "Semantic: 100% similarity to sensitive data",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": null,
+          "bypassBayesian": null,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "b4f9c83bbaee823d",
+          "type": "COMPOSITE_DEEP_BREACH",
+          "title": "Deep Attack Path (3 hops)",
+          "severity": "MEDIUM",
+          "score": 63,
+          "probability": "52.1%",
+          "centrality": "0.000000",
+          "attackChains": [
+            {
+              "path": [
+                "GET /realms/master/account/",
+                "GET /realms/master/account/applications",
+                "SCHEMA_#/components/schemas/ResourcesMasterAccountEnGetResponse"
+              ],
+              "sinkNode": {
+                "id": "SCHEMA_#/components/schemas/ResourcesMasterAccountEnGetResponse",
+                "type": "SCHEMA"
+              },
+              "depth": 3,
+              "entryPoint": "GET /realms/master/account/"
+            },
+            {
+              "entryPoint": "GET /realms/master/account/",
+              "chain": [
+                "GET /realms/master/account/"
+              ],
+              "depth": 1
+            }
+          ],
+          "attackChainsCount": 2,
+          "detectedBy": "CortexOmega_IDDFS",
+          "detectedByEngines": [
+            "CortexOmega_IDDFS"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DEEP_ATTACK_PATH"
+          ],
+          "description": "Attack chain: GET /realms/master/account/ → GET /realms/master/account/applications → SCHEMA_#/components/schemas/ResourcesMasterAccountEnGetResponse",
+          "remediation": "Review the entire attack chain. Apply network segmentation and defense-in-depth.",
+          "reasoning": [
+            "Reachable via 2 attack path(s), max depth: 3",
+            "Semantic: 100% similarity to sensitive data",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": null,
+          "bypassBayesian": null,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "8a7e76c68a02a9eb",
+          "type": "COMPOSITE_DEEP_BREACH",
+          "title": "Deep Attack Path (1 hops)",
+          "severity": "MEDIUM",
+          "score": 63,
+          "probability": "52.1%",
+          "centrality": "0.000000",
+          "attackChains": [
+            {
+              "path": [
+                "GET /realms/master/account/"
+              ],
+              "entryPoint": "GET /realms/master/account/",
+              "depth": 1
+            }
+          ],
+          "attackChainsCount": 1,
+          "detectedBy": "CortexOmega_IDDFS",
+          "detectedByEngines": [
+            "CortexOmega_IDDFS"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DEEP_ATTACK_PATH"
+          ],
+          "description": "Attack chain: GET /realms/master/account/",
+          "remediation": "Review the entire attack chain. Apply network segmentation and defense-in-depth.",
+          "reasoning": [
+            "Reachable via 1 attack path(s), max depth: 1",
+            "Semantic: 100% similarity to sensitive data",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": null,
+          "bypassBayesian": null,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "4ce90824701320f4",
+          "type": "LOG_INJECTION_RISK",
+          "title": "Potential Log Injection via Unvalidated Header: userProfileMetadata",
+          "severity": "LOW",
+          "score": 35,
+          "probability": "28.9%",
+          "centrality": "0.000000",
+          "attackChains": [
+            {
+              "entryPoint": "GET /realms/master/account/",
+              "chain": [
+                "GET /realms/master/account/"
+              ],
+              "depth": 1
+            }
+          ],
+          "attackChainsCount": 1,
+          "detectedBy": "LoggingMonitor",
+          "detectedByEngines": [
+            "LoggingMonitor"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "LOG_INJECTION_RISK"
+          ],
+          "description": "The query parameter 'userProfileMetadata' accepts arbitrary strings with no pattern or length constraints. If this value is written to logs unsanitised, an attacker can inject CRLF sequences (\\r\\n) to forge fake log entries, potentially hiding malicious activity or framing legitimate users.",
+          "remediation": "Add a restrictive pattern (e.g. ^[\\w\\s,;=./@:-]{1,256}$) and maxLength to this parameter schema.",
+          "reasoning": [
+            "Reachable via 1 attack path(s), max depth: 1",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": null,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": true
+        },
+        {
+          "id": "3d8141df089b5fd4",
+          "type": "BEARER_TOKEN_NO_EXPIRY",
+          "title": "BEARER_TOKEN_NO_EXPIRY",
+          "severity": "LOW",
+          "score": 30,
+          "probability": "24.8%",
+          "centrality": "0.000000",
+          "attackChains": [
+            {
+              "entryPoint": "GET /realms/master/account/",
+              "chain": [
+                "GET /realms/master/account/"
+              ],
+              "depth": 1
+            }
+          ],
+          "attackChainsCount": 1,
+          "detectedBy": "SecurityCore",
+          "detectedByEngines": [
+            "SecurityCore"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "BEARER_TOKEN_NO_EXPIRY"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Reachable via 1 attack path(s), max depth: 1",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.65,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        }
+      ]
+    },
+    "/realms/master/account/sessions/devices": {
+      "method": "GET",
+      "flags": 512,
+      "maxSeverity": "HIGH",
+      "securityScore": 56,
+      "findings": [
+        {
+          "id": "15b41c1ed0d920af",
+          "type": "JWT_ALGORITHM_NOT_LOCKED",
+          "title": "JWT_ALGORITHM_NOT_LOCKED",
+          "severity": "HIGH",
+          "score": 81,
+          "probability": "66.3%",
+          "centrality": "0.000140",
+          "attackChains": [
+            {
+              "entryPoint": "GET /realms/master/account",
+              "chain": [
+                "GET /realms/master/account",
+                "GET /realms/master/account/sessions/devices"
+              ],
+              "depth": 2
+            },
+            {
+              "entryPoint": "GET /realms/master/account/",
+              "chain": [
+                "GET /realms/master/account/",
+                "GET /realms/master/account/sessions/devices"
+              ],
+              "depth": 2
+            }
+          ],
+          "attackChainsCount": 2,
+          "detectedBy": "AuthAnalyzer",
+          "detectedByEngines": [
+            "AuthAnalyzer"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "JWT_ALGORITHM_NOT_LOCKED"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Reachable via 2 attack path(s), max depth: 2",
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": 0.75,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "d66885a3a0c793ba",
+          "type": "IOT_NO_TLS_SPECIFICATION",
+          "title": "IoT Endpoint Missing TLS/Encryption Specification",
+          "severity": "MEDIUM",
+          "score": 38,
+          "probability": "31.1%",
+          "centrality": "0.000140",
+          "attackChains": [
+            {
+              "entryPoint": "GET /realms/master/account",
+              "chain": [
+                "GET /realms/master/account",
+                "GET /realms/master/account/sessions/devices"
+              ],
+              "depth": 2
+            },
+            {
+              "entryPoint": "GET /realms/master/account/",
+              "chain": [
+                "GET /realms/master/account/",
+                "GET /realms/master/account/sessions/devices"
+              ],
+              "depth": 2
+            }
+          ],
+          "attackChainsCount": 2,
+          "detectedBy": "SecurityCore",
+          "detectedByEngines": [
+            "SecurityCore"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "IOT_NO_TLS_SPECIFICATION"
+          ],
+          "description": "IoT/telemetry endpoint GET /realms/master/account/sessions/devices has no TLS or encryption requirement specified. Device-to-cloud communication may occur over unencrypted channels exposing sensor data.",
+          "remediation": "Explicitly require TLS 1.2+ in the API specification. Use x-tls-required extension. Enforce mutual TLS (mTLS) for IoT device auth. Document encryption requirements in operation description.",
+          "reasoning": [
+            "Reachable via 2 attack path(s), max depth: 2",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": null,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": true
+        },
+        {
+          "id": "2c2ce0989bb91b2f",
+          "type": "BEARER_TOKEN_NO_EXPIRY",
+          "title": "BEARER_TOKEN_NO_EXPIRY",
+          "severity": "LOW",
+          "score": 30,
+          "probability": "24.5%",
+          "centrality": "0.000140",
+          "attackChains": [
+            {
+              "entryPoint": "GET /realms/master/account",
+              "chain": [
+                "GET /realms/master/account",
+                "GET /realms/master/account/sessions/devices"
+              ],
+              "depth": 2
+            },
+            {
+              "entryPoint": "GET /realms/master/account/",
+              "chain": [
+                "GET /realms/master/account/",
+                "GET /realms/master/account/sessions/devices"
+              ],
+              "depth": 2
+            }
+          ],
+          "attackChainsCount": 2,
+          "detectedBy": "SecurityCore",
+          "detectedByEngines": [
+            "SecurityCore"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "BEARER_TOKEN_NO_EXPIRY"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Reachable via 2 attack path(s), max depth: 2",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.65,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        }
+      ]
+    },
+    "/realms/master/account/linked-accounts": {
+      "method": "GET",
+      "flags": 512,
+      "maxSeverity": "HIGH",
+      "securityScore": 33,
+      "findings": [
+        {
+          "id": "fb352e560a941dc7",
+          "type": "JWT_ALGORITHM_NOT_LOCKED",
+          "title": "JWT_ALGORITHM_NOT_LOCKED",
+          "severity": "HIGH",
+          "score": 81,
+          "probability": "66.9%",
+          "centrality": "0.002236",
+          "attackChains": [
+            {
+              "entryPoint": "GET /realms/master/account",
+              "chain": [
+                "GET /realms/master/account",
+                "GET /realms/master/account/linked-accounts"
+              ],
+              "depth": 2
+            },
+            {
+              "entryPoint": "GET /realms/master/account/",
+              "chain": [
+                "GET /realms/master/account/",
+                "GET /realms/master/account/linked-accounts"
+              ],
+              "depth": 2
+            }
+          ],
+          "attackChainsCount": 2,
+          "detectedBy": "AuthAnalyzer",
+          "detectedByEngines": [
+            "AuthAnalyzer"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "JWT_ALGORITHM_NOT_LOCKED"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Reachable via 2 attack path(s), max depth: 2",
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": 0.75,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "7ee1fc90c115e1e8",
+          "type": "GDPR_PII_PATH_UNPROTECTED",
+          "title": "GDPR Concern: Personal Data Path Without Verified Controls",
+          "severity": "HIGH",
+          "score": 76,
+          "probability": "62.8%",
+          "centrality": "0.002236",
+          "attackChains": [
+            {
+              "entryPoint": "GET /realms/master/account",
+              "chain": [
+                "GET /realms/master/account",
+                "GET /realms/master/account/linked-accounts"
+              ],
+              "depth": 2
+            },
+            {
+              "entryPoint": "GET /realms/master/account/",
+              "chain": [
+                "GET /realms/master/account/",
+                "GET /realms/master/account/linked-accounts"
+              ],
+              "depth": 2
+            }
+          ],
+          "attackChainsCount": 2,
+          "detectedBy": "ComplianceEngine",
+          "detectedByEngines": [
+            "ComplianceEngine",
+            "ContextEngine"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "GDPR_PII_PATH_UNPROTECTED"
+          ],
+          "description": "Endpoint GET /realms/master/account/linked-accounts follows a personal data path pattern (matched: account) without spec-verified authentication. GDPR Art. 32 requires appropriate technical measures to secure personal data processing. Auth source: CROSS_VALIDATED — not sufficient for GDPR compliance decisions.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Reachable via 2 attack path(s), max depth: 2",
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": null,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "967bb1dfc01f7141",
+          "type": "LOG_INJECTION_RISK",
+          "title": "Potential Log Injection via Unvalidated Header: first",
+          "severity": "LOW",
+          "score": 35,
+          "probability": "28.9%",
+          "centrality": "0.002236",
+          "attackChains": [
+            {
+              "entryPoint": "GET /realms/master/account",
+              "chain": [
+                "GET /realms/master/account",
+                "GET /realms/master/account/linked-accounts"
+              ],
+              "depth": 2
+            },
+            {
+              "entryPoint": "GET /realms/master/account/",
+              "chain": [
+                "GET /realms/master/account/",
+                "GET /realms/master/account/linked-accounts"
+              ],
+              "depth": 2
+            }
+          ],
+          "attackChainsCount": 2,
+          "detectedBy": "LoggingMonitor",
+          "detectedByEngines": [
+            "LoggingMonitor"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "LOG_INJECTION_RISK"
+          ],
+          "description": "The query parameter 'first' accepts arbitrary strings with no pattern or length constraints. If this value is written to logs unsanitised, an attacker can inject CRLF sequences (\\r\\n) to forge fake log entries, potentially hiding malicious activity or framing legitimate users.",
+          "remediation": "Add a restrictive pattern (e.g. ^[\\w\\s,;=./@:-]{1,256}$) and maxLength to this parameter schema.",
+          "reasoning": [
+            "Reachable via 2 attack path(s), max depth: 2",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": null,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": true
+        },
+        {
+          "id": "e67d81be8cb8b4e7",
+          "type": "BEARER_TOKEN_NO_EXPIRY",
+          "title": "BEARER_TOKEN_NO_EXPIRY",
+          "severity": "LOW",
+          "score": 30,
+          "probability": "24.8%",
+          "centrality": "0.002236",
+          "attackChains": [
+            {
+              "entryPoint": "GET /realms/master/account",
+              "chain": [
+                "GET /realms/master/account",
+                "GET /realms/master/account/linked-accounts"
+              ],
+              "depth": 2
+            },
+            {
+              "entryPoint": "GET /realms/master/account/",
+              "chain": [
+                "GET /realms/master/account/",
+                "GET /realms/master/account/linked-accounts"
+              ],
+              "depth": 2
+            }
+          ],
+          "attackChainsCount": 2,
+          "detectedBy": "SecurityCore",
+          "detectedByEngines": [
+            "SecurityCore"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "BEARER_TOKEN_NO_EXPIRY"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Reachable via 2 attack path(s), max depth: 2",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.65,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        }
+      ]
+    },
+    "/realms/master/account/applications": {
+      "method": "GET",
+      "flags": 512,
+      "maxSeverity": "HIGH",
+      "securityScore": 44,
+      "findings": [
+        {
+          "id": "c8554efcb87ac6fe",
+          "type": "JWT_ALGORITHM_NOT_LOCKED",
+          "title": "JWT_ALGORITHM_NOT_LOCKED",
+          "severity": "HIGH",
+          "score": 81,
+          "probability": "66.9%",
+          "centrality": "0.000140",
+          "attackChains": [
+            {
+              "entryPoint": "GET /realms/master/account",
+              "chain": [
+                "GET /realms/master/account",
+                "GET /realms/master/account/applications"
+              ],
+              "depth": 2
+            },
+            {
+              "entryPoint": "GET /realms/master/account/",
+              "chain": [
+                "GET /realms/master/account/",
+                "GET /realms/master/account/applications"
+              ],
+              "depth": 2
+            }
+          ],
+          "attackChainsCount": 2,
+          "detectedBy": "AuthAnalyzer",
+          "detectedByEngines": [
+            "AuthAnalyzer"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "JWT_ALGORITHM_NOT_LOCKED"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Reachable via 2 attack path(s), max depth: 2",
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": 0.75,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "71e9ef8397685e91",
+          "type": "GDPR_PII_PATH_UNPROTECTED",
+          "title": "GDPR Concern: Personal Data Path Without Verified Controls",
+          "severity": "HIGH",
+          "score": 76,
+          "probability": "62.8%",
+          "centrality": "0.000140",
+          "attackChains": [
+            {
+              "entryPoint": "GET /realms/master/account",
+              "chain": [
+                "GET /realms/master/account",
+                "GET /realms/master/account/applications"
+              ],
+              "depth": 2
+            },
+            {
+              "entryPoint": "GET /realms/master/account/",
+              "chain": [
+                "GET /realms/master/account/",
+                "GET /realms/master/account/applications"
+              ],
+              "depth": 2
+            }
+          ],
+          "attackChainsCount": 2,
+          "detectedBy": "ComplianceEngine",
+          "detectedByEngines": [
+            "ComplianceEngine",
+            "ContextEngine"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "GDPR_PII_PATH_UNPROTECTED"
+          ],
+          "description": "Endpoint GET /realms/master/account/applications follows a personal data path pattern (matched: account) without spec-verified authentication. GDPR Art. 32 requires appropriate technical measures to secure personal data processing. Auth source: CROSS_VALIDATED — not sufficient for GDPR compliance decisions.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Reachable via 2 attack path(s), max depth: 2",
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": null,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "4036f527f0262a59",
+          "type": "BEARER_TOKEN_NO_EXPIRY",
+          "title": "BEARER_TOKEN_NO_EXPIRY",
+          "severity": "LOW",
+          "score": 30,
+          "probability": "24.8%",
+          "centrality": "0.000140",
+          "attackChains": [
+            {
+              "entryPoint": "GET /realms/master/account",
+              "chain": [
+                "GET /realms/master/account",
+                "GET /realms/master/account/applications"
+              ],
+              "depth": 2
+            },
+            {
+              "entryPoint": "GET /realms/master/account/",
+              "chain": [
+                "GET /realms/master/account/",
+                "GET /realms/master/account/applications"
+              ],
+              "depth": 2
+            }
+          ],
+          "attackChainsCount": 2,
+          "detectedBy": "SecurityCore",
+          "detectedByEngines": [
+            "SecurityCore"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "BEARER_TOKEN_NO_EXPIRY"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Reachable via 2 attack path(s), max depth: 2",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.65,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        }
+      ]
+    },
+    "/realms/master/protocol/openid-connect/token": {
+      "method": "POST",
+      "flags": 512,
+      "maxSeverity": "HIGH",
+      "securityScore": 51,
+      "findings": [
+        {
+          "id": "9993c0d6e9096968",
+          "type": "JWT_ALGORITHM_NOT_LOCKED",
+          "title": "JWT_ALGORITHM_NOT_LOCKED",
+          "severity": "HIGH",
+          "score": 67,
+          "probability": "56.3%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "AuthAnalyzer",
+          "detectedByEngines": [
+            "AuthAnalyzer"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "JWT_ALGORITHM_NOT_LOCKED"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": 0.75,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "db0f36b5862e6f60",
+          "type": "RATE_LIMIT_MISSING_LOGIN",
+          "title": "Authentication Endpoint Without Rate Limiting",
+          "severity": "MEDIUM",
+          "score": 38,
+          "probability": "32.0%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "CorsRateLimiter",
+          "detectedByEngines": [
+            "CorsRateLimiter"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "RATE_LIMIT_MISSING_LOGIN"
+          ],
+          "description": "POST /realms/master/protocol/openid-connect/token handles authentication but has no documented rate limiting. Vulnerable to brute force, credential stuffing, and password spraying attacks.",
+          "remediation": "Implement strict rate limiting (≤5 req/min per IP) with progressive delays and account lockout.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": null,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": false
+        },
+        {
+          "id": "335522d60b6ee8de",
+          "type": "NO_RATE_LIMIT_WRITE_OP",
+          "title": "NO_RATE_LIMIT_WRITE_OP",
+          "severity": "MEDIUM",
+          "score": 38,
+          "probability": "32.0%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "SecurityCore",
+          "detectedByEngines": [
+            "SecurityCore"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "NO_RATE_LIMIT_WRITE_OP"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.7,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "9d188e16f2a84ce0",
+          "type": "BEARER_TOKEN_NO_EXPIRY",
+          "title": "BEARER_TOKEN_NO_EXPIRY",
+          "severity": "LOW",
+          "score": 22,
+          "probability": "18.5%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "SecurityCore",
+          "detectedByEngines": [
+            "SecurityCore"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "BEARER_TOKEN_NO_EXPIRY"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.65,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        }
+      ]
+    },
+    "/resources/k6ez4/common/keycloak/vendor/react/react-jsx-runtime.production.min.js": {
+      "method": "GET",
+      "flags": 0,
+      "maxSeverity": "HIGH",
+      "securityScore": 54,
+      "findings": [
+        {
+          "id": "8f411b8f87e9a14a",
+          "type": "JWT_ALGORITHM_NOT_LOCKED",
+          "title": "JWT_ALGORITHM_NOT_LOCKED",
+          "severity": "HIGH",
+          "score": 66,
+          "probability": "54.0%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "AuthAnalyzer",
+          "detectedByEngines": [
+            "AuthAnalyzer"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "JWT_ALGORITHM_NOT_LOCKED"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": 0.75,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "ff95c74cc4ffe3cf",
+          "type": "RATE_LIMIT_MISSING_SENSITIVE",
+          "title": "High-Sensitivity Endpoint Without Rate Limiting (sensitivity=0.95)",
+          "severity": "HIGH",
+          "score": 66,
+          "probability": "54.0%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "CorsRateLimiter",
+          "detectedByEngines": [
+            "CorsRateLimiter"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "RATE_LIMIT_MISSING_SENSITIVE"
+          ],
+          "description": "GET /resources/k6ez4/common/keycloak/vendor/react/react-jsx-runtime.production.min.js operates on highly sensitive data (pathSensitivity=0.95) with weak authentication and no rate limiting.",
+          "remediation": "Implement per-user and per-IP rate limiting. For financial/health endpoints: ≤10 req/min per user.",
+          "reasoning": [
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": null,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": false
+        },
+        {
+          "id": "779d0d4092d5c9a0",
+          "type": "BEARER_TOKEN_NO_EXPIRY",
+          "title": "BEARER_TOKEN_NO_EXPIRY",
+          "severity": "LOW",
+          "score": 20,
+          "probability": "16.4%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "SecurityCore",
+          "detectedByEngines": [
+            "SecurityCore"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "BEARER_TOKEN_NO_EXPIRY"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.65,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        }
+      ]
+    },
+    "/resources/k6ez4/common/keycloak/vendor/react/react.production.min.js": {
+      "method": "GET",
+      "flags": 0,
+      "maxSeverity": "HIGH",
+      "securityScore": 54,
+      "findings": [
+        {
+          "id": "9ad46e289655fb6a",
+          "type": "RATE_LIMIT_MISSING_SENSITIVE",
+          "title": "High-Sensitivity Endpoint Without Rate Limiting (sensitivity=0.95)",
+          "severity": "HIGH",
+          "score": 66,
+          "probability": "54.0%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "CorsRateLimiter",
+          "detectedByEngines": [
+            "CorsRateLimiter"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "RATE_LIMIT_MISSING_SENSITIVE"
+          ],
+          "description": "GET /resources/k6ez4/common/keycloak/vendor/react/react.production.min.js operates on highly sensitive data (pathSensitivity=0.95) with weak authentication and no rate limiting.",
+          "remediation": "Implement per-user and per-IP rate limiting. For financial/health endpoints: ≤10 req/min per user.",
+          "reasoning": [
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": null,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": false
+        },
+        {
+          "id": "771a7bd7ce8b3d9d",
+          "type": "JWT_ALGORITHM_NOT_LOCKED",
+          "title": "JWT_ALGORITHM_NOT_LOCKED",
+          "severity": "HIGH",
+          "score": 66,
+          "probability": "54.0%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "AuthAnalyzer",
+          "detectedByEngines": [
+            "AuthAnalyzer"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "JWT_ALGORITHM_NOT_LOCKED"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": 0.75,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "0e223f8b7eb60387",
+          "type": "BEARER_TOKEN_NO_EXPIRY",
+          "title": "BEARER_TOKEN_NO_EXPIRY",
+          "severity": "LOW",
+          "score": 20,
+          "probability": "16.4%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "SecurityCore",
+          "detectedByEngines": [
+            "SecurityCore"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "BEARER_TOKEN_NO_EXPIRY"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.65,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        }
+      ]
+    },
+    "/resources/k6ez4/common/keycloak/vendor/react-dom/react-dom.production.min.js": {
+      "method": "GET",
+      "flags": 0,
+      "maxSeverity": "HIGH",
+      "securityScore": 54,
+      "findings": [
+        {
+          "id": "efbfd3159c8bd2e3",
+          "type": "RATE_LIMIT_MISSING_SENSITIVE",
+          "title": "High-Sensitivity Endpoint Without Rate Limiting (sensitivity=0.95)",
+          "severity": "HIGH",
+          "score": 66,
+          "probability": "54.0%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "CorsRateLimiter",
+          "detectedByEngines": [
+            "CorsRateLimiter"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "RATE_LIMIT_MISSING_SENSITIVE"
+          ],
+          "description": "GET /resources/k6ez4/common/keycloak/vendor/react-dom/react-dom.production.min.js operates on highly sensitive data (pathSensitivity=0.95) with weak authentication and no rate limiting.",
+          "remediation": "Implement per-user and per-IP rate limiting. For financial/health endpoints: ≤10 req/min per user.",
+          "reasoning": [
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": null,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": false
+        },
+        {
+          "id": "eb1a84f2bdb70122",
+          "type": "JWT_ALGORITHM_NOT_LOCKED",
+          "title": "JWT_ALGORITHM_NOT_LOCKED",
+          "severity": "HIGH",
+          "score": 66,
+          "probability": "54.0%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "AuthAnalyzer",
+          "detectedByEngines": [
+            "AuthAnalyzer"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "JWT_ALGORITHM_NOT_LOCKED"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": 0.75,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "ae9a2218d98b72b8",
+          "type": "BEARER_TOKEN_NO_EXPIRY",
+          "title": "BEARER_TOKEN_NO_EXPIRY",
+          "severity": "LOW",
+          "score": 20,
+          "probability": "16.4%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "SecurityCore",
+          "detectedByEngines": [
+            "SecurityCore"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "BEARER_TOKEN_NO_EXPIRY"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.65,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        }
+      ]
+    },
+    "/resources/master/account/en": {
+      "method": "GET",
+      "flags": 512,
+      "maxSeverity": "HIGH",
+      "securityScore": 54,
+      "findings": [
+        {
+          "id": "ebf9479fd4d0f7a1",
+          "type": "JWT_ALGORITHM_NOT_LOCKED",
+          "title": "JWT_ALGORITHM_NOT_LOCKED",
+          "severity": "HIGH",
+          "score": 66,
+          "probability": "54.5%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "AuthAnalyzer",
+          "detectedByEngines": [
+            "AuthAnalyzer"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "JWT_ALGORITHM_NOT_LOCKED"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": 0.75,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "d7184b658110f91a",
+          "type": "GDPR_PII_PATH_UNPROTECTED",
+          "title": "GDPR Concern: Personal Data Path Without Verified Controls",
+          "severity": "HIGH",
+          "score": 66,
+          "probability": "54.5%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "ComplianceEngine",
+          "detectedByEngines": [
+            "ComplianceEngine",
+            "ContextEngine"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "GDPR_PII_PATH_UNPROTECTED"
+          ],
+          "description": "Endpoint GET /resources/master/account/en follows a personal data path pattern (matched: account) without spec-verified authentication. GDPR Art. 32 requires appropriate technical measures to secure personal data processing. Auth source: CROSS_VALIDATED — not sufficient for GDPR compliance decisions.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": null,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "072369f61401ff20",
+          "type": "BEARER_TOKEN_NO_EXPIRY",
+          "title": "BEARER_TOKEN_NO_EXPIRY",
+          "severity": "LOW",
+          "score": 20,
+          "probability": "16.5%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "SecurityCore",
+          "detectedByEngines": [
+            "SecurityCore"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "BEARER_TOKEN_NO_EXPIRY"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.65,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        }
+      ]
+    },
+    "/realms/master/protocol/openid-connect/3p-cookies/step1.html": {
+      "method": "GET",
+      "flags": 0,
+      "maxSeverity": "HIGH",
+      "securityScore": 74,
+      "findings": [
+        {
+          "id": "4665518180593e6d",
+          "type": "JWT_ALGORITHM_NOT_LOCKED",
+          "title": "JWT_ALGORITHM_NOT_LOCKED",
+          "severity": "HIGH",
+          "score": 66,
+          "probability": "54.0%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "AuthAnalyzer",
+          "detectedByEngines": [
+            "AuthAnalyzer"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "JWT_ALGORITHM_NOT_LOCKED"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": 0.75,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "cad46e3267bca8ab",
+          "type": "BEARER_TOKEN_NO_EXPIRY",
+          "title": "BEARER_TOKEN_NO_EXPIRY",
+          "severity": "LOW",
+          "score": 20,
+          "probability": "16.4%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "SecurityCore",
+          "detectedByEngines": [
+            "SecurityCore"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "BEARER_TOKEN_NO_EXPIRY"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.65,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        }
+      ]
+    },
+    "/realms/master/protocol/openid-connect/login-status-iframe.html": {
+      "method": "GET",
+      "flags": 0,
+      "maxSeverity": "HIGH",
+      "securityScore": 63,
+      "findings": [
+        {
+          "id": "0902b8c371a29b8f",
+          "type": "JWT_ALGORITHM_NOT_LOCKED",
+          "title": "JWT_ALGORITHM_NOT_LOCKED",
+          "severity": "HIGH",
+          "score": 66,
+          "probability": "54.0%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "AuthAnalyzer",
+          "detectedByEngines": [
+            "AuthAnalyzer"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "JWT_ALGORITHM_NOT_LOCKED"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": 0.75,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "892236f8c613a949",
+          "type": "RATE_LIMIT_MISSING_LOGIN",
+          "title": "Authentication Endpoint Without Rate Limiting",
+          "severity": "MEDIUM",
+          "score": 38,
+          "probability": "31.1%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "CorsRateLimiter",
+          "detectedByEngines": [
+            "CorsRateLimiter"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "RATE_LIMIT_MISSING_LOGIN"
+          ],
+          "description": "GET /realms/master/protocol/openid-connect/login-status-iframe.html handles authentication but has no documented rate limiting. Vulnerable to brute force, credential stuffing, and password spraying attacks.",
+          "remediation": "Implement strict rate limiting (≤5 req/min per IP) with progressive delays and account lockout.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": null,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": false
+        },
+        {
+          "id": "b10ff6ef2b40daaf",
+          "type": "BEARER_TOKEN_NO_EXPIRY",
+          "title": "BEARER_TOKEN_NO_EXPIRY",
+          "severity": "LOW",
+          "score": 20,
+          "probability": "16.4%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "SecurityCore",
+          "detectedByEngines": [
+            "SecurityCore"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "BEARER_TOKEN_NO_EXPIRY"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.65,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        }
+      ]
+    },
+    "/resources/k6ez4/account/keycloak.v3/content.json": {
+      "method": "GET",
+      "flags": 512,
+      "maxSeverity": "HIGH",
+      "securityScore": 34,
+      "findings": [
+        {
+          "id": "97ab239ca8d11c51",
+          "type": "RATE_LIMIT_MISSING_SENSITIVE",
+          "title": "High-Sensitivity Endpoint Without Rate Limiting (sensitivity=0.95)",
+          "severity": "HIGH",
+          "score": 66,
+          "probability": "54.5%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "CorsRateLimiter",
+          "detectedByEngines": [
+            "CorsRateLimiter"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "RATE_LIMIT_MISSING_SENSITIVE"
+          ],
+          "description": "GET /resources/k6ez4/account/keycloak.v3/content.json operates on highly sensitive data (pathSensitivity=0.95) with weak authentication and no rate limiting.",
+          "remediation": "Implement per-user and per-IP rate limiting. For financial/health endpoints: ≤10 req/min per user.",
+          "reasoning": [
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": null,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": false
+        },
+        {
+          "id": "d78c87e240c85322",
+          "type": "JWT_ALGORITHM_NOT_LOCKED",
+          "title": "JWT_ALGORITHM_NOT_LOCKED",
+          "severity": "HIGH",
+          "score": 66,
+          "probability": "54.5%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "AuthAnalyzer",
+          "detectedByEngines": [
+            "AuthAnalyzer"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "JWT_ALGORITHM_NOT_LOCKED"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": 0.75,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "9ff3ad33d5a9112c",
+          "type": "GDPR_PII_PATH_UNPROTECTED",
+          "title": "GDPR Concern: Personal Data Path Without Verified Controls",
+          "severity": "HIGH",
+          "score": 66,
+          "probability": "54.5%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "ComplianceEngine",
+          "detectedByEngines": [
+            "ComplianceEngine",
+            "ContextEngine"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "GDPR_PII_PATH_UNPROTECTED"
+          ],
+          "description": "Endpoint GET /resources/k6ez4/account/keycloak.v3/content.json follows a personal data path pattern (matched: account) without spec-verified authentication. GDPR Art. 32 requires appropriate technical measures to secure personal data processing. Auth source: CROSS_VALIDATED — not sufficient for GDPR compliance decisions.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": null,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "d8fb0fc98fc403dc",
+          "type": "BEARER_TOKEN_NO_EXPIRY",
+          "title": "BEARER_TOKEN_NO_EXPIRY",
+          "severity": "LOW",
+          "score": 20,
+          "probability": "16.5%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "SecurityCore",
+          "detectedByEngines": [
+            "SecurityCore"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "BEARER_TOKEN_NO_EXPIRY"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.65,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        }
+      ]
+    },
+    "/resources/k6ez4/account/keycloak.v3/assets/PersonalInfo-B3qlHebj.js": {
+      "method": "GET",
+      "flags": 0,
+      "maxSeverity": "HIGH",
+      "securityScore": 34,
+      "findings": [
+        {
+          "id": "289b4b2a37888bf5",
+          "type": "RATE_LIMIT_MISSING_SENSITIVE",
+          "title": "High-Sensitivity Endpoint Without Rate Limiting (sensitivity=0.95)",
+          "severity": "HIGH",
+          "score": 66,
+          "probability": "54.5%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "CorsRateLimiter",
+          "detectedByEngines": [
+            "CorsRateLimiter"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "RATE_LIMIT_MISSING_SENSITIVE"
+          ],
+          "description": "GET /resources/k6ez4/account/keycloak.v3/assets/PersonalInfo-B3qlHebj.js operates on highly sensitive data (pathSensitivity=0.95) with weak authentication and no rate limiting.",
+          "remediation": "Implement per-user and per-IP rate limiting. For financial/health endpoints: ≤10 req/min per user.",
+          "reasoning": [
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": null,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": false
+        },
+        {
+          "id": "8c77f67ae7dfe0a8",
+          "type": "JWT_ALGORITHM_NOT_LOCKED",
+          "title": "JWT_ALGORITHM_NOT_LOCKED",
+          "severity": "HIGH",
+          "score": 66,
+          "probability": "54.5%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "AuthAnalyzer",
+          "detectedByEngines": [
+            "AuthAnalyzer"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "JWT_ALGORITHM_NOT_LOCKED"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": 0.75,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "4086501208884e66",
+          "type": "GDPR_PII_PATH_UNPROTECTED",
+          "title": "GDPR Concern: Personal Data Path Without Verified Controls",
+          "severity": "HIGH",
+          "score": 66,
+          "probability": "54.5%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "ComplianceEngine",
+          "detectedByEngines": [
+            "ComplianceEngine",
+            "ContextEngine"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "GDPR_PII_PATH_UNPROTECTED"
+          ],
+          "description": "Endpoint GET /resources/k6ez4/account/keycloak.v3/assets/PersonalInfo-B3qlHebj.js follows a personal data path pattern (matched: user-data) without spec-verified authentication. GDPR Art. 32 requires appropriate technical measures to secure personal data processing. Auth source: CROSS_VALIDATED — not sufficient for GDPR compliance decisions.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": null,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "edd7bf1bfe33e330",
+          "type": "BEARER_TOKEN_NO_EXPIRY",
+          "title": "BEARER_TOKEN_NO_EXPIRY",
+          "severity": "LOW",
+          "score": 20,
+          "probability": "16.5%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "SecurityCore",
+          "detectedByEngines": [
+            "SecurityCore"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "BEARER_TOKEN_NO_EXPIRY"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.65,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        }
+      ]
+    },
+    "/resources/k6ez4/account/keycloak.v3/assets/DataListItemRow-CXfELLqF.js": {
+      "method": "GET",
+      "flags": 0,
+      "maxSeverity": "HIGH",
+      "securityScore": 34,
+      "findings": [
+        {
+          "id": "db2fdce74128fc2b",
+          "type": "RATE_LIMIT_MISSING_SENSITIVE",
+          "title": "High-Sensitivity Endpoint Without Rate Limiting (sensitivity=0.95)",
+          "severity": "HIGH",
+          "score": 66,
+          "probability": "54.5%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "CorsRateLimiter",
+          "detectedByEngines": [
+            "CorsRateLimiter"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "RATE_LIMIT_MISSING_SENSITIVE"
+          ],
+          "description": "GET /resources/k6ez4/account/keycloak.v3/assets/DataListItemRow-CXfELLqF.js operates on highly sensitive data (pathSensitivity=0.95) with weak authentication and no rate limiting.",
+          "remediation": "Implement per-user and per-IP rate limiting. For financial/health endpoints: ≤10 req/min per user.",
+          "reasoning": [
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": null,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": false
+        },
+        {
+          "id": "f1255fea7a3821cb",
+          "type": "JWT_ALGORITHM_NOT_LOCKED",
+          "title": "JWT_ALGORITHM_NOT_LOCKED",
+          "severity": "HIGH",
+          "score": 66,
+          "probability": "54.5%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "AuthAnalyzer",
+          "detectedByEngines": [
+            "AuthAnalyzer"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "JWT_ALGORITHM_NOT_LOCKED"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": 0.75,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "775d384a45926edd",
+          "type": "GDPR_PII_PATH_UNPROTECTED",
+          "title": "GDPR Concern: Personal Data Path Without Verified Controls",
+          "severity": "HIGH",
+          "score": 66,
+          "probability": "54.5%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "ComplianceEngine",
+          "detectedByEngines": [
+            "ComplianceEngine",
+            "ContextEngine"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "GDPR_PII_PATH_UNPROTECTED"
+          ],
+          "description": "Endpoint GET /resources/k6ez4/account/keycloak.v3/assets/DataListItemRow-CXfELLqF.js follows a personal data path pattern (matched: account) without spec-verified authentication. GDPR Art. 32 requires appropriate technical measures to secure personal data processing. Auth source: CROSS_VALIDATED — not sufficient for GDPR compliance decisions.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": null,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "02c82f0ecd638837",
+          "type": "BEARER_TOKEN_NO_EXPIRY",
+          "title": "BEARER_TOKEN_NO_EXPIRY",
+          "severity": "LOW",
+          "score": 20,
+          "probability": "16.5%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "SecurityCore",
+          "detectedByEngines": [
+            "SecurityCore"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "BEARER_TOKEN_NO_EXPIRY"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.65,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        }
+      ]
+    },
+    "Global": {
+      "flags": 512,
+      "maxSeverity": "MEDIUM",
+      "securityScore": 0,
+      "findings": [
+        {
+          "id": "586fb6e773c31b21",
+          "type": "DATA_CREDENTIAL",
+          "title": "Sensitive Field Detected: clientId",
+          "severity": "MEDIUM",
+          "score": 55,
+          "probability": "46.5%",
+          "centrality": "0.000699",
+          "attackChains": [
+            {
+              "entryPoint": "GET /realms/master/account",
+              "chain": [
+                "GET /realms/master/account",
+                "SCHEMA_#/components/schemas/RealmsMasterAccountReferrerSecurityAdminConsoleReferrerUriHttp3A2F2Flocalhost3A80802Fadmin2Fmaster2Fconsole2F232Fmaster2Fworkflows2Fcreate2FnewState63c7639f2fad4f6e813e4776f458ea4bSessionStateMNBmkl4JeMVnH4NGvX6QEFIssHttp3A2F2Flocalhost3A80802Frealms2FmasterCode0b22965fE9480576Ac20149be74ff465MNBmkl4JeMVnH4NGvX6QEF771f25596eda4861A5aeA1e83537db57GetResponse"
+              ],
+              "depth": 2
+            }
+          ],
+          "attackChainsCount": 1,
+          "detectedBy": "DataScanner",
+          "detectedByEngines": [
+            "DataScanner"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DATA_CREDENTIAL"
+          ],
+          "description": "Detected DATA_CREDENTIAL in field 'clientId' via NAME_ENGINE (confidence: 95%).",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Reachable via 1 attack path(s), max depth: 2",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.95,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": {
+            "auth": false,
+            "transport": true,
+            "dataRisk": true,
+            "apiContext": true
+          }
+        },
+        {
+          "id": "51c3ad5a8d7b0683",
+          "type": "DATA_NETWORK",
+          "title": "Sensitive Field Detected: locale",
+          "severity": "MEDIUM",
+          "score": 39,
+          "probability": "33.0%",
+          "centrality": "0.000699",
+          "attackChains": [
+            {
+              "entryPoint": "GET /realms/master/account",
+              "chain": [
+                "GET /realms/master/account",
+                "SCHEMA_#/components/schemas/RealmsMasterAccountReferrerSecurityAdminConsoleReferrerUriHttp3A2F2Flocalhost3A80802Fadmin2Fmaster2Fconsole2F232Fmaster2Fworkflows2Fcreate2FnewState63c7639f2fad4f6e813e4776f458ea4bSessionStateMNBmkl4JeMVnH4NGvX6QEFIssHttp3A2F2Flocalhost3A80802Frealms2FmasterCode0b22965fE9480576Ac20149be74ff465MNBmkl4JeMVnH4NGvX6QEF771f25596eda4861A5aeA1e83537db57GetResponse"
+              ],
+              "depth": 2
+            }
+          ],
+          "attackChainsCount": 1,
+          "detectedBy": "DataScanner",
+          "detectedByEngines": [
+            "DataScanner"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DATA_NETWORK"
+          ],
+          "description": "Detected DATA_NETWORK in field 'locale' via FORMAT_ENGINE (confidence: 72%).",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Reachable via 1 attack path(s), max depth: 2",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.72,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": {
+            "auth": false,
+            "transport": true,
+            "dataRisk": true,
+            "apiContext": true
+          }
+        },
+        {
+          "id": "b6c778add606418b",
+          "type": "DATA_NETWORK",
+          "title": "Sensitive Field Detected: realm",
+          "severity": "MEDIUM",
+          "score": 39,
+          "probability": "33.0%",
+          "centrality": "0.000699",
+          "attackChains": [
+            {
+              "entryPoint": "GET /realms/master/account",
+              "chain": [
+                "GET /realms/master/account",
+                "SCHEMA_#/components/schemas/RealmsMasterAccountReferrerSecurityAdminConsoleReferrerUriHttp3A2F2Flocalhost3A80802Fadmin2Fmaster2Fconsole2F232Fmaster2Fworkflows2Fcreate2FnewState63c7639f2fad4f6e813e4776f458ea4bSessionStateMNBmkl4JeMVnH4NGvX6QEFIssHttp3A2F2Flocalhost3A80802Frealms2FmasterCode0b22965fE9480576Ac20149be74ff465MNBmkl4JeMVnH4NGvX6QEF771f25596eda4861A5aeA1e83537db57GetResponse"
+              ],
+              "depth": 2
+            }
+          ],
+          "attackChainsCount": 1,
+          "detectedBy": "DataScanner",
+          "detectedByEngines": [
+            "DataScanner"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DATA_NETWORK"
+          ],
+          "description": "Detected DATA_NETWORK in field 'realm' via FORMAT_ENGINE (confidence: 72%).",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Reachable via 1 attack path(s), max depth: 2",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.72,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": {
+            "auth": false,
+            "transport": true,
+            "dataRisk": true,
+            "apiContext": true
+          }
+        },
+        {
+          "id": "339404706bcc599b",
+          "type": "DATA_NETWORK",
+          "title": "Sensitive Field Detected: scope",
+          "severity": "MEDIUM",
+          "score": 39,
+          "probability": "33.0%",
+          "centrality": "0.000699",
+          "attackChains": [
+            {
+              "entryPoint": "GET /realms/master/account",
+              "chain": [
+                "GET /realms/master/account",
+                "SCHEMA_#/components/schemas/RealmsMasterAccountReferrerSecurityAdminConsoleReferrerUriHttp3A2F2Flocalhost3A80802Fadmin2Fmaster2Fconsole2F232Fmaster2Fworkflows2Fcreate2FnewState63c7639f2fad4f6e813e4776f458ea4bSessionStateMNBmkl4JeMVnH4NGvX6QEFIssHttp3A2F2Flocalhost3A80802Frealms2FmasterCode0b22965fE9480576Ac20149be74ff465MNBmkl4JeMVnH4NGvX6QEF771f25596eda4861A5aeA1e83537db57GetResponse"
+              ],
+              "depth": 2
+            }
+          ],
+          "attackChainsCount": 1,
+          "detectedBy": "DataScanner",
+          "detectedByEngines": [
+            "DataScanner"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DATA_NETWORK"
+          ],
+          "description": "Detected DATA_NETWORK in field 'scope' via FORMAT_ENGINE (confidence: 72%).",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Reachable via 1 attack path(s), max depth: 2",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.72,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": {
+            "auth": false,
+            "transport": true,
+            "dataRisk": true,
+            "apiContext": true
+          }
+        },
+        {
+          "id": "3f61c8de263ae0b4",
+          "type": "DATA_NETWORK",
+          "title": "Sensitive Field Detected: key",
+          "severity": "MEDIUM",
+          "score": 39,
+          "probability": "33.0%",
+          "centrality": "0.000000",
+          "attackChains": [
+            {
+              "entryPoint": "GET /realms/master/account",
+              "chain": [
+                "GET /realms/master/account",
+                "GET /realms/master/account/supportedLocales",
+                "SCHEMA_#/components/schemas/ResourcesMasterAccountEnGetResponse"
+              ],
+              "depth": 3
+            },
+            {
+              "entryPoint": "GET /realms/master/account",
+              "chain": [
+                "GET /realms/master/account",
+                "GET /realms/master/account/credentials",
+                "SCHEMA_#/components/schemas/ResourcesMasterAccountEnGetResponse"
+              ],
+              "depth": 3
+            },
+            {
+              "entryPoint": "GET /realms/master/account",
+              "chain": [
+                "GET /realms/master/account",
+                "GET /realms/master/account/sessions/devices",
+                "SCHEMA_#/components/schemas/ResourcesMasterAccountEnGetResponse"
+              ],
+              "depth": 3
+            },
+            {
+              "entryPoint": "GET /realms/master/account",
+              "chain": [
+                "GET /realms/master/account",
+                "GET /realms/master/account/linked-accounts",
+                "SCHEMA_#/components/schemas/ResourcesMasterAccountEnGetResponse"
+              ],
+              "depth": 3
+            },
+            {
+              "entryPoint": "GET /realms/master/account",
+              "chain": [
+                "GET /realms/master/account",
+                "GET /realms/master/account/applications",
+                "SCHEMA_#/components/schemas/ResourcesMasterAccountEnGetResponse"
+              ],
+              "depth": 3
+            },
+            {
+              "entryPoint": "GET /realms/master/account/",
+              "chain": [
+                "GET /realms/master/account/",
+                "GET /realms/master/account/supportedLocales",
+                "SCHEMA_#/components/schemas/ResourcesMasterAccountEnGetResponse"
+              ],
+              "depth": 3
+            },
+            {
+              "entryPoint": "GET /realms/master/account/",
+              "chain": [
+                "GET /realms/master/account/",
+                "GET /realms/master/account/credentials",
+                "SCHEMA_#/components/schemas/ResourcesMasterAccountEnGetResponse"
+              ],
+              "depth": 3
+            },
+            {
+              "entryPoint": "GET /realms/master/account/",
+              "chain": [
+                "GET /realms/master/account/",
+                "GET /realms/master/account/sessions/devices",
+                "SCHEMA_#/components/schemas/ResourcesMasterAccountEnGetResponse"
+              ],
+              "depth": 3
+            },
+            {
+              "entryPoint": "GET /realms/master/account/",
+              "chain": [
+                "GET /realms/master/account/",
+                "GET /realms/master/account/linked-accounts",
+                "SCHEMA_#/components/schemas/ResourcesMasterAccountEnGetResponse"
+              ],
+              "depth": 3
+            },
+            {
+              "entryPoint": "GET /realms/master/account/",
+              "chain": [
+                "GET /realms/master/account/",
+                "GET /realms/master/account/applications",
+                "SCHEMA_#/components/schemas/ResourcesMasterAccountEnGetResponse"
+              ],
+              "depth": 3
+            }
+          ],
+          "attackChainsCount": 10,
+          "detectedBy": "DataScanner",
+          "detectedByEngines": [
+            "DataScanner"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DATA_NETWORK"
+          ],
+          "description": "Detected DATA_NETWORK in field 'key' via FORMAT_ENGINE (confidence: 72%).",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Reachable via 10 attack path(s), max depth: 3",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.72,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": {
+            "auth": false,
+            "transport": true,
+            "dataRisk": true,
+            "apiContext": true
+          }
+        },
+        {
+          "id": "be8561e37e366b00",
+          "type": "DATA_NETWORK",
+          "title": "Sensitive Field Detected: is_temporary_admin[]",
+          "severity": "MEDIUM",
+          "score": 39,
+          "probability": "33.0%",
+          "centrality": "0.001747",
+          "attackChains": [
+            {
+              "entryPoint": "GET /realms/master/account/",
+              "chain": [
+                "GET /realms/master/account/",
+                "SCHEMA_#/components/schemas/RealmsMasterAccountUserProfileMetadataTrueGetResponse"
+              ],
+              "depth": 2
+            }
+          ],
+          "attackChainsCount": 1,
+          "detectedBy": "DataScanner",
+          "detectedByEngines": [
+            "DataScanner"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DATA_NETWORK"
+          ],
+          "description": "Detected DATA_NETWORK in field 'is_temporary_admin[]' via FORMAT_ENGINE (confidence: 72%).",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Reachable via 1 attack path(s), max depth: 2",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.72,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": {
+            "auth": false,
+            "transport": true,
+            "dataRisk": true,
+            "apiContext": true
+          }
+        },
+        {
+          "id": "6aac66148f80e08e",
+          "type": "DATA_ID",
+          "title": "Sensitive Field Detected: id",
+          "severity": "MEDIUM",
+          "score": 39,
+          "probability": "33.0%",
+          "centrality": "0.001747",
+          "attackChains": [
+            {
+              "entryPoint": "GET /realms/master/account/",
+              "chain": [
+                "GET /realms/master/account/",
+                "SCHEMA_#/components/schemas/RealmsMasterAccountUserProfileMetadataTrueGetResponse"
+              ],
+              "depth": 2
+            }
+          ],
+          "attackChainsCount": 1,
+          "detectedBy": "DataScanner",
+          "detectedByEngines": [
+            "DataScanner"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DATA_ID"
+          ],
+          "description": "Detected DATA_ID in field 'id' via FORMAT_ENGINE (confidence: 80%).",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Reachable via 1 attack path(s), max depth: 2",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.8,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": {
+            "auth": false,
+            "transport": true,
+            "dataRisk": true,
+            "apiContext": true
+          }
+        },
+        {
+          "id": "d51b9344ba206029",
+          "type": "DATA_NETWORK",
+          "title": "Sensitive Field Detected: name",
+          "severity": "MEDIUM",
+          "score": 39,
+          "probability": "33.0%",
+          "centrality": "0.001747",
+          "attackChains": [
+            {
+              "entryPoint": "GET /realms/master/account/",
+              "chain": [
+                "GET /realms/master/account/",
+                "SCHEMA_#/components/schemas/RealmsMasterAccountUserProfileMetadataTrueGetResponse"
+              ],
+              "depth": 2
+            }
+          ],
+          "attackChainsCount": 1,
+          "detectedBy": "DataScanner",
+          "detectedByEngines": [
+            "DataScanner"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DATA_NETWORK"
+          ],
+          "description": "Detected DATA_NETWORK in field 'name' via FORMAT_ENGINE (confidence: 72%).",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Reachable via 1 attack path(s), max depth: 2",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.72,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": {
+            "auth": false,
+            "transport": true,
+            "dataRisk": true,
+            "apiContext": true
+          }
+        },
+        {
+          "id": "74918bda3ac26859",
+          "type": "DATA_PII_EMAIL",
+          "title": "Sensitive Field Detected: email",
+          "severity": "MEDIUM",
+          "score": 39,
+          "probability": "33.0%",
+          "centrality": "0.001747",
+          "attackChains": [
+            {
+              "entryPoint": "GET /realms/master/account/",
+              "chain": [
+                "GET /realms/master/account/",
+                "SCHEMA_#/components/schemas/RealmsMasterAccountUserProfileMetadataTrueGetResponse"
+              ],
+              "depth": 2
+            }
+          ],
+          "attackChainsCount": 1,
+          "detectedBy": "DataScanner",
+          "detectedByEngines": [
+            "DataScanner"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DATA_PII_EMAIL"
+          ],
+          "description": "Detected DATA_PII_EMAIL in field 'email' via NAME_ENGINE (confidence: 90%).",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Reachable via 1 attack path(s), max depth: 2",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.9,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": {
+            "auth": false,
+            "transport": true,
+            "dataRisk": true,
+            "apiContext": true
+          }
+        },
+        {
+          "id": "853130161a00e969",
+          "type": "DATA_NETWORK",
+          "title": "Sensitive Field Detected: max",
+          "severity": "MEDIUM",
+          "score": 39,
+          "probability": "33.0%",
+          "centrality": "0.001747",
+          "attackChains": [
+            {
+              "entryPoint": "GET /realms/master/account/",
+              "chain": [
+                "GET /realms/master/account/",
+                "SCHEMA_#/components/schemas/RealmsMasterAccountUserProfileMetadataTrueGetResponse"
+              ],
+              "depth": 2
+            }
+          ],
+          "attackChainsCount": 1,
+          "detectedBy": "DataScanner",
+          "detectedByEngines": [
+            "DataScanner"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DATA_NETWORK"
+          ],
+          "description": "Detected DATA_NETWORK in field 'max' via FORMAT_ENGINE (confidence: 72%).",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Reachable via 1 attack path(s), max depth: 2",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.72,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": {
+            "auth": false,
+            "transport": true,
+            "dataRisk": true,
+            "apiContext": true
+          }
+        },
+        {
+          "id": "856ddd9698e1d0aa",
+          "type": "DATA_NETWORK",
+          "title": "Sensitive Field Detected: username",
+          "severity": "MEDIUM",
+          "score": 39,
+          "probability": "33.0%",
+          "centrality": "0.001747",
+          "attackChains": [
+            {
+              "entryPoint": "GET /realms/master/account/",
+              "chain": [
+                "GET /realms/master/account/",
+                "SCHEMA_#/components/schemas/RealmsMasterAccountUserProfileMetadataTrueGetResponse"
+              ],
+              "depth": 2
+            }
+          ],
+          "attackChainsCount": 1,
+          "detectedBy": "DataScanner",
+          "detectedByEngines": [
+            "DataScanner"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DATA_NETWORK"
+          ],
+          "description": "Detected DATA_NETWORK in field 'username' via FORMAT_ENGINE (confidence: 72%).",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Reachable via 1 attack path(s), max depth: 2",
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.72,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": {
+            "auth": false,
+            "transport": true,
+            "dataRisk": true,
+            "apiContext": true
+          }
+        },
+        {
+          "id": "65f6e9c7ec5ab117",
+          "type": "DATA_CREDENTIAL",
+          "title": "Sensitive Field Detected: access_token",
+          "severity": "MEDIUM",
+          "score": 38,
+          "probability": "32.1%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "DataScanner",
+          "detectedByEngines": [
+            "DataScanner"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DATA_CREDENTIAL"
+          ],
+          "description": "Detected DATA_CREDENTIAL in field 'access_token' via NAME_ENGINE (confidence: 88%).",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.88,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": {
+            "auth": false,
+            "transport": true,
+            "dataRisk": true,
+            "apiContext": true
+          }
+        },
+        {
+          "id": "e448e3e4de961cd9",
+          "type": "DATA_CREDENTIAL",
+          "title": "Sensitive Field Detected: id_token",
+          "severity": "MEDIUM",
+          "score": 38,
+          "probability": "32.1%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "DataScanner",
+          "detectedByEngines": [
+            "DataScanner"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DATA_CREDENTIAL"
+          ],
+          "description": "Detected DATA_CREDENTIAL in field 'id_token' via NAME_ENGINE (confidence: 88%).",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.88,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": {
+            "auth": false,
+            "transport": true,
+            "dataRisk": true,
+            "apiContext": true
+          }
+        },
+        {
+          "id": "1a544a03e6e6a8fa",
+          "type": "DATA_CREDENTIAL",
+          "title": "Sensitive Field Detected: refresh_token",
+          "severity": "MEDIUM",
+          "score": 38,
+          "probability": "32.1%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "DataScanner",
+          "detectedByEngines": [
+            "DataScanner"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DATA_CREDENTIAL"
+          ],
+          "description": "Detected DATA_CREDENTIAL in field 'refresh_token' via NAME_ENGINE (confidence: 88%).",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.88,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": {
+            "auth": false,
+            "transport": true,
+            "dataRisk": true,
+            "apiContext": true
+          }
+        },
+        {
+          "id": "759eb19a209812f3",
+          "type": "DATA_NETWORK",
+          "title": "Sensitive Field Detected: session_state",
+          "severity": "LOW",
+          "score": 16,
+          "probability": "13.5%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "DataScanner",
+          "detectedByEngines": [
+            "DataScanner"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DATA_NETWORK"
+          ],
+          "description": "Detected DATA_NETWORK in field 'session_state' via FORMAT_ENGINE (confidence: 72%).",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.72,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": {
+            "auth": false,
+            "transport": true,
+            "dataRisk": true,
+            "apiContext": true
+          }
+        },
+        {
+          "id": "c72a52734788ae35",
+          "type": "DATA_NETWORK",
+          "title": "Sensitive Field Detected: token_type",
+          "severity": "LOW",
+          "score": 16,
+          "probability": "13.5%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "DataScanner",
+          "detectedByEngines": [
+            "DataScanner"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DATA_NETWORK"
+          ],
+          "description": "Detected DATA_NETWORK in field 'token_type' via FORMAT_ENGINE (confidence: 72%).",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.72,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.38575000000000004,
+          "_ctxConflicts": [
+            "dataRisk",
+            "apiContext"
+          ],
+          "_ctxSpecActionable": {
+            "auth": false,
+            "transport": true,
+            "dataRisk": true,
+            "apiContext": true
+          }
+        }
+      ]
+    }
+  },
+  "intelligence": {
+    "suppressionLog": [],
+    "crossEngineCorrelations": 0,
+    "evidenceWeights": {
+      "PUBLIC_ACCESS": {
+        "pIfTrue": 0.85,
+        "pIfFalse": 0.15
+      },
+      "WEAK_AUTH": {
+        "pIfTrue": 0.92,
+        "pIfFalse": 0.08
+      },
+      "ADMIN_ROUTE": {
+        "pIfTrue": 0.78,
+        "pIfFalse": 0.35
+      },
+      "SENSITIVE_DATA": {
+        "pIfTrue": 0.88,
+        "pIfFalse": 0.12
+      },
+      "WRITE_OPERATION": {
+        "pIfTrue": 0.7,
+        "pIfFalse": 0.3
+      },
+      "HIGH_CENTRALITY": {
+        "pIfTrue": 0.75,
+        "pIfFalse": 0.25
+      },
+      "HTTP_TRANSPORT": {
+        "pIfTrue": 0.9,
+        "pIfFalse": 0.1
+      },
+      "DEEP_ATTACK_PATH": {
+        "pIfTrue": 0.95,
+        "pIfFalse": 0.05
+      },
+      "INCONSISTENT_AUTH": {
+        "pIfTrue": 0.8,
+        "pIfFalse": 0.2
+      },
+      "CORS_WILDCARD": {
+        "pIfTrue": 0.72,
+        "pIfFalse": 0.28
+      }
+    },
+    "engineTrustWeights": {
+      "ProtocolAnalyzer": 0.95,
+      "AuthAnalyzer": 0.85,
+      "DataScanner": 0.9,
+      "CorsRateLimiter": 0.78,
+      "WebhookAnalyzer": 0.8,
+      "LoggingMonitor": 0.8,
+      "ComplianceEngine": 0.8,
+      "CortexOmega_IDDFS": 0.9,
+      "SecurityCore": 0.7,
+      "ScoringEngine": 0.7,
+      "CortexOmega": 1
+    }
+  }
+}
+--------------------------------------------------
+Score: 48 | Grade: D
+Total Risks: 98
+--------------------------------------------------

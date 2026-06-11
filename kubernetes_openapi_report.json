@@ -1,0 +1,602 @@
+[ CLI ] Starting Sovereign Analysis on: kubernetes_openapi.json...
+{"ts":"2026-06-11T06:05:30.878Z","level":"INFO","module":"SpecNormalizer_v5.1","message":"Spec version detected: 3.0.1"}
+{"ts":"2026-06-11T06:05:30.879Z","level":"DEBUG","module":"SpecNormalizer_v5.1","message":"Registered 3 security scheme nodes"}
+{"ts":"2026-06-11T06:05:30.881Z","level":"INFO","module":"SpecNormalizer_v5.1","message":"Spec normalization complete","version":"3.0.1","nodes_built":16,"duration_ms":3}
+[GRAPH] Constructed: 16 nodes, 21 edges (5ms)
+{"ts":"2026-06-11T06:05:30.895Z","level":"INFO","module":"ProtocolAnalyzer_v6.0","message":"ProtocolAnalyzer v6.0 initialized"}
+{"ts":"2026-06-11T06:05:30.896Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"DataScanner Ultra v6.0 initialized — Context-First Architecture","runtime_ports_active":{"samples":0,"behavioral":0,"overrides":0}}
+{"ts":"2026-06-11T06:05:30.896Z","level":"INFO","module":"LoggingMonitor_Ultra_v5.1","message":"LoggingMonitor Ultra v5.1 initialized"}
+{"ts":"2026-06-11T06:05:30.896Z","level":"INFO","module":"WebhookAnalyzer_Ultra_v6.0","message":"WebhookAnalyzer Ultra v6.0 initialized — Context-First Architecture"}
+{"ts":"2026-06-11T06:05:30.897Z","level":"INFO","module":"ProtocolAnalyzer_v6.0","message":"ProtocolAnalyzer_v6.0 starting protocol detection..."}
+{"ts":"2026-06-11T06:05:30.898Z","level":"WARN","module":"ProtocolAnalyzer_v6.0","message":"[Phase 0] Endpoint transport INFERRED — decisions deferred","nodeId":"GET /api/v1/me/","transportSource":"DEFAULT","transportConf":0.1}
+{"ts":"2026-06-11T06:05:30.898Z","level":"INFO","module":"ProtocolAnalyzer_v6.0","message":"Phase 0 complete","endpointContexts":1,"globalUncertainty":0.505}
+{"ts":"2026-06-11T06:05:30.898Z","level":"INFO","module":"ProtocolAnalyzer_v6.0","message":"No global servers defined — transport protocol unknown. OAS3 default: server serving the spec file."}
+{"ts":"2026-06-11T06:05:30.898Z","level":"INFO","module":"ProtocolAnalyzer_v6.0","message":"Processing 1 endpoints for protocol flags."}
+{"ts":"2026-06-11T06:05:30.898Z","level":"INFO","module":"ProtocolAnalyzer_v6.0","message":"Protocol analysis complete.","endpoints_processed":1,"global_has_http":false,"global_has_https":false,"global_has_ws":false,"global_has_wss":false}
+{"ts":"2026-06-11T06:05:30.899Z","level":"INFO","module":"AuthAnalyzer_v2.0_ContextFirst","message":"AuthAnalyzer v2.0 — Context-First Architecture"}
+{"ts":"2026-06-11T06:05:30.900Z","level":"INFO","module":"AuthAnalyzer_v2.0_ContextFirst","message":"Shared context built","hasContextEngine":true,"schemesFound":3,"globalUncertainty":0.505}
+{"ts":"2026-06-11T06:05:30.901Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"DataScanner v6.0 — Context-First — 16 nodes","runtime_samples":0,"behavioral_sigs":0,"classification_overrides":0}
+{"ts":"2026-06-11T06:05:30.901Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Phase 0: Context-First Initialization"}
+{"ts":"2026-06-11T06:05:30.903Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Phase 0 complete","globalApiContext":"general","globalDataRisk":"low","globalUncertainty":0.505,"endpointContexts":1}
+{"ts":"2026-06-11T06:05:30.903Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Phase 1: Schema Extraction & Indexing"}
+{"ts":"2026-06-11T06:05:30.904Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Extracted 22 schema descriptors."}
+{"ts":"2026-06-11T06:05:30.904Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Phase 2: Hybrid Field Analysis (Pattern + Name + Format + Entropy + Context)"}
+{"ts":"2026-06-11T06:05:30.917Z","level":"INFO","module":"CorsRateLimiter","version":"6.0.0","message":"CorsRateLimiter v6.0 — 16 nodes"}
+{"ts":"2026-06-11T06:05:30.917Z","level":"INFO","module":"LoggingMonitor_Ultra_v5.1","message":"Engaging Log Security & Traceability Scan..."}
+{"ts":"2026-06-11T06:05:30.918Z","level":"INFO","module":"LoggingMonitor_Ultra_v5.1","message":"Phase 0 complete","endpointContexts":1}
+{"ts":"2026-06-11T06:05:30.918Z","level":"INFO","module":"WebhookAnalyzer_Ultra_v6.0","message":"Scanning for Webhooks & Callbacks..."}
+{"ts":"2026-06-11T06:05:30.918Z","level":"INFO","module":"WebhookAnalyzer_Ultra_v6.0","message":"Phase 0 complete","globalUncertainty":0.505,"endpointContexts":1}
+{"ts":"2026-06-11T06:05:30.919Z","level":"INFO","module":"WebhookAnalyzer_Ultra_v6.0","message":"No webhooks detected in specification."}
+{"ts":"2026-06-11T06:05:30.919Z","level":"INFO","module":"AuthAnalyzer_v2.0_ContextFirst","message":"Analyzing 1 endpoints with context-awareness"}
+{"ts":"2026-06-11T06:05:30.930Z","level":"INFO","module":"LoggingMonitor_Ultra_v5.1","message":"Engine 1: Global Traceability Audit"}
+{"ts":"2026-06-11T06:05:30.933Z","level":"INFO","module":"LoggingMonitor_Ultra_v5.1","message":"Engine 2: Sensitive URL Parameter Audit"}
+{"ts":"2026-06-11T06:05:30.936Z","level":"INFO","module":"LoggingMonitor_Ultra_v5.1","message":"Engine 3: CRLF Log Injection Detection"}
+{"ts":"2026-06-11T06:05:30.937Z","level":"INFO","module":"AuthAnalyzer_v2.0_ContextFirst","message":"Analysis complete","duration":"38ms","endpoints":1,"risks":4,"contextUsage":{"inferredAuthUsed":1,"specAuthUsed":1,"contextPrimary":0}}
+{"ts":"2026-06-11T06:05:30.937Z","level":"INFO","module":"CorsRateLimiter","version":"6.0.0","message":"CorsRateLimiter v6.0 complete","duration_ms":20,"cors_misconfigurations":0,"rate_limit_issues":0,"dos_risks":0,"upload_risks":0,"context_hits":2,"context_misses":0}
+{"ts":"2026-06-11T06:05:30.937Z","level":"INFO","module":"LoggingMonitor_Ultra_v5.1","message":"Engine 4: Error Response Leakage Scan"}
+{"ts":"2026-06-11T06:05:30.939Z","level":"INFO","module":"LoggingMonitor_Ultra_v5.1","message":"Engine 5: Sensitive Response Field Audit"}
+{"ts":"2026-06-11T06:05:30.939Z","level":"INFO","module":"LoggingMonitor_Ultra_v5.1","message":"Engine 6: Audit Logging Gap Detection"}
+{"ts":"2026-06-11T06:05:30.940Z","level":"INFO","module":"LoggingMonitor_Ultra_v5.1","message":"Engine 7: Context-First Audit Logging Rules"}
+{"ts":"2026-06-11T06:05:30.941Z","level":"INFO","module":"LoggingMonitor_Ultra_v5.1","message":"Log Security Analysis Complete","duration_ms":24,"traceability_gaps":0,"injection_risks":0,"sensitive_url_params":0,"error_leaks":0,"sensitive_responses":0}
+{"ts":"2026-06-11T06:05:30.942Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Phase 3: Composite Sensitivity Clustering"}
+{"ts":"2026-06-11T06:05:30.943Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Phase 4: Contextual Risk Evaluation (Context-First)"}
+{"ts":"2026-06-11T06:05:30.943Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Evaluating contextual risk rules (Context-First)..."}
+{"ts":"2026-06-11T06:05:30.944Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Phase 5: Context-Aware New Rules (v6.0)"}
+{"ts":"2026-06-11T06:05:30.945Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Context-aware rules fired: 0 new findings"}
+{"ts":"2026-06-11T06:05:30.945Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Phase 5b: AI Security Direct Scan (v6.1)"}
+{"ts":"2026-06-11T06:05:30.948Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Phase 6: Graph-Based Sensitivity Flag Propagation"}
+{"ts":"2026-06-11T06:05:30.948Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Phase 7: Context-Aware False Positive Reduction"}
+{"ts":"2026-06-11T06:05:30.948Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"Applying context-aware false positive reduction..."}
+{"ts":"2026-06-11T06:05:30.948Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"False positive reduction complete: 2 findings removed."}
+{"ts":"2026-06-11T06:05:30.949Z","level":"INFO","module":"DataScanner_Ultra_v6.0","message":"DataScanner v6.0 Analysis Complete","duration_ms":47,"schemas_scanned":22,"fields_analyzed":35,"sensitive_found":4,"false_positives_removed":2,"runtime_signals_used":0,"context_amplifications":0,"context_suppressions":0,"context_first_hits":1,"new_rules_triggered":0,"findings":{"CRITICAL":0,"HIGH":2,"MEDIUM":2,"LOW":1},"data_categories":{"credentials":0,"secrets":0,"pii":4,"pci":0}}
+{"ts":"2026-06-11T06:05:30.950Z","level":"INFO","module":"ComplianceEngine_Ultra_v6.0","message":"ComplianceEngine Ultra v6.0 initialized — Context-First"}
+{"ts":"2026-06-11T06:05:30.950Z","level":"INFO","module":"ComplianceEngine_Ultra_v6.0","message":"Starting Regulatory Compliance Audit v6.0 — Context-First..."}
+{"ts":"2026-06-11T06:05:30.950Z","level":"INFO","module":"ComplianceEngine_Ultra_v6.0","message":"Phase 0-A: Context built for 1 endpoints","contextEngineAvailable":true}
+{"ts":"2026-06-11T06:05:30.951Z","level":"INFO","module":"ComplianceEngine_Ultra_v6.0","message":"API Context detected — Healthcare:false Financial:false EU:true"}
+{"ts":"2026-06-11T06:05:30.952Z","level":"INFO","module":"ComplianceEngine_Ultra_v6.0","message":"Phase 0-C: Injected 0 independent compliance findings","hipaaImpacts":0,"pciImpacts":0,"gdprImpacts":0}
+{"ts":"2026-06-11T06:05:30.952Z","level":"INFO","module":"ComplianceEngine_Ultra_v6.0","message":"Mapping 7 findings to compliance standards."}
+{"ts":"2026-06-11T06:05:30.953Z","level":"INFO","module":"ComplianceEngine_Ultra_v6.0","message":"Compliance Mapping Complete.","independentFindings":0,"complianceViolations":4}
+{"ts":"2026-06-11T06:05:30.953Z","level":"WARN","module":"ComplianceEngine_Ultra_v6.0","message":"[GDPR] AT_RISK — 3 violations"}
+{"ts":"2026-06-11T06:05:30.953Z","level":"WARN","module":"ComplianceEngine_Ultra_v6.0","message":"[HIPAA] AT_RISK — 2 violations"}
+{"ts":"2026-06-11T06:05:30.953Z","level":"INFO","module":"ComplianceEngine_Ultra_v6.0","message":"[PCI_DSS] COMPLIANT — 0 violations"}
+{"ts":"2026-06-11T06:05:30.953Z","level":"INFO","module":"ComplianceEngine_Ultra_v6.0","message":"[SOC2] COMPLIANT — 0 violations"}
+{"ts":"2026-06-11T06:05:30.953Z","level":"INFO","module":"ComplianceEngine_Ultra_v6.0","message":"[OWASP] COMPLIANT — 0 violations"}
+{"ts":"2026-06-11T06:05:30.954Z","level":"INFO","module":"ScoringEngine_v5.2","message":"Scoring engine starting","nodes":16}
+{"ts":"2026-06-11T06:05:30.954Z","level":"INFO","module":"ScoringEngine_v5.2","message":"Evaluating 2 nodes"}
+{"ts":"2026-06-11T06:05:30.955Z","level":"INFO","module":"ScoringEngine_v5.2","message":"Scoring complete","global_score":15,"grade":"F","endpoints":1,"weighted_risk":341.27,"breakdown":{"CRITICAL":0,"HIGH":3,"MEDIUM":3,"LOW":1,"INFO":0,"AI_CRITICAL":0},"runtime_used":false,"rule_failures":0,"duration_ms":1}
+Analysis_1781157930876: 84.271ms
+[ OK ] Analysis Complete.
+[ OK ] Report saved to: /mnt/secure_fort/scratch/white_page_project/white_page_project/api-security-core/SOVEREIGN_REPORTS/kubernetes_openapi_report.json
+--------------------------------------------------
+RAW REPORT (JSON):
+{
+  "engine": "Cortex_Omega_v2.0",
+  "metadata": {
+    "generatedAt": "2026-06-11T06:05:30.961Z",
+    "durationMs": 6,
+    "metrics": {
+      "startTime": 1781157930955,
+      "nodesProcessed": 16,
+      "risksIngested": 7,
+      "risksAfterDedup": 7,
+      "attackPathsFound": 0,
+      "maxAttackDepth": 0,
+      "centralityComputed": true,
+      "centralityMethod": "exact_brandes_16_nodes",
+      "bayesianUpdates": 0,
+      "falsePositivesSuppressed": 0,
+      "suppressionBreakdown": {},
+      "workerThreadsUsed": 0,
+      "workerTimeouts": 0,
+      "crossEngineCorrelations": 0,
+      "peakMemoryMB": 11
+    }
+  },
+  "summary": {
+    "totalRisks": 7,
+    "suppressed": 0,
+    "globalScore": 15,
+    "grade": "F",
+    "riskBreakdown": {
+      "CRITICAL": 0,
+      "HIGH": 1,
+      "MEDIUM": 2,
+      "LOW": 4
+    },
+    "failedRuleCount": 0,
+    "severityCounts": {
+      "CRITICAL": 0,
+      "HIGH": 1,
+      "MEDIUM": 2,
+      "LOW": 4
+    },
+    "complianceReport": {
+      "generatedAt": "2026-06-11T06:05:30.953Z",
+      "standards": {
+        "GDPR": {
+          "violations": [
+            {
+              "riskId": "DATA_PII_EMAIL",
+              "severity": "HIGH",
+              "location": "SCHEMA_#/components/schemas/MeGetResponse",
+              "description": "Detected DATA_PII_EMAIL in field 'email' via FORMAT_ENGINE (confidence: 96%).",
+              "clause": "Art. 5",
+              "requirement": "Data Minimization Principle"
+            },
+            {
+              "severity": "HIGH",
+              "location": "SCHEMA_#/components/schemas/MeGetResponse",
+              "description": "Personal Data Impact: Sensitive Field Detected: email",
+              "clause": "GDPR Art. 32",
+              "requirement": "Security of processing personal data"
+            },
+            {
+              "riskId": "DATA_PII_NAME",
+              "severity": "MEDIUM",
+              "location": "SCHEMA_#/components/schemas/MeGetResponse",
+              "description": "Detected DATA_PII_NAME in field 'first_name' via NAME_ENGINE (confidence: 82%).",
+              "clause": "Art. 5",
+              "requirement": "Data Minimization Principle"
+            }
+          ],
+          "status": "AT_RISK"
+        },
+        "HIPAA": {
+          "violations": [
+            {
+              "riskId": "DATA_PII_EMAIL",
+              "severity": "HIGH",
+              "location": "SCHEMA_#/components/schemas/MeGetResponse",
+              "description": "Detected DATA_PII_EMAIL in field 'email' via FORMAT_ENGINE (confidence: 96%).",
+              "clause": "§164.514",
+              "requirement": "De-identification of PHI"
+            },
+            {
+              "riskId": "DATA_PII_NAME",
+              "severity": "MEDIUM",
+              "location": "SCHEMA_#/components/schemas/MeGetResponse",
+              "description": "Detected DATA_PII_NAME in field 'first_name' via NAME_ENGINE (confidence: 82%).",
+              "clause": "§164.514",
+              "requirement": "De-identification of PHI"
+            }
+          ],
+          "status": "AT_RISK"
+        },
+        "PCI_DSS": {
+          "violations": [],
+          "status": "COMPLIANT"
+        },
+        "SOC2": {
+          "violations": [],
+          "status": "COMPLIANT"
+        },
+        "OWASP": {
+          "violations": [],
+          "status": "COMPLIANT"
+        }
+      },
+      "metrics": {
+        "startTime": 1781157930950,
+        "endTime": null,
+        "complianceViolations": 4,
+        "gdprImpacts": 2,
+        "pciImpacts": 0,
+        "hipaaImpacts": 2,
+        "independentFindings": 0
+      }
+    },
+    "topThreats": [
+      {
+        "title": "JWT_ALGORITHM_NOT_LOCKED",
+        "severity": "HIGH",
+        "score": 66,
+        "probability": "53.0%",
+        "location": "/api/v1/me/",
+        "engines": [
+          "AuthAnalyzer"
+        ]
+      },
+      {
+        "title": "Contact Identity Profile: Name + Contact Information",
+        "severity": "MEDIUM",
+        "score": 38,
+        "probability": "30.5%",
+        "location": "/api/v1/me/",
+        "engines": [
+          "SecurityCore"
+        ]
+      },
+      {
+        "title": "Sensitive Field Detected: email",
+        "severity": "MEDIUM",
+        "score": 38,
+        "probability": "30.3%",
+        "engines": [
+          "DataScanner"
+        ]
+      },
+      {
+        "title": "BEARER_TOKEN_NO_EXPIRY",
+        "severity": "LOW",
+        "score": 20,
+        "probability": "16.1%",
+        "location": "/api/v1/me/",
+        "engines": [
+          "SecurityCore"
+        ]
+      },
+      {
+        "title": "Sensitive Field Detected: first_name",
+        "severity": "LOW",
+        "score": 20,
+        "probability": "16.0%",
+        "engines": [
+          "DataScanner"
+        ]
+      },
+      {
+        "title": "Sensitive Field Detected: last_name",
+        "severity": "LOW",
+        "score": 20,
+        "probability": "16.0%",
+        "engines": [
+          "DataScanner"
+        ]
+      },
+      {
+        "title": "Sensitive Field Detected: username",
+        "severity": "LOW",
+        "score": 5,
+        "probability": "5.0%",
+        "engines": [
+          "DataScanner"
+        ]
+      }
+    ],
+    "attackPaths": {
+      "totalDiscovered": 0,
+      "maxDepth": 0,
+      "criticalPaths": 0
+    }
+  },
+  "topology": {
+    "nodeCount": 16,
+    "edgeCount": 21,
+    "centralityMethod": "exact_brandes_16_nodes",
+    "topChokepoints": [
+      {
+        "nodeId": "SCHEMA_#/components/schemas/ValidationError",
+        "centrality": "0.00952381",
+        "path": "SCHEMA_#/components/schemas/ValidationError"
+      },
+      {
+        "nodeId": "SCHEMA_INLINE_4",
+        "centrality": "0.00952381",
+        "path": "SCHEMA_INLINE_4"
+      },
+      {
+        "nodeId": "SCHEMA_#/components/schemas/MeGetResponse",
+        "centrality": "0.00476190",
+        "path": "SCHEMA_#/components/schemas/MeGetResponse"
+      },
+      {
+        "nodeId": "SCHEMA_#/components/schemas/UnauthorizedError",
+        "centrality": "0.00476190",
+        "path": "SCHEMA_#/components/schemas/UnauthorizedError"
+      },
+      {
+        "nodeId": "SCHEMA_#/components/schemas/ConflictError",
+        "centrality": "0.00476190",
+        "path": "SCHEMA_#/components/schemas/ConflictError"
+      }
+    ]
+  },
+  "results": {
+    "/api/v1/me/": {
+      "method": "GET",
+      "flags": 512,
+      "maxSeverity": "HIGH",
+      "securityScore": 63,
+      "findings": [
+        {
+          "id": "b289c8021838d775",
+          "type": "JWT_ALGORITHM_NOT_LOCKED",
+          "title": "JWT_ALGORITHM_NOT_LOCKED",
+          "severity": "HIGH",
+          "score": 66,
+          "probability": "53.0%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "AuthAnalyzer",
+          "detectedByEngines": [
+            "AuthAnalyzer"
+          ],
+          "correlationNote": "Sovereign finding — logically-certain, Bayesian penalty bypassed",
+          "evidence": [
+            "JWT_ALGORITHM_NOT_LOCKED"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Sovereign finding — logically-certain, Bayesian penalty bypassed"
+          ],
+          "confidence": 0.75,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        },
+        {
+          "id": "a8ab6058f99d2d14",
+          "type": "COMPOSITE_PII_CONTACT",
+          "title": "Contact Identity Profile: Name + Contact Information",
+          "severity": "MEDIUM",
+          "score": 38,
+          "probability": "30.5%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "SecurityCore",
+          "detectedByEngines": [
+            "SecurityCore"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "COMPOSITE_PII_CONTACT"
+          ],
+          "description": "This schema links personal identity to contact details. High value for phishing, spam, and impersonation attacks.",
+          "remediation": "Apply field-level encryption, strict access control, audit logging, and data minimisation.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": null,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.505,
+          "_ctxConflicts": [],
+          "_ctxSpecActionable": {
+            "auth": false,
+            "transport": true,
+            "dataRisk": true,
+            "apiContext": true
+          }
+        },
+        {
+          "id": "b6cedd4c299a4e3c",
+          "type": "BEARER_TOKEN_NO_EXPIRY",
+          "title": "BEARER_TOKEN_NO_EXPIRY",
+          "severity": "LOW",
+          "score": 20,
+          "probability": "16.1%",
+          "centrality": "0.000000",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "SecurityCore",
+          "detectedByEngines": [
+            "SecurityCore"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "BEARER_TOKEN_NO_EXPIRY"
+          ],
+          "description": "Security anomaly detected.",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.65,
+          "bypassBayesian": false,
+          "_ctxUncertainty": null,
+          "_ctxConflicts": null,
+          "_ctxSpecActionable": null
+        }
+      ]
+    },
+    "Global": {
+      "flags": 512,
+      "maxSeverity": "MEDIUM",
+      "securityScore": 75,
+      "findings": [
+        {
+          "id": "9cf7f03a1cf11148",
+          "type": "DATA_PII_EMAIL",
+          "title": "Sensitive Field Detected: email",
+          "severity": "MEDIUM",
+          "score": 38,
+          "probability": "30.3%",
+          "centrality": "0.004762",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "DataScanner",
+          "detectedByEngines": [
+            "DataScanner"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DATA_PII_EMAIL"
+          ],
+          "description": "Detected DATA_PII_EMAIL in field 'email' via FORMAT_ENGINE (confidence: 96%).",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.96,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.505,
+          "_ctxConflicts": [],
+          "_ctxSpecActionable": {
+            "auth": false,
+            "transport": true,
+            "dataRisk": true,
+            "apiContext": true
+          }
+        },
+        {
+          "id": "5553ea9f7cfd2235",
+          "type": "DATA_PII_NAME",
+          "title": "Sensitive Field Detected: first_name",
+          "severity": "LOW",
+          "score": 20,
+          "probability": "16.0%",
+          "centrality": "0.004762",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "DataScanner",
+          "detectedByEngines": [
+            "DataScanner"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DATA_PII_NAME"
+          ],
+          "description": "Detected DATA_PII_NAME in field 'first_name' via NAME_ENGINE (confidence: 82%).",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.82,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.505,
+          "_ctxConflicts": [],
+          "_ctxSpecActionable": {
+            "auth": false,
+            "transport": true,
+            "dataRisk": true,
+            "apiContext": true
+          }
+        },
+        {
+          "id": "fed0d7db96b0c6ba",
+          "type": "DATA_PII_NAME",
+          "title": "Sensitive Field Detected: last_name",
+          "severity": "LOW",
+          "score": 20,
+          "probability": "16.0%",
+          "centrality": "0.004762",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "DataScanner",
+          "detectedByEngines": [
+            "DataScanner"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DATA_PII_NAME"
+          ],
+          "description": "Detected DATA_PII_NAME in field 'last_name' via NAME_ENGINE (confidence: 82%).",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.82,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.505,
+          "_ctxConflicts": [],
+          "_ctxSpecActionable": {
+            "auth": false,
+            "transport": true,
+            "dataRisk": true,
+            "apiContext": true
+          }
+        },
+        {
+          "id": "c937d52d0ee4237f",
+          "type": "DATA_NETWORK",
+          "title": "Sensitive Field Detected: username",
+          "severity": "LOW",
+          "score": 5,
+          "probability": "5.0%",
+          "centrality": "0.004762",
+          "attackChains": [],
+          "attackChainsCount": 0,
+          "detectedBy": "DataScanner",
+          "detectedByEngines": [
+            "DataScanner"
+          ],
+          "correlationNote": "Single-engine detection — confidence reduced",
+          "evidence": [
+            "DATA_NETWORK"
+          ],
+          "description": "Detected DATA_NETWORK in field 'username' via FORMAT_ENGINE (confidence: 72%).",
+          "remediation": "Review and remediate.",
+          "reasoning": [
+            "Single-engine detection — confidence reduced"
+          ],
+          "confidence": 0.72,
+          "bypassBayesian": false,
+          "_ctxUncertainty": 0.505,
+          "_ctxConflicts": [],
+          "_ctxSpecActionable": {
+            "auth": false,
+            "transport": true,
+            "dataRisk": true,
+            "apiContext": true
+          }
+        }
+      ]
+    }
+  },
+  "intelligence": {
+    "suppressionLog": [],
+    "crossEngineCorrelations": 0,
+    "evidenceWeights": {
+      "PUBLIC_ACCESS": {
+        "pIfTrue": 0.85,
+        "pIfFalse": 0.15
+      },
+      "WEAK_AUTH": {
+        "pIfTrue": 0.92,
+        "pIfFalse": 0.08
+      },
+      "ADMIN_ROUTE": {
+        "pIfTrue": 0.78,
+        "pIfFalse": 0.35
+      },
+      "SENSITIVE_DATA": {
+        "pIfTrue": 0.88,
+        "pIfFalse": 0.12
+      },
+      "WRITE_OPERATION": {
+        "pIfTrue": 0.7,
+        "pIfFalse": 0.3
+      },
+      "HIGH_CENTRALITY": {
+        "pIfTrue": 0.75,
+        "pIfFalse": 0.25
+      },
+      "HTTP_TRANSPORT": {
+        "pIfTrue": 0.9,
+        "pIfFalse": 0.1
+      },
+      "DEEP_ATTACK_PATH": {
+        "pIfTrue": 0.95,
+        "pIfFalse": 0.05
+      },
+      "INCONSISTENT_AUTH": {
+        "pIfTrue": 0.8,
+        "pIfFalse": 0.2
+      },
+      "CORS_WILDCARD": {
+        "pIfTrue": 0.72,
+        "pIfFalse": 0.28
+      }
+    },
+    "engineTrustWeights": {
+      "ProtocolAnalyzer": 0.95,
+      "AuthAnalyzer": 0.85,
+      "DataScanner": 0.9,
+      "CorsRateLimiter": 0.78,
+      "WebhookAnalyzer": 0.8,
+      "LoggingMonitor": 0.8,
+      "ComplianceEngine": 0.8,
+      "CortexOmega_IDDFS": 0.9,
+      "SecurityCore": 0.7,
+      "ScoringEngine": 0.7,
+      "CortexOmega": 1
+    }
+  }
+}
+--------------------------------------------------
+Score: 15 | Grade: F
+Total Risks: 7
+--------------------------------------------------
